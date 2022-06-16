@@ -1,0 +1,37 @@
+import { StyleSheet } from 'react-native';
+
+//color
+import Colors from '../../constants/color';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+
+  image: {
+    flex: 1,
+  },
+
+  separator: {
+    marginVertical: 5,
+  },
+
+  main: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+
+  button: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    margin: 10,
+  },
+
+  number: {
+    width: 130,
+    borderColor: Colors.black,
+    borderRadius: 5,
+    borderWidth: 3,
+  },
+});
+export default styles;
