@@ -35,6 +35,7 @@ import {
   DatabaseSettingScreen,
 } from '../screens';
 import MyTabs from './Tab';
+import AuthNavigator from './AuthNavigator';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -55,6 +56,12 @@ const AppNavigator = () => {
             header: () => null,
           }}
           component={SplashScreen}
+        />
+
+        <Stack.Screen
+          name="AuthNavigator"
+          component={AuthNavigator}
+          options={{ headerShown: false }}
         />
 
         <Stack.Screen

@@ -27,6 +27,7 @@ const GlobalNetworkScreen = ({ navigation }) => {
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
   const [shouldShow, setShouldShow] = useState(false);
   const modal = () => setShouldShow(previousState => !previousState);
+
   return (
     <View style={styles.container}>
       <ImageBackground source={Images.background} style={styles.image}>
@@ -82,7 +83,7 @@ const GlobalNetworkScreen = ({ navigation }) => {
                       <TextInput
                         style={styles.input}
                         placeholder="www.google.com"
-                        placeholderTextColor={'gray'}
+                        placeholderTextColor={Colors.gray}
                       />
                     </View>
 

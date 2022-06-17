@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: Colors.white,
     fontWeight: Fonts.FontWeight.semibold,
-    FontFamily: Fonts.FontFamily.semibold,
+    fontFamily: Fonts.FontFamily.semibold,
   },
 
   main: {

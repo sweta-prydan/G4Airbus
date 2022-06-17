@@ -142,7 +142,7 @@ const SecurityScreen = ({ navigation }) => {
                   <TextInput
                     style={styles.input}
                     placeholder="Password"
-                    placeholderTextColor={'gray'}
+                    placeholderTextColor={Colors.gray}
                     keyboardType="visible-password"
                   />
                 </KeyboardAvoidingView>

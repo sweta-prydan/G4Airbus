@@ -35,10 +35,10 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 400,
+    width: 390,
     height: 550,
-    padding: 25,
-    marginLeft: 5,
+    padding: 20,
+    marginLeft: 10,
     borderRadius: 20,
     backgroundColor: Colors.transform,
   },

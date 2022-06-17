@@ -14,6 +14,7 @@ import styles from './style';
 
 //images
 import Images from '../../utils/images';
+import { Colors } from '../../constants';
 
 // Components
 import Header from '../../components/Header';
@@ -72,7 +73,7 @@ const ByFtpServerScreen = ({ navigation }) => {
                         onChange={onChangeUsername}
                         placeholder="Enter User Name"
                         keyboardType="name-phone-pad"
-                        placeholderTextColor={'black'}
+                        placeholderTextColor={Colors.gray}
                       />
                     </KeyboardAvoidingView>
                   </View>
@@ -95,7 +96,7 @@ const ByFtpServerScreen = ({ navigation }) => {
                         placeholder="Password"
                         keyboardType="phone-pad"
                         onChange={onChangePassword}
-                        placeholderTextColor={'black'}
+                        placeholderTextColor={Colors.gray}
                       />
                     </KeyboardAvoidingView>
                   </View>

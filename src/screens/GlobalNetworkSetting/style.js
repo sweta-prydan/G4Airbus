@@ -52,8 +52,8 @@ const styles = StyleSheet.create({
 
   description: {
     fontSize: 16,
-    color: Colors.white,
     marginVertical: 8,
+    color: Colors.white,
     marginHorizontal: 10,
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontWeight.semibold,

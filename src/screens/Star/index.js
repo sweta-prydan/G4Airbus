@@ -20,6 +20,7 @@ import Images from '../../utils/images';
 
 //Component
 import Button from '../../components/Button';
+
 //color
 import { Colors } from '../../constants';
 
@@ -79,7 +80,7 @@ const StarScreen = ({ navigation }) => {
                             value={text}
                             style={styles.input}
                             keyboardType="name-phone-pad"
-                            placeholderTextColor={'white'}
+                            placeholderTextColor={Colors.gray}
                             placeholder="Enter The Zone Name"
                             onChangeText={onChangeText}
                           />
