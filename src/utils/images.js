@@ -197,6 +197,54 @@ const images = {
   heatIcon: require('../assets/images/heat_btn.png'),
   //thumb
   thumb: require('../assets/images/hot.png'),
+  //frequently
+  frequently: require('../assets/images/frequency.png'),
+  //fanfour
+  fanfour: require('../assets/images/fanfiveon.png'),
+  //sdcard
+  sdcard: require('../assets/images/sd_card.png'),
+  //sdunseclect
+  sdunseclect: require('../assets/images/sd_unselected.png'),
+  // tv
+  tv: require('../assets/images/tv_selected.png'),
+  //tvunselect
+  tvunselect: require('../assets/images/img_tv.png'),
+  //speaker
+  speaker: require('../assets/images/specker_selected.png'),
+  //speckerunselect
+  speckerunselect: require('../assets/images/img_speaker.png'),
+  //chrome
+  chrome: require('../assets/images/crom_cast.png'),
+  // chromeunselect
+  chromeunselect: require('../assets/images/img_crom_u.png'),
+  // radio
+  radio: require('../assets/images/radio_selected.png'),
+  //radiounselect
+  radiounselect: require('../assets/images/img_radio.png'),
+  //imgLeft
+  imgLeft: require('../assets/images/img_left.png'),
+  // imgRight
+  imgRight: require('../assets/images/img_right.png'),
+  //imgPlay
+  imgPlay: require('../assets/images/img_play.png'),
+  //imgPlayque
+  imgPlayque: require('../assets/images/img_playque.png'),
+  // imgPause
+  imgPause: require('../assets/images/img_puse.png'),
+  // imgPlus
+  imgPlus: require('../assets/images/img_queplus.png'),
+  //imgrepeat
+  imgrepeat: require('../assets/images/img_repeat.png'),
+  //imgStop
+  imgStop: require('../assets/images/img_stop.png'),
+  //imgStopque
+  imgStopque: require('../assets/images/img_stopp.png'),
+  // imageup
+  imageup: require('../assets/images/img_up.png'),
+  //editQueue
+  editQueue: require('../assets/images/img_editque.png'),
+  //repeat
+  repeat: require('../assets/images/repeat_once.png'),
 };
 
 export default images;

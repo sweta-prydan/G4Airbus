@@ -26,7 +26,6 @@ const Camera = ({ navigation }) => {
               <View style={styles.separator} />
               <View style={styles.childView} />
 
-              {/* <View style={styles.button}></View> */}
             </View>
           </ScrollView>
         </SafeAreaView>

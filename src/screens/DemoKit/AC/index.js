@@ -6,7 +6,7 @@ import Images from '../../../utils/images';
 
 //Components
 // import Button from '../../../components/Button';
-import { ScreenLayer, NavigationHeader } from '../../../components';
+import { NavigationHeader } from '../../../components';
 
 //style
 import styles from './style';
@@ -23,7 +23,7 @@ const Ac = ({ navigation }) => {
             <View>
               <View style={styles.separator} />
               <View style={styles.childView}>
-                <ScreenLayer />
+                {/* <ScreenLayer /> */}
               </View>
               {/* <View style={styles.button}></View> */}
             </View>

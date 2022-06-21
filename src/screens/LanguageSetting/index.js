@@ -25,14 +25,14 @@ const LanguageSettingScreen = ({ navigation }) => {
         <Header navigation={navigation} headerText="Language Setting" />
 
         <SafeAreaView style={styles.container}>
-          <ScrollView style={styles.container}>
-            <Text style={styles.lang}>English</Text>
+          <ScrollView>
+            <Text style={styles.lang}> English</Text>
 
-            <Text style={styles.lang}>Gujarati</Text>
+            <Text style={styles.lang}> Gujarati</Text>
 
-            <Text style={styles.lang}>Hindi</Text>
+            <Text style={styles.lang}> Hindi</Text>
 
-            <Text style={styles.lang}>Chinese</Text>
+            <Text style={styles.lang}> Chinese</Text>
 
             <View style={styles.layout}>
               <View style={styles.button}>

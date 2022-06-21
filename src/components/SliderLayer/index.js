@@ -6,9 +6,10 @@ import Slider from 'react-native-slider';
 import styles from './style';
 
 //color
+import { Colors } from '../../constants';
+
 //image
 import Images from '../../utils/images';
-import { Colors } from '../../constants';
 
 function SliderLayer({ layerText, onPress }) {
   const [sliderValue, setSliderValue] = useState(100);

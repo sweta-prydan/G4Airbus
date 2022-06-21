@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Ac,
+  Fan,
   Dmx,
   RGBW,
   Mood,
@@ -79,7 +80,9 @@ const AppNavigator = () => {
 
         <Stack.Screen name="Dmx" component={Dmx} />
 
-        <Stack.Screen name="rgbw" component={RGBW} />
+        <Stack.Screen name="Fan" component={Fan} />
+
+        <Stack.Screen name="Rgbw" component={RGBW} />
 
         <Stack.Screen name="Ac" component={Ac} />
 

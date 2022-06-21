@@ -6,11 +6,10 @@ import { Colors, Fonts } from '../../constants';
 const styles = StyleSheet.create({
   menuView: {
     height: 60,
-    padding: 8,
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'center',
-    backgroundColor: Colors.black,
+    backgroundColor: Colors.transform3,
   },
 
   icon: {
@@ -19,22 +18,15 @@ const styles = StyleSheet.create({
   },
 
   separator: {
-    marginHorizontal: 6,
+    marginHorizontal: 4,
   },
 
   header: {
-    fontSize: 18,
+    fontSize: 20,
     color: Colors.white,
     marginHorizontal: 40,
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.bold,
-  },
-
-  text: {
-    fontSize: 18,
-    color: Colors.white,
-    fontFamily: Fonts.FontFamily.bold,
-    fontWeight: Fonts.FontWeight.regular,
   },
 });
 export default styles;

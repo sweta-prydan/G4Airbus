@@ -14,22 +14,24 @@ const styles = StyleSheet.create({
 
   menuView: {
     height: 60,
-    padding: 20,
     alignItems: 'center',
     flexDirection: 'row',
-    backgroundColor: Colors.black,
+    justifyContent: 'center',
+    backgroundColor: Colors.transform3,
   },
 
   header: {
-    fontSize: 16,
-    marginHorizontal: 55,
+    fontSize: 20,
     color: Colors.white,
-    fontFamily: Fonts.FontFamily.light,
-    fontWeight: Fonts.FontWeight.light,
+    marginHorizontal: 55,
+    fontFamily: Fonts.FontFamily.bold,
+    fontWeight: Fonts.FontWeight.bold,
   },
 
   main: {
+    textAlign: 'center',
     flexDirection: 'row',
+    justifyContent: 'center',
   },
 
   icon: {
@@ -39,6 +41,10 @@ const styles = StyleSheet.create({
 
   separator: {
     marginHorizontal: 8,
+  },
+
+  separate: {
+    marginVertical: 4,
   },
 });
 export default styles;

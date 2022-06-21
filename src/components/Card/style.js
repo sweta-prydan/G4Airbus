@@ -9,6 +9,8 @@ const styles = StyleSheet.create({
     padding: 10,
     height: 240,
     marginVertical: 3,
+    textAlign: 'center',
+    alignItems: 'center',
     flexDirection: 'row',
     marginHorizontal: 3,
   },
@@ -24,8 +26,9 @@ const styles = StyleSheet.create({
 
   round: {
     marginTop: 20,
+    textAlign: 'center',
+    alignItems: 'center',
     flexDirection: 'row',
-    alignContent: 'center',
     justifyContent: 'space-between',
   },
 

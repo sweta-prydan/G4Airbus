@@ -3,6 +3,7 @@ import { Image } from 'react-native';
 import {
   Ac,
   Dmx,
+  Fan,
   Mood,
   RGBW,
   Light,
@@ -144,7 +145,7 @@ function MyTabs() {
       />
       <Tab.Screen
         name="tab8"
-        component={Mood}
+        component={Fan}
         options={{
           tabBarIcon: ({ focus }) => (
             <Image

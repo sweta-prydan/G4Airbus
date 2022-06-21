@@ -5,8 +5,8 @@ import { ImageBackground, View, SafeAreaView, ScrollView } from 'react-native';
 import Images from '../../../utils/images';
 
 //Components
-import Button from '../../../components/Button';
-import { Card, ScreenLayer, NavigationHeader } from '../../../components';
+// import Button from '../../../components/Button';
+import { NavigationHeader } from '../../../components';
 
 //style
 import styles from './style';
@@ -25,9 +25,7 @@ const Curtain = ({ navigation }) => {
           <ScrollView style={styles.container}>
             <View>
               <View style={styles.separator} />
-              <View style={styles.childView}>
-                <ScreenLayer />
-              </View>
+              <View style={styles.childView}>{/* <ScreenLayer /> */}</View>
 
               {/* <View style={styles.button}></View> */}
             </View>

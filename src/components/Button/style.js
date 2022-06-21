@@ -14,9 +14,9 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     paddingBottom: 10,
     alignItems: 'center',
-    borderColor: Colors.darkJungleGreen,
     justifyContent: 'center',
-    backgroundColor: Colors.raisinBlack,
+    borderColor: Colors.darkJungleGreen,
+    backgroundColor: Colors.charlestonGreen,
   },
 
   text: {

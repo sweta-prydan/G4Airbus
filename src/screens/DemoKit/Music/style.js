@@ -21,12 +21,22 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
 
-  button: {
-    margin: 10,
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
+  down: {
+    paddingVertical: 400,
   },
 
+  button: {
+    flexDirection: 'row',
+    position:'absolute',
+    // marginVertical: 100,
+    // justifyContent: 'space-evenly',
+  },
+  button1: {
+    flexDirection: 'row',
+    marginVertical: 10,
+    position:'absolute',
+    justifyContent: 'space-evenly',
+  },
   number: {
     width: 100,
     borderRadius: 5,
@@ -36,11 +46,16 @@ const styles = StyleSheet.create({
 
   childView: {
     width: 390,
-    height: 550,
-    padding: 20,
+    height: 600,
+    paddingHorizontal: 40,
     marginLeft: 10,
     borderRadius: 20,
     backgroundColor: Colors.transform,
+  },
+
+  icon: {
+    width: 60,
+    height: 60,
   },
 });
 

@@ -37,6 +37,8 @@ const styles = StyleSheet.create({
   },
 
   main: {
+    textAlign: 'center',
+    alignItems: 'center',
     flexDirection: 'row',
   },
 
@@ -75,7 +77,7 @@ const styles = StyleSheet.create({
     padding: 5,
     fontSize: 18,
     borderRadius: 5,
-    color: Colors.raisinBlack,
+    color: Colors.charlestonGreen,
     backgroundColor: Colors.white,
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontWeight.semibold,

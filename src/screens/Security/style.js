@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     padding: 3,
     fontSize: 18,
     borderRadius: 5,
-    color: Colors.raisinBlack,
+    color: Colors.charlestonGreen,
     backgroundColor: Colors.white,
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,

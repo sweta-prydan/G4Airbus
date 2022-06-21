@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     marginVertical: 300,
     marginHorizontal: 20,
     fontWeight: Fonts.FontWeight.black,
-    FontFamily: Fonts.FontFamily.bold,
+    fontFamily: Fonts.FontFamily.bold,
   },
 
   separator: {

@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: Colors.black,
+    backgroundColor: Colors.transform3,
   },
 
   back: {
@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
   titleView: {
     flex: 1,
     alignItems: 'center',
+    justifyContent: 'center',
   },
 
   text: {

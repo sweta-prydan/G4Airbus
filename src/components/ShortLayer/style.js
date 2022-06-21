@@ -1,30 +1,31 @@
 import { StyleSheet } from 'react-native';
 
-//color
+//constants
 import { Colors, Fonts } from '../../constants';
 
 const styles = StyleSheet.create({
   layer: {
-    width: 200,
+    width: 185,
     padding: 22,
     height: 100,
     opacity: 0.9,
-    marginVertical: 3,
-    marginHorizontal: 3,
+    marginVertical: 1,
+    textAlign: 'center',
     flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: 1,
     backgroundColor: Colors.transform,
   },
 
   symbol: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
   },
 
   text: {
+    padding: 16,
     fontSize: 16,
-    marginVertical: 10,
     color: Colors.white,
-    marginHorizontal: 30,
     fontFamily: Fonts.FontFamily.semibold,
     fontWeight: Fonts.FontWeight.semibold,
   },

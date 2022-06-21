@@ -5,14 +5,18 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
+  separator: {
+    marginVertical: 8,
+  },
+
   image: {
     flex: 1,
   },
 
   main: {
     flexDirection: 'row',
-    justifyContent: 'center',
     textAlign: 'center',
+    justifyContent: 'center',
   },
 });
 export default styles;

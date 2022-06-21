@@ -12,7 +12,9 @@ const styles = StyleSheet.create({
     marginVertical: 3,
     marginHorizontal: 3,
     flexDirection: 'row',
-    backgroundColor: Colors.raisinBlack,
+    textAlign: 'center',
+    alignItems: 'center',
+    backgroundColor: Colors.charlestonGreen,
   },
 
   symbol: {

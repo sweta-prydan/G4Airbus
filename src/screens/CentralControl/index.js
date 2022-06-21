@@ -52,6 +52,7 @@ const CentralControlScreen = ({ navigation }) => {
                 </TouchableOpacity>
               </View>
             </View>
+            <View style={styles.separate} />
 
             <View style={styles.main}>
               <Layer

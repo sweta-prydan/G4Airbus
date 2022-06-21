@@ -100,6 +100,8 @@ const styles = StyleSheet.create({
 
   row1: {
     flexDirection: 'row',
+    textAlign: 'center',
+    alignItems: 'center',
     marginHorizontal: 10,
   },
 

@@ -1,13 +1,12 @@
 import { StyleSheet } from 'react-native';
 
 //color
-import { Colors, Fonts } from '../../constants';
+import { Colors, Fonts } from '../../../constants';
 
 const styles = StyleSheet.create({
   layer: {
     padding: 10,
     opacity: 0.9,
-    borderRadius: 10,
     marginVertical: 3,
     marginHorizontal: 3,
     textAlign: 'center',
@@ -28,6 +27,7 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.FontFamily.default,
     fontWeight: Fonts.FontWeight.regular,
   },
+
   slider: {
     margin: 10,
   },
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 
   track: {
     height: 10,
-    width: 220,
+    width: 130,
     borderRadius: 50,
     backgroundColor: Colors.transform,
   },
@@ -51,9 +51,43 @@ const styles = StyleSheet.create({
   },
 
   thumb: {
+    width: 20,
+    height: 30,
+  },
+
+  container: {
+    flex: 1,
+  },
+
+  image: {
+    flex: 1,
+  },
+
+  main: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+
+  button: {
+    margin: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+  },
+
+  number: {
     width: 100,
-    height: 'auto',
-    borderRadius: '100%',
+    borderWidth: 3,
+    borderRadius: 5,
+    borderColor: Colors.black,
+  },
+
+  childView: {
+    width: 390,
+    height: 550,
+    padding: 20,
+    marginLeft: 10,
+    borderRadius: 20,
+    backgroundColor: Colors.transform,
   },
 });
 

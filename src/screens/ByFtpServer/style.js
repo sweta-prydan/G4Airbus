@@ -32,6 +32,8 @@ const styles = StyleSheet.create({
 
   main: {
     flexDirection: 'row',
+    textAlign: 'center',
+    alignItems: 'center',
   },
 
   example: {

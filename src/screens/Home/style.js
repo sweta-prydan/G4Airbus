@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     marginHorizontal: 20,
     color: Colors.white,
-    backgroundColor: Colors.raisinBlack,
+    backgroundColor: Colors.charlestonGreen,
     fontFamily: Fonts.FontFamily.light,
     fontWeight: Fonts.FontWeight.light,
   },
@@ -75,14 +75,13 @@ const styles = StyleSheet.create({
     color: Colors.white,
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
-    backgroundColor: Colors.raisinBlack,
+    backgroundColor: Colors.charlestonGreen,
   },
 
   button: {
-    borderRadius: 15,
-    overflow: 'hidden',
-    alignSelf: 'flex-start',
-    marginHorizontal: '15%',
+    width: 140,
+    marginHorizontal: '5%',
+    marginVertical: '2%',
   },
 
   close: {
@@ -104,14 +103,12 @@ const styles = StyleSheet.create({
 
   layout: {
     margin: 5,
-    borderRadius: 15,
-    overflow: 'hidden',
-    marginHorizontal: 10,
     flexDirection: 'row',
+    alignContent: 'center',
+    justifyContent: 'center',
   },
 
   loading: {
-    margin: 5,
     width: 100,
     height: 100,
     marginHorizontal: 130,

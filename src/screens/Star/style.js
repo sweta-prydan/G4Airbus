@@ -67,6 +67,8 @@ const styles = StyleSheet.create({
 
   heading: {
     flexDirection: 'row',
+    textAlign: 'center',
+    alignItems: 'center',
     marginVertical: 130,
   },
 
@@ -132,9 +134,9 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     color: Colors.white,
     marginHorizontal: 20,
-    backgroundColor: Colors.raisinBlack,
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
+    backgroundColor: Colors.charlestonGreen,
   },
 
   input: {
@@ -142,9 +144,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
     borderRadius: 5,
     color: Colors.white,
-    backgroundColor: Colors.raisinBlack,
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
+    backgroundColor: Colors.charlestonGreen,
   },
   button: {
     alignSelf: 'flex-start',
@@ -171,6 +173,8 @@ const styles = StyleSheet.create({
   layout: {
     margin: 10,
     flexDirection: 'row',
+    textAlign: 'center',
+    alignItems: 'center',
     marginHorizontal: 10,
   },
 

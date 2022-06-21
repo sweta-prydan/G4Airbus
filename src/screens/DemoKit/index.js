@@ -17,7 +17,7 @@ const Demokitzone = ({ navigation }) => {
         <SafeAreaView>
           <ScrollView>
             <DemoHeader DemoHeaderText={'DEMO KIT Zone'} />
-
+            <View style={styles.separator} />
             <View style={styles.main}>
               <Layer
                 onPress={() => navigation.navigate('MyTabs')}
@@ -64,7 +64,7 @@ const Demokitzone = ({ navigation }) => {
                 layerText={'Modes'}
               />
               <Layer
-                onPress={() => navigation.navigate('MyTabs')}
+                onPress={() => navigation.navigate('Fan')}
                 Icon={Images.fan}
                 layerText={'Fan'}
               />
@@ -74,7 +74,7 @@ const Demokitzone = ({ navigation }) => {
               <Layer
                 onPress={() => navigation.navigate('MyTabs')}
                 Icon={Images.control}
-                layerText={'OtherControl'}
+                layerText={'OtherControls'}
               />
               <Layer
                 onPress={() => navigation.navigate('Irrigation')}

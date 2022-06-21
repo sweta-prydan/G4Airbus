@@ -17,9 +17,10 @@ const styles = StyleSheet.create({
   },
 
   main: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
     alignItems: 'center',
+    flexDirection: 'row',
+    textAlign: 'center',
+    justifyContent: 'space-around',
   },
 
   childView: {

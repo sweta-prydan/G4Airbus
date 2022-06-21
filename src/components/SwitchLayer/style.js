@@ -10,8 +10,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginVertical: 3,
     marginHorizontal: 3,
+    textAlign: 'center',
+    alignItems: 'center',
     flexDirection: 'row',
-    backgroundColor: Colors.raisinBlack,
+    backgroundColor: Colors.charlestonGreen,
   },
 
   symbol: {
@@ -27,8 +29,8 @@ const styles = StyleSheet.create({
     fontWeight: Fonts.FontWeight.semibold,
   },
   icon: {
-    width: 100,
     height: 50,
+    width: 100,
     marginVertical: 10,
   },
 

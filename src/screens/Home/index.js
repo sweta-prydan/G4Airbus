@@ -74,7 +74,7 @@ const HomeScreen = ({ navigation }) => {
                                 style={styles.input}
                                 onChangeText={onChangeText}
                                 keyboardType="name-phone-pad"
-                                placeholderTextColor={Colors.gray}
+                                placeholderTextColor={Colors.spanishGray}
                                 placeholder="Enter The MainZone Name"
                               />
                             </View>
@@ -86,7 +86,7 @@ const HomeScreen = ({ navigation }) => {
                                 value={number}
                                 style={styles.input}
                                 keyboardType="phone-pad"
-                                placeholderTextColor={Colors.gray}
+                                placeholderTextColor={Colors.spanishGray}
                                 placeholder="Enter IP Address"
                                 onChangeText={onChangeNumber}
                               />

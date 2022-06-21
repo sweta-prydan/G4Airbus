@@ -13,25 +13,25 @@ const styles = StyleSheet.create({
   },
 
   lang: {
-    padding: 6,
+    padding: 3,
     fontSize: 16,
-    marginVertical: 25,
     color: Colors.white,
-    marginHorizontal: 20,
-    borderBottomWidth: 0.2,
-    borderBottomColor: Colors.white,
+    margin: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.davyGrey,
     fontWeight: Fonts.FontWeight.light,
     fontFamily: Fonts.FontFamily.light,
   },
 
   layout: {
     flexDirection: 'row',
+    textAlign: 'center',
+    alignContent: 'center',
   },
 
   button: {
     minWidth: '25%',
-    marginBottom: 5,
-    marginVertical: 380,
+    marginVertical: 480,
     marginHorizontal: 50,
   },
 });

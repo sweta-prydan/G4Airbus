@@ -8,8 +8,12 @@ const Layer = ({ layerText, onPress, Icon }) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.button}>
       <View style={styles.layer}>
-        <Image style={styles.symbol} source={Icon} />
-        <Text style={styles.text}>{layerText}</Text>
+        <View>
+          <Image style={styles.symbol} source={Icon} />
+        </View>
+        <View>
+          <Text style={styles.text}>{layerText}</Text>
+        </View>
       </View>
     </TouchableOpacity>
   );

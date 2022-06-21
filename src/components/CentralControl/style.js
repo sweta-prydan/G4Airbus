@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
   toggle: {
     margin: 5,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    textAlign: 'center',
+    alignItems: 'center',
   },
 
   childView: {

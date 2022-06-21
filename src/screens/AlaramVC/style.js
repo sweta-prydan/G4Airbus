@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
 
   menuView: {
     height: 60,
-    flexDirection: 'row',
     alignItems: 'center',
+    flexDirection: 'row',
     justifyContent: 'center',
     backgroundColor: Colors.black,
   },
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     padding: 3,
     fontSize: 18,
     borderRadius: 5,
-    color: Colors.raisinBlack,
+    color: Colors.charlestonGreen,
     backgroundColor: Colors.white,
     fontFamily: Fonts.FontFamily.default,
     fontWeight: Fonts.FontWeight.medium,
