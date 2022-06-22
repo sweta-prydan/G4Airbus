@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.FontFamily.default,
     fontWeight: Fonts.FontWeight.regular,
   },
+
   slider: {
     margin: 10,
   },
@@ -51,9 +52,12 @@ const styles = StyleSheet.create({
   },
 
   thumb: {
-    width: 100,
-    height: 'auto',
-    borderRadius: '100%',
+    width: 30,
+    height: 30,
+    borderWidth: 8,
+    borderRadius: 80,
+    borderColor: Colors.white,
+    backgroundColor: Colors.venetianRed,
   },
 });
 

@@ -26,12 +26,12 @@ function SliderLayer({ layerText, onPress }) {
               maximumValue={100}
               minimumValue={0}
               minimumTrackTintColor={Colors.bronze}
-              maximumTrackTintColor={Colors.transform}
+              maximumTrackTintColor={Colors.davyGrey}
               step={1}
               value={sliderValue}
               onValueChange={sliderValue => setSliderValue(sliderValue)}
               thumbStyle={styles.thumb}
-              thumbImage={Images.thumb}
+              // thumbImage={Images.thumb}
             />
 
             <View style={styles.separator} />

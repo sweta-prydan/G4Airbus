@@ -21,8 +21,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
 
-  button: {
-    margin: 10,
+  row: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
   },
@@ -36,11 +35,22 @@ const styles = StyleSheet.create({
 
   childView: {
     width: 390,
-    height: 550,
+    height: 750,
     padding: 20,
     marginLeft: 10,
     borderRadius: 20,
     backgroundColor: Colors.transform,
+  },
+
+  icon: {
+    width: 60,
+    height: 60,
+  },
+
+  temp: {
+    width: 160,
+    height: 400,
+    marginHorizontal: 90,
   },
 });
 

@@ -188,11 +188,17 @@ const images = {
   //fan
   fanButton: require('../assets/images/fan_btn.png'),
   //fan Fast
-  fanFast: require('../assets/images/fan_btn.png'),
+  fanFast: require('../assets/images/fan_fast.png'),
+  //fan Fast O
+  fanFastO: require('../assets/images/fan_fast_o.png'),
   //fan Slow
-  fanSlow: require('../assets/images/fan_btn.png'),
+  fanSlow: require('../assets/images/fan_slow.png'),
+  //fan Slow O
+  fanSlowO: require('../assets/images/fan_low_o.png'),
   //fan Medium
-  fanMedium: require('../assets/images/fan_btn.png'),
+  fanMedium: require('../assets/images/fan_medium.png'),
+  //fan Medium
+  fanMediumO: require('../assets/images/fan_medium_o.png'),
   //heat icon
   heatIcon: require('../assets/images/heat_btn.png'),
   //thumb
@@ -245,6 +251,20 @@ const images = {
   editQueue: require('../assets/images/img_editque.png'),
   //repeat
   repeat: require('../assets/images/repeat_once.png'),
+  //volumeon
+  volumeon: require('../assets/images/img_volume_new.png'),
+  //volumemute
+  volumemute: require('../assets/images/img_mute_new.png'),
+  //fanTitle
+  fanTitle: require('../assets/images/fan_btn.png'),
+  //cool
+  cool: require('../assets/images/cool_btn.png'),
+  //temperature
+  bigTemperature: require('../assets/images/bigtemprecher.png'),
+  //layout
+  layout: require('../assets/images/layout.png'),
+  //temperatureCool
+  temperatureCool: require('../assets/images/tmpcher_cool.png'),
 };
 
 export default images;

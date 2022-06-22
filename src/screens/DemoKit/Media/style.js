@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 
   childView: {
     width: 390,
-    height: 550,
+    height: 700,
     padding: 20,
     marginLeft: 10,
     borderRadius: 20,
