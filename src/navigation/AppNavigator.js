@@ -7,8 +7,8 @@ import {
   Mood,
   Media,
   Music,
-  Camera,
   Light,
+  Camera,
   Curtain,
   FanScreen,
   DMXScreen,
@@ -73,7 +73,7 @@ const AppNavigator = () => {
           }}
           component={HomeScreen}
         />
-        {/* <Stack.Group initialRouteName="MyTabs"> */}
+
         <Stack.Screen name="MyTabs" component={MyTabs} />
 
         <Stack.Screen name="Light" component={Light} />
@@ -97,7 +97,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Media" component={Media} />
 
         <Stack.Screen name="Irrigation" component={Irrigation} />
-        {/* </Stack.Group> */}
+
         <Stack.Screen name="SettingScreen" component={SettingScreen} />
 
         <Stack.Screen

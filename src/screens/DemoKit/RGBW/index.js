@@ -4,6 +4,7 @@ import { ImageBackground, View, SafeAreaView, ScrollView } from 'react-native';
 //images
 import Images from '../../../utils/images';
 
+//components
 import { NavigationHeader, ArrowLayer } from '../../../components';
 
 //style
@@ -23,6 +24,7 @@ const RGBW = ({ navigation }) => {
           <ScrollView style={styles.container}>
             <View>
               <View style={styles.separator} />
+
               <View style={styles.childView}>
                 <ArrowLayer arrowText={'RGBW'} />
               </View>

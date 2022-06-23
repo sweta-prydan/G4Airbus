@@ -72,10 +72,10 @@ const SchedulingDropScreen = ({ navigation }) => {
                   style={styles.dropdown}
                   placeholder="Controlled Item"
                   searchPlaceholder="Search..."
+                  iconStyle={styles.iconStyle}
                   placeholderStyle={styles.placeholderStyle}
                   selectedTextStyle={styles.selectedTextStyle}
                   inputSearchStyle={styles.inputSearchStyle}
-                  iconStyle={styles.iconStyle}
                   renderLeftIcon={() => (
                     <AntDesign color="white" style={styles.icon} />
                   )}

@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
 
   number: {
     width: 100,
-    borderRadius: 5,
     borderWidth: 3,
+    borderRadius: 5,
     borderColor: Colors.black,
   },
 });

@@ -134,6 +134,7 @@ const SecurityScreen = ({ navigation }) => {
               <View>
                 <Text style={styles.description}> Password </Text>
               </View>
+
               <View style={styles.edit}>
                 <KeyboardAvoidingView
                   style={styles.container}

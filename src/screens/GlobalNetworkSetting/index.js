@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import {
-  ImageBackground,
   View,
   Text,
-  TextInput,
   Switch,
-  SafeAreaView,
+  TextInput,
   ScrollView,
+  SafeAreaView,
+  ImageBackground,
 } from 'react-native';
 
 //images
@@ -32,6 +32,7 @@ const GlobalNetworkScreen = ({ navigation }) => {
     <View style={styles.container}>
       <ImageBackground source={Images.background} style={styles.image}>
         <Header navigation={navigation} headerText="Global Network Setting" />
+
         <SafeAreaView style={styles.container}>
           <ScrollView style={styles.container}>
             <View style={styles.toggle}>

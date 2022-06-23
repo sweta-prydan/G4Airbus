@@ -12,6 +12,7 @@ const Logo = ({ Heading }) => {
     <View style={styles.container}>
       <View style={styles.contain}>
         <Image source={Images.logo} style={styles.logo} />
+
         <View>
           <Text style={styles.text}>{Heading}</Text>
         </View>

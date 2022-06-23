@@ -89,8 +89,8 @@ const styles = StyleSheet.create({
   demo: {
     height: 35,
     width: 300,
-    paddingVertical: 7,
     textAlign: 'center',
+    paddingVertical: 7,
     color: Colors.white,
     borderTopRightRadius: 250,
     borderBottomRightRadius: 0,

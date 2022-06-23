@@ -14,9 +14,9 @@ const styles = StyleSheet.create({
 
   lang: {
     padding: 3,
+    margin: 16,
     fontSize: 16,
     color: Colors.white,
-    margin: 16,
     borderBottomWidth: 1,
     borderBottomColor: Colors.davyGrey,
     fontWeight: Fonts.FontWeight.light,

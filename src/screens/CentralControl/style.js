@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
 
   menuView: {
     height: 60,
-    alignItems: 'center',
     flexDirection: 'row',
+    alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: Colors.transform3,
   },
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     color: Colors.white,
     marginHorizontal: 55,
     fontFamily: Fonts.FontFamily.bold,
-    fontWeight: Fonts.FontWeight.bold,
+    fontWeight: Fonts.FontWeight.black,
   },
 
   main: {

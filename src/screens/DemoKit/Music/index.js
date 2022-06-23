@@ -135,6 +135,7 @@ const Music = ({ navigation }) => {
 
                     <Image source={Images.imgStopque} style={styles.stop} />
                   </View>
+
                   <View style={styles.separator} />
                   <View style={styles.separator} />
                   <View style={styles.separator} />

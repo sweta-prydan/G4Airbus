@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
 
   main: {
     alignItems: 'center',
-    flexDirection: 'row',
     textAlign: 'center',
+    flexDirection: 'row',
     justifyContent: 'space-around',
   },
 

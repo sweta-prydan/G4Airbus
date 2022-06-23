@@ -8,7 +8,6 @@ import styles from './style';
 import Images from '../../../utils/images';
 
 //Components
-// import Button from '../../../components/Button';
 import { ScreenLayer, NavigationHeader } from '../../../components';
 
 const Mood = ({ navigation }) => {

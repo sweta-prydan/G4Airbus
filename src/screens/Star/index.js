@@ -159,6 +159,7 @@ const StarScreen = ({ navigation }) => {
                         <Image source={Images.eye} style={styles.eye} />
                       </TouchableOpacity>
                     </View>
+
                     <View style={styles.Head}>
                       <TouchableOpacity
                         onPress={() => navigation.navigate('Demokitzone')}>

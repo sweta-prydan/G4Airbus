@@ -7,8 +7,8 @@ const styles = StyleSheet.create({
   menuView: {
     height: 60,
     padding: 8,
-    flexDirection: 'row',
     alignItems: 'center',
+    flexDirection: 'row',
     justifyContent: 'center',
     backgroundColor: Colors.transform3,
   },
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: Colors.white,
     fontFamily: Fonts.FontFamily.bold,
-    fontWeight: Fonts.FontWeight.bold,
+    fontWeight: Fonts.FontWeight.black,
   },
 });
 export default styles;

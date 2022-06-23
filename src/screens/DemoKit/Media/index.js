@@ -20,37 +20,45 @@ const Media = ({ navigation }) => {
             NavigationHeaderText="Media"
           />
         </View>
+
         <SafeAreaView style={styles.container}>
           <ScrollView style={styles.container}>
             <View style={styles.childView}>
               <View>
                 <View style={styles.separator} />
+
                 <View style={styles.main}>
                   <View>
                     <RoundCard cardText={'TV'} />
                   </View>
+
                   <View>
                     <RoundCard cardText={'DVD'} />
                   </View>
                 </View>
               </View>
+
               <View>
                 <View style={styles.separator} />
+
                 <View style={styles.main}>
                   <View>
                     <RoundCard cardText={'Apple TV'} />
                   </View>
+
                   <View>
                     <RoundCard cardText={'Satelite'} />
                   </View>
                 </View>
               </View>
+
               <View>
                 <View style={styles.separator} />
                 <View style={styles.main}>
                   <View>
                     <RoundCard cardText={'Projector'} />
                   </View>
+
                   <View>
                     <RoundCard cardText={'Roku'} />
                   </View>

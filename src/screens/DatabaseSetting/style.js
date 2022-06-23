@@ -13,9 +13,9 @@ const styles = StyleSheet.create({
   },
 
   layout: {
-    alignItems: 'center',
     marginVertical: 280,
     marginHorizontal: 40,
+    alignItems: 'center',
     justifyContent: 'center',
     fontWeight: Fonts.FontWeight.black,
     fontFamily: Fonts.FontFamily.bold,

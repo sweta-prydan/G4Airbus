@@ -4,10 +4,14 @@ import { ImageBackground, View, SafeAreaView, ScrollView } from 'react-native';
 //images
 import Images from '../../utils/images';
 
-//Component
-import Header from '../../components/Header';
-import { PowerOff, PowerOn, SliderTrack } from '../../components';
-import CentralControl from '../../components/CentralControl';
+//Components
+import {
+  Header,
+  PowerOn,
+  PowerOff,
+  SliderTrack,
+  CentralControl,
+} from '../../components';
 
 //style
 import styles from './style';

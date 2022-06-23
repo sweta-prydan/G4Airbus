@@ -29,15 +29,15 @@ const styles = StyleSheet.create({
 
   number: {
     width: 100,
-    borderRadius: 5,
     borderWidth: 3,
+    borderRadius: 5,
     borderColor: Colors.black,
   },
 
   childView: {
     width: 390,
-    height: 550,
     padding: 20,
+    height: 550,
     marginLeft: 10,
     borderRadius: 20,
     backgroundColor: Colors.transform,

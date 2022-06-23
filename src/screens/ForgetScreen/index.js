@@ -37,10 +37,12 @@ const ForgetScreen = ({ navigation }) => {
         <SafeAreaView>
           <ScrollView>
             <Logo Heading={'Forget Password'} />
+
             <View style={styles.childView}>
               <View style={styles.SectionStyle}>
                 <View style={styles.input}>
                   <Text style={styles.registerTextStyle}>Email:</Text>
+
                   <TextInput
                     style={styles.inputStyle}
                     onChangeText={UserEmail => setUserEmail(UserEmail)}

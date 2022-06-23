@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Slider from 'react-native-slider';
 import { Text, View } from 'react-native';
+
+import Slider from 'react-native-slider';
 
 //style
 import styles from './style';

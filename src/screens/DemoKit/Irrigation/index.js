@@ -26,6 +26,7 @@ const Irrigation = ({ navigation }) => {
           <ScrollView style={styles.container}>
             <View>
               <View style={styles.separator} />
+
               <View style={styles.childView}>
                 <View style={styles.button}>
                   <Button buttonText={'All Stop'} style={styles.button} />

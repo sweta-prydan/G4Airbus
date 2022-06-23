@@ -43,14 +43,14 @@ const styles = StyleSheet.create({
   },
 
   symbol: {
-    height: 28,
     width: 28,
+    height: 28,
   },
 
   number: {
     width: 130,
-    borderRadius: 5,
     borderWidth: 3,
+    borderRadius: 5,
     borderColor: Colors.black,
   },
 });

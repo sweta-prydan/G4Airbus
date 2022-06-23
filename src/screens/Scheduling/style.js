@@ -43,8 +43,8 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    marginHorizontal: 150,
     marginVertical: 660,
+    marginHorizontal: 150,
   },
 });
 

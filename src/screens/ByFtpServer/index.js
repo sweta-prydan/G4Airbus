@@ -46,8 +46,8 @@ const ByFtpServerScreen = ({ navigation }) => {
                       enabled>
                       <TextInput
                         value=""
-                        keyboardType="phone-pad"
                         style={styles.input}
+                        keyboardType="phone-pad"
                       />
                     </KeyboardAvoidingView>
                   </View>

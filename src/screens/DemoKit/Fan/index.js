@@ -35,13 +35,16 @@ const Fan = ({ navigation }) => {
           <ScrollView style={styles.container}>
             <View>
               <View style={styles.separator} />
+
               <View style={styles.childView}>
                 <View style={styles.layer}>
                   <Text style={styles.text}>Fan1</Text>
+
                   <Image style={styles.symbol} source={Images.fanfour} />
                   <View>
                     <View style={styles.slider}>
                       <Text style={styles.text1}> {sliderValue} </Text>
+
                       <Slider
                         style={styles.track}
                         maximumValue={4}

@@ -9,10 +9,10 @@ const styles = StyleSheet.create({
     padding: 10,
     height: 240,
     marginVertical: 3,
+    marginHorizontal: 3,
     textAlign: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    marginHorizontal: 3,
   },
 
   banner: {
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     justifyContent: 'center',
   },
+
   text: {
     height: 35,
     width: 160,

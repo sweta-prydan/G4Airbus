@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
 
   menuView: {
     height: 60,
-    alignItems: 'center',
     flexDirection: 'row',
+    alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: Colors.black,
   },
@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
   },
 
   main: {
-    flexDirection: 'row',
     alignItems: 'center',
+    flexDirection: 'row',
     justifyContent: 'center',
   },
 
@@ -103,8 +103,8 @@ const styles = StyleSheet.create({
     padding: 3,
     fontSize: 18,
     borderRadius: 5,
-    color: Colors.charlestonGreen,
     backgroundColor: Colors.white,
+    color: Colors.charlestonGreen,
     fontFamily: Fonts.FontFamily.default,
     fontWeight: Fonts.FontWeight.medium,
   },

@@ -2,11 +2,11 @@ import React from 'react';
 import {
   View,
   Text,
-  ImageBackground,
   Image,
-  TouchableOpacity,
-  SafeAreaView,
   ScrollView,
+  SafeAreaView,
+  ImageBackground,
+  TouchableOpacity,
   TouchableHighlight,
 } from 'react-native';
 

@@ -15,9 +15,7 @@ import Images from '../../utils/images';
 import styles from './style';
 
 //components
-import Header from '../../components/Header';
-import { PowerOff, PowerOn } from '../../components';
-import CentralControl from '../../components/CentralControl';
+import { Header, PowerOff, PowerOn, CentralControl } from '../../components';
 
 const HVACScreen = ({ navigation }) => {
   return (

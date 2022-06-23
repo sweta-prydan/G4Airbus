@@ -9,29 +9,44 @@ const styles = StyleSheet.create({
     opacity: 0.9,
     borderRadius: 10,
     marginVertical: 3,
-    textAlign: 'center',
     marginHorizontal: 3,
-    alignItems: 'center',
     flexDirection: 'row',
+    textAlign: 'center',
+    alignItems: 'center',
     backgroundColor: Colors.charlestonGreen,
   },
 
   symbol: {
-    width: 100,
-    height: 100,
+    width: 90,
+    height: 90,
   },
 
   text: {
     fontSize: 16,
-    marginVertical: 40,
+    marginVertical: 20,
     color: Colors.white,
-    marginHorizontal: 30,
+    marginHorizontal: 20,
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.bold,
   },
 
-  arrow: {
-    marginHorizontal: 20,
+  buttonrow: {
+    flexDirection: 'row',
+    textAlign: 'center',
+    alignItems: 'center',
+  },
+
+  button: {
+    width: 80,
+    elevation: 3,
+    borderWidth: 3,
+    paddingTop: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingBottom: 10,
+    alignItems: 'center',
+    borderColor: Colors.darkJungleGreen,
+    backgroundColor: Colors.charlestonGreen,
   },
 });
 

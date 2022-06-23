@@ -23,16 +23,16 @@ const styles = StyleSheet.create({
 
   button: {
     margin: 10,
-    flexDirection: 'row',
     marginVertical: 600,
+    flexDirection: 'row',
     marginHorizontal: 130,
     justifyContent: 'center',
   },
 
   childView: {
     width: 390,
-    height: 550,
     padding: 20,
+    height: 550,
     marginLeft: 10,
     borderRadius: 20,
     backgroundColor: Colors.transform,

@@ -5,10 +5,13 @@ import { ImageBackground, View, SafeAreaView, ScrollView } from 'react-native';
 import Images from '../../utils/images';
 
 //Components
-import Button from '../../components/Button';
-import Header from '../../components/Header';
-import { PowerOff, PowerOn } from '../../components';
-import CentralControl from '../../components/CentralControl';
+import {
+  Button,
+  Header,
+  PowerOn,
+  PowerOff,
+  CentralControl,
+} from '../../components';
 
 //style
 import styles from './style';

@@ -8,10 +8,14 @@ import Images from '../../utils/images';
 import styles from './style';
 
 //components
-import Button from '../../components/Button';
-import Header from '../../components/Header';
-import { PowerOff, PowerOn } from '../../components';
-import CentralControl from '../../components/CentralControl';
+
+import {
+  Header,
+  Button,
+  PowerOn,
+  PowerOff,
+  CentralControl,
+} from '../../components';
 
 const FanScreen = ({ navigation }) => {
   return (

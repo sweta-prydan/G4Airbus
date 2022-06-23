@@ -5,9 +5,7 @@ import { ImageBackground, View, SafeAreaView, ScrollView } from 'react-native';
 import Images from '../../utils/images';
 
 //Components
-import Header from '../../components/Header';
-import { PowerOff, PowerOn } from '../../components';
-import CentralControl from '../../components/CentralControl';
+import { Header, PowerOff, PowerOn, CentralControl } from '../../components';
 
 //style
 import styles from './style';

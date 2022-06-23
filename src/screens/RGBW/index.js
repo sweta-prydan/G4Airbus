@@ -1,23 +1,26 @@
 import React, { useState } from 'react';
 import {
-  ImageBackground,
   View,
-  Image,
-  TouchableOpacity,
   Alert,
   Modal,
-  SafeAreaView,
+  Image,
   ScrollView,
+  SafeAreaView,
+  ImageBackground,
+  TouchableOpacity,
 } from 'react-native';
 
 //images
 import Images from '../../utils/images';
 
 //Components
-import Header from '../../components/Header';
-import Button from '../../components/Button';
-import { PowerOff, PowerOn } from '../../components';
-import CentralControl from '../../components/CentralControl';
+import {
+  Header,
+  Button,
+  PowerOn,
+  PowerOff,
+  CentralControl,
+} from '../../components';
 
 //style
 import styles from './style';

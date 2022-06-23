@@ -10,10 +10,10 @@ const styles = StyleSheet.create({
     height: 100,
     opacity: 0.9,
     marginVertical: 1,
+    marginHorizontal: 1,
     textAlign: 'center',
     flexDirection: 'row',
     alignItems: 'center',
-    marginHorizontal: 1,
     backgroundColor: Colors.transform,
   },
 

@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
   },
 
   main: {
-    flexDirection: 'row',
     textAlign: 'center',
+    flexDirection: 'row',
     justifyContent: 'center',
   },
 });

@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    marginHorizontal: 130,
     margin: 20,
+    marginHorizontal: 130,
   },
 
   container1: {
@@ -53,9 +53,9 @@ const styles = StyleSheet.create({
   },
 
   cancel: {
+    margin: 5,
     width: 30,
     height: 30,
-    margin: 5,
     marginHorizontal: 40,
   },
 });

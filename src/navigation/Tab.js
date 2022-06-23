@@ -128,6 +128,7 @@ function MyTabs() {
           ),
         }}
       />
+
       <Tab.Screen
         name="tab7"
         component={Mood}
@@ -143,6 +144,7 @@ function MyTabs() {
           ),
         }}
       />
+
       <Tab.Screen
         name="tab8"
         component={Fan}
@@ -158,6 +160,7 @@ function MyTabs() {
           ),
         }}
       />
+
       <Tab.Screen
         name="tab9"
         component={Mood}
@@ -204,6 +207,7 @@ function MyTabs() {
           ),
         }}
       />
+
       <Tab.Screen
         name="tab12"
         component={Camera}

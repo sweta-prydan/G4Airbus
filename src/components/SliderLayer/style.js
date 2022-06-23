@@ -42,9 +42,9 @@ const styles = StyleSheet.create({
 
   track: {
     height: 10,
-    width: 220,
+    width: 230,
     borderRadius: 50,
-    backgroundColor: Colors.transform,
+    backgroundColor: Colors.bronze,
   },
 
   separator: {
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   thumb: {
     width: 30,
     height: 30,
-    borderWidth: 8,
+    borderWidth: 7,
     borderRadius: 80,
     borderColor: Colors.white,
     backgroundColor: Colors.venetianRed,

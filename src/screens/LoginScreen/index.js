@@ -56,6 +56,7 @@ const LoginScreen = ({ navigation }) => {
                   />
                 </View>
               </View>
+
               <View style={styles.SectionStyle}>
                 <View style={styles.input}>
                   <Text style={styles.registerTextStyle}>Password:</Text>

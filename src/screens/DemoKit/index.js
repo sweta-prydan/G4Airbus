@@ -18,12 +18,14 @@ const Demokitzone = ({ navigation }) => {
           <ScrollView>
             <DemoHeader DemoHeaderText={'DEMO KIT Zone'} />
             <View style={styles.separator} />
+
             <View style={styles.main}>
               <Layer
                 onPress={() => navigation.navigate('MyTabs')}
                 Icon={Images.roomLight}
                 layerText={'Light'}
               />
+
               <Layer
                 onPress={() => navigation.navigate('Rgbw')}
                 Icon={Images.rgb}
@@ -37,6 +39,7 @@ const Demokitzone = ({ navigation }) => {
                 Icon={Images.dmx}
                 layerText={'DMX'}
               />
+
               <Layer
                 onPress={() => navigation.navigate('Ac')}
                 Icon={Images.hvac}
@@ -50,6 +53,7 @@ const Demokitzone = ({ navigation }) => {
                 Icon={Images.audio}
                 layerText={'Z-Audio'}
               />
+
               <Layer
                 onPress={() => navigation.navigate('Curtain')}
                 Icon={Images.curtain}
@@ -63,6 +67,7 @@ const Demokitzone = ({ navigation }) => {
                 Icon={Images.mood}
                 layerText={'Modes'}
               />
+
               <Layer
                 onPress={() => navigation.navigate('Fan')}
                 Icon={Images.fan}
@@ -76,6 +81,7 @@ const Demokitzone = ({ navigation }) => {
                 Icon={Images.control}
                 layerText={'OtherControls'}
               />
+
               <Layer
                 onPress={() => navigation.navigate('Irrigation')}
                 Icon={Images.irrigation}
@@ -89,6 +95,7 @@ const Demokitzone = ({ navigation }) => {
                 Icon={Images.media}
                 layerText={'Media'}
               />
+
               <Layer
                 onPress={() => navigation.navigate('Camera')}
                 Icon={Images.roomCamera}

@@ -13,9 +13,9 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    paddingHorizontal: 14,
     flexDirection: 'row',
     alignItems: 'center',
+    paddingHorizontal: 14,
     justifyContent: 'space-between',
   },
 
@@ -61,8 +61,8 @@ const styles = StyleSheet.create({
     fontSize: 50,
     borderRadius: 5,
     marginVertical: 10,
-    marginHorizontal: 20,
     color: Colors.white,
+    marginHorizontal: 20,
     backgroundColor: Colors.charlestonGreen,
     fontFamily: Fonts.FontFamily.light,
     fontWeight: Fonts.FontWeight.light,

@@ -123,17 +123,6 @@ const CentralControlScreen = ({ navigation }) => {
                 onPress={() => navigation.navigate('SchedulingScreen')}
               />
             </View>
-
-            {/* <View style={styles.main}>
-          <View style={styles.layer}>
-
-          <Image source={Images.} style={styles.symbol} />
-
-            <Text style={styles.text}>Macro</Text>
-
-        </View>
-
-</View> */}
           </ScrollView>
         </SafeAreaView>
       </ImageBackground>

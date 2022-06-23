@@ -9,9 +9,9 @@ const styles = StyleSheet.create({
   },
 
   logo: {
+    margin: 50,
     width: 100,
     height: 100,
-    margin: 50,
   },
 
   contain: {

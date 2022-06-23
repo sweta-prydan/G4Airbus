@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
   },
 
   version: {
-    fontSize: 20,
     bottom: 20,
+    fontSize: 20,
     color: Colors.white,
     position: 'absolute',
     marginHorizontal: 150,

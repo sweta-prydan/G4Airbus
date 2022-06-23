@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
   inputStyle: {
     flex: 1,
     padding: 10,
-    borderRadius: 5,
     paddingLeft: 15,
+    borderRadius: 5,
     color: Colors.black,
     backgroundColor: Colors.white,
     fontFamily: Fonts.FontFamily.medium,

@@ -20,12 +20,12 @@ const Camera = ({ navigation }) => {
             NavigationHeaderText="Camera"
           />
         </View>
+
         <SafeAreaView style={styles.container}>
           <ScrollView style={styles.container}>
             <View>
               <View style={styles.separator} />
               <View style={styles.childView} />
-
             </View>
           </ScrollView>
         </SafeAreaView>

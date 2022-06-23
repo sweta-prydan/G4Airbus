@@ -22,16 +22,16 @@ const styles = StyleSheet.create({
   },
 
   button: {
+    margin: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    margin: 10,
   },
 
   number: {
     width: 130,
-    borderColor: Colors.black,
-    borderRadius: 5,
     borderWidth: 3,
+    borderRadius: 5,
+    borderColor: Colors.black,
   },
 });
 export default styles;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Text, TouchableOpacity, View, Image } from 'react-native';
+
 import Slider from 'react-native-slider';
 
 //style
@@ -31,7 +32,6 @@ function SliderLayer({ layerText, onPress }) {
               value={sliderValue}
               onValueChange={sliderValue => setSliderValue(sliderValue)}
               thumbStyle={styles.thumb}
-              // thumbImage={Images.thumb}
             />
 
             <View style={styles.separator} />
