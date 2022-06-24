@@ -14,11 +14,12 @@ const styles = StyleSheet.create({
 
   childView: {
     padding: 8,
-    width: 400,
+    width: 350,
     height: 300,
     opacity: 0.9,
-    marginLeft: 6,
     borderRadius: 10,
+    marginVertical: 3,
+    marginHorizontal: 6,
     backgroundColor: Colors.transform,
   },
 
@@ -54,19 +55,19 @@ const styles = StyleSheet.create({
   },
 
   edit: {
-    width: 200,
+    width: 170,
     height: 40,
     borderRadius: 5,
-    marginHorizontal: 20,
     color: Colors.black,
+    marginHorizontal: 20,
     backgroundColor: Colors.white,
   },
 
   edit2: {
-    width: 200,
+    width: 170,
     height: 40,
     borderRadius: 5,
-    marginHorizontal: 90,
+    marginHorizontal: 80,
     color: Colors.black,
     backgroundColor: Colors.white,
   },
@@ -92,21 +93,23 @@ const styles = StyleSheet.create({
 
   childView2: {
     opacity: 0.9,
-    width: 400,
-    height: 200,
+    width: 350,
+    height: 170,
     padding: 8,
-    marginLeft: 6,
     borderRadius: 10,
+    marginVertical: 3,
+    marginHorizontal: 6,
     backgroundColor: Colors.transform,
   },
 
   childView3: {
     opacity: 0.9,
-    width: 400,
+    width: 350,
     padding: 8,
-    height: 240,
-    marginLeft: 6,
+    height: 200,
     borderRadius: 10,
+    marginVertical: 3,
+    marginHorizontal: 6,
     backgroundColor: Colors.transform,
   },
 });

@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     color: Colors.white,
     borderColor: 'black',
-    marginHorizontal: 17,
+    marginHorizontal: 12,
   },
 
   border: {
@@ -43,8 +43,9 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    marginVertical: 660,
-    marginHorizontal: 150,
+    width: 100,
+    marginVertical: 500,
+    marginHorizontal: 120,
   },
 });
 

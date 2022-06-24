@@ -11,8 +11,9 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 400,
-    marginLeft: 6,
+    width: 350,
+    marginHorizontal: 6,
+    marginVertical: 6,
     borderRadius: 20,
     backgroundColor: Colors.transform,
   },
@@ -24,18 +25,18 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    width: 350,
+    width: 300,
     marginTop: 30,
-    marginLeft: 35,
-    marginRight: 35,
+    marginVertical: 30,
+    marginHorizontal: 30,
   },
 
   inputStyle: {
     flex: 1,
     padding: 10,
-    paddingLeft: 15,
     borderRadius: 5,
     color: Colors.black,
+    paddingHorizontal: 15,
     backgroundColor: Colors.white,
     fontFamily: Fonts.FontFamily.medium,
     fontWeight: Fonts.FontWeight.medium,

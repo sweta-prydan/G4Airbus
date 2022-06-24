@@ -5,8 +5,8 @@ import { Colors, Fonts } from '../../constants';
 
 const styles = StyleSheet.create({
   image: {
-    width: 140,
-    height: 140,
+    width: 120,
+    height: 120,
     borderWidth: 1,
     borderRadius: 100,
     borderColor: Colors.white,
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
 
   separator: {
-    marginVertical: 10,
+    marginVertical: 5,
   },
 });
 export default styles;

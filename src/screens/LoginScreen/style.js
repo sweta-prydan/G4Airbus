@@ -13,9 +13,10 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 400,
-    marginLeft: 6,
+    width: 350,
     borderRadius: 20,
+    marginVertical: 6,
+    marginHorizontal: 6,
     backgroundColor: Colors.transform,
   },
 
@@ -26,19 +27,19 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    width: 350,
+    width: 300,
     marginTop: 30,
-    marginLeft: 35,
-    marginRight: 35,
     fontSize: 16,
+    marginVertical: 30,
+    marginHorizontal: 30,
   },
 
   inputStyle: {
     flex: 1,
     padding: 10,
-    paddingLeft: 15,
     borderRadius: 5,
     color: Colors.black,
+    paddingHorizontal: 15,
     backgroundColor: Colors.white,
     fontFamily: Fonts.FontFamily.medium,
     fontWeight: Fonts.FontWeight.medium,
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
 
   buttonStyle: {
     height: 40,
-    marginTop: 20,
+    marginTop: 10,
     marginBottom: 25,
     marginVertical: 35,
     marginHorizontal: 35,

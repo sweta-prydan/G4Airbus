@@ -74,11 +74,11 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 390,
-    height: 600,
-    marginLeft: 10,
+    width: 350,
+    height: 580,
     borderRadius: 20,
-    paddingHorizontal: 40,
+    marginVertical: 5,
+    marginHorizontal: 5,
     backgroundColor: Colors.transform,
   },
 

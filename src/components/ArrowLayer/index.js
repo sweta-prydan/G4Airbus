@@ -18,7 +18,7 @@ function ArrowLayer({ arrowText, onPress }) {
         </View>
 
         <View>
-          <Image source={Images.arrow} style={styles.arrow} />
+          <Image source={Images.arrow} />
         </View>
       </View>
     </TouchableOpacity>

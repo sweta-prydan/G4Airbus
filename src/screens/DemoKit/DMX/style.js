@@ -35,11 +35,12 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 390,
+    width: 350,
     height: 550,
     padding: 20,
-    marginLeft: 10,
     borderRadius: 20,
+    marginVertical: 5,
+    marginHorizontal: 5,
     backgroundColor: Colors.transform,
   },
 });

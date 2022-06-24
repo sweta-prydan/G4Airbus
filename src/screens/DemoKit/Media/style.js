@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   },
 
   separator: {
-    marginVertical: 5,
+    marginVertical: 4,
   },
 
   main: {
@@ -24,11 +24,12 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 390,
-    height: 700,
+    width: 350,
+    height: 600,
     padding: 20,
-    marginLeft: 10,
     borderRadius: 20,
+    marginVertical: 5,
+    marginHorizontal: 5,
     backgroundColor: Colors.transform,
   },
 });

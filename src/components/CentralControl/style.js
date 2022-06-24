@@ -12,10 +12,11 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 400,
+    width: 350,
     height: 400,
-    padding: 25,
-    marginLeft: 5,
+    padding: 20,
+    marginHorizontal: 5,
+    marginVertical: 5,
     borderRadius: 20,
     backgroundColor: Colors.transform,
   },
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
     marginLeft: 5,
     marginVertical: 4,
     color: Colors.white,
+    marginHorizontal: 4,
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.regular,
   },

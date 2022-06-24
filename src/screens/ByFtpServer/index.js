@@ -103,9 +103,6 @@ const ByFtpServerScreen = ({ navigation }) => {
                 </View>
               </View>
 
-              <View style={styles.separator} />
-              <View style={styles.separator} />
-
               <View style={styles.button}>
                 <Button
                   onPress={() => navigation.navigate('LanguageSettingScreen')}

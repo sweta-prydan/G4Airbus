@@ -51,8 +51,6 @@ const styles = StyleSheet.create({
   cancel: {
     width: 35,
     height: 35,
-    margin: 10,
-    marginHorizontal: 40,
   },
 
   edit: {
@@ -80,15 +78,15 @@ const styles = StyleSheet.create({
 
   button: {
     width: 140,
-    marginHorizontal: '5%',
     marginVertical: '2%',
+    marginHorizontal: '5%',
   },
 
   close: {
     width: 90,
-    margin: 5,
-    marginBottom: 5,
+    margin: 6,
     display: 'flex',
+    marginVertical: 5,
     marginHorizontal: 280,
   },
 
@@ -118,7 +116,8 @@ const styles = StyleSheet.create({
   camera: {
     margin: 5,
     flexDirection: 'row',
-    marginHorizontal: 70,
+    marginHorizontal: 40,
+    alignItems: 'center',
     justifyContent: 'space-between',
   },
 

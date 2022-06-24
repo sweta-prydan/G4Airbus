@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   home: {
     width: 35,
     height: 35,
-    marginHorizontal: 120,
+    marginHorizontal: 100,
   },
 
   theme: {
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     width: 35,
     height: 35,
     margin: 20,
-    marginHorizontal: 40,
+    marginHorizontal: 50,
   },
 
   edit: {
@@ -148,21 +148,20 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.FontFamily.default,
     backgroundColor: Colors.charlestonGreen,
   },
+
   button: {
     alignSelf: 'flex-start',
-    marginHorizontal: '15%',
+    width: '40%',
+    marginHorizontal: 15,
   },
 
   close: {
     width: 90,
-    margin: 10,
     display: 'flex',
-    marginBottom: 5,
-    marginHorizontal: 270,
+    marginHorizontal: 230,
   },
 
   location: {
-    margin: 2,
     fontSize: 14,
     color: Colors.white,
     marginHorizontal: 20,
@@ -182,14 +181,14 @@ const styles = StyleSheet.create({
     margin: 10,
     width: 100,
     height: 100,
-    marginHorizontal: 130,
+    marginHorizontal: 100,
     backgroundColor: Colors.white,
   },
 
   camera: {
     margin: 10,
     flexDirection: 'row',
-    marginHorizontal: 70,
+    marginHorizontal: 50,
     justifyContent: 'space-between',
   },
 
@@ -201,6 +200,7 @@ const styles = StyleSheet.create({
   font: {
     fontSize: 16,
     textAlign: 'center',
+    alignItems: 'center',
     color: Colors.white,
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,

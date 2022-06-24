@@ -32,11 +32,11 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 400,
-    height: 550,
+    width: 350,
     padding: 25,
-    marginLeft: 5,
     borderRadius: 20,
+    marginVertical: 5,
+    marginHorizontal: 5,
     backgroundColor: Colors.transform,
   },
 });

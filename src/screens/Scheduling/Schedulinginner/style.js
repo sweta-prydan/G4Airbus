@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
 
   main: {
-    marginVertical: 430,
+    marginVertical: 330,
   },
 
   row: {
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
   },
 
   button1: {
-    width: 230,
+    width: 180,
   },
 });
 export default styles;

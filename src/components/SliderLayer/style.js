@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
     padding: 10,
     opacity: 0.9,
     borderRadius: 10,
-    marginVertical: 3,
-    marginHorizontal: 3,
+    marginVertical: 5,
+    marginHorizontal: 5,
     textAlign: 'center',
     alignItems: 'center',
     flexDirection: 'row',
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
 
   track: {
     height: 10,
-    width: 230,
+    width: 200,
     borderRadius: 50,
     backgroundColor: Colors.bronze,
   },

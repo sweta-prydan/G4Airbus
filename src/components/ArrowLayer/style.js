@@ -5,12 +5,10 @@ import { Colors, Fonts } from '../../constants';
 
 const styles = StyleSheet.create({
   layer: {
-    padding: 10,
+    padding: 8,
     opacity: 0.9,
     borderRadius: 10,
-    marginVertical: 3,
     textAlign: 'center',
-    marginHorizontal: 3,
     alignItems: 'center',
     flexDirection: 'row',
     backgroundColor: Colors.charlestonGreen,
@@ -28,10 +26,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.bold,
-  },
-
-  arrow: {
-    marginHorizontal: 20,
   },
 });
 

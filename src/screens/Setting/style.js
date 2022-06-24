@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   },
 
   layout: {
-    marginVertical: 300,
+    marginVertical: 250,
     marginHorizontal: 20,
     fontWeight: Fonts.FontWeight.black,
     fontFamily: Fonts.FontFamily.bold,
@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
     bottom: 20,
     fontSize: 20,
     color: Colors.white,
-    position: 'absolute',
-    marginHorizontal: 150,
+    textAlign: 'center',
+    alignItems: 'center',
     fontWeight: Fonts.FontWeight.bold,
     fontFamily: Fonts.FontFamily.bold,
   },

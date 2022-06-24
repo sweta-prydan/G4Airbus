@@ -25,13 +25,11 @@ const styles = StyleSheet.create({
 
   layout: {
     flexDirection: 'row',
-    textAlign: 'center',
-    alignContent: 'center',
   },
 
   button: {
     minWidth: '25%',
-    marginVertical: 480,
+    marginVertical: 300,
     marginHorizontal: 50,
   },
 });

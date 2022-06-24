@@ -5,10 +5,8 @@ import { Colors, Fonts } from '../../../constants';
 
 const styles = StyleSheet.create({
   layer: {
-    padding: 10,
+    padding: 8,
     opacity: 0.9,
-    marginVertical: 3,
-    marginHorizontal: 3,
     textAlign: 'center',
     alignItems: 'center',
     flexDirection: 'row',
@@ -41,7 +39,7 @@ const styles = StyleSheet.create({
 
   track: {
     height: 10,
-    width: 130,
+    width: 100,
     borderRadius: 50,
     backgroundColor: Colors.transform,
   },
@@ -82,10 +80,11 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 390,
+    width: 350,
     height: 550,
     padding: 20,
-    marginLeft: 10,
+    marginVertical: 5,
+    marginHorizontal: 5,
     borderRadius: 20,
     backgroundColor: Colors.transform,
   },

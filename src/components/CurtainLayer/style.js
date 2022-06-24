@@ -1,15 +1,13 @@
 import { StyleSheet } from 'react-native';
 
-//color
+//constants
 import { Colors, Fonts } from '../../constants';
 
 const styles = StyleSheet.create({
   layer: {
-    padding: 10,
+    padding: 8,
     opacity: 0.9,
     borderRadius: 10,
-    marginVertical: 3,
-    marginHorizontal: 3,
     flexDirection: 'row',
     textAlign: 'center',
     alignItems: 'center',
@@ -37,7 +35,7 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    width: 80,
+    width: 70,
     elevation: 3,
     borderWidth: 3,
     paddingTop: 10,

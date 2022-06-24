@@ -45,7 +45,7 @@ const SchedulingScreen = ({ navigation }) => {
 
               <View style={styles.button}>
                 <Button
-                  buttonText="Add"
+                  buttonText={'Add'}
                   onPress={() => navigation.navigate('SchedulingDropScreen')}
                 />
               </View>
