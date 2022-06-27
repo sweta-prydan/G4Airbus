@@ -33,4 +33,5 @@ export { default as CentralControlScreen } from './CentralControl';
 export { default as LanguageSettingScreen } from './LanguageSetting';
 export { default as DatabaseSettingScreen } from './DatabaseSetting';
 export { default as GlobalNetworkScreen } from './GlobalNetworkSetting';
+export { default as LightSetting } from './DemoKit/Light/Light Setting';
 export { default as SchedulingDropScreen } from './Scheduling/Schedulinginner';

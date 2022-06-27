@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     width: 395,
     height: 700,
     opacity: 0.7,
-    marginLeft: 6,
     borderRadius: 20,
+    marginHorizontal: 6,
     backgroundColor: Colors.black,
   },
 

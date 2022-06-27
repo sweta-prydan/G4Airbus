@@ -18,6 +18,7 @@ import {
   HomeScreen,
   Irrigation,
   Demokitzone,
+  LightSetting,
   MusicScreen,
   LightScreen,
   SplashScreen,
@@ -149,6 +150,8 @@ const AppNavigator = () => {
         <Stack.Screen name="SchedulingScreen" component={SchedulingScreen} />
 
         <Stack.Screen name="AlaramVCScreen" component={AlaramVCScreen} />
+
+        <Stack.Screen name="LightSetting" component={LightSetting} />
 
         <Stack.Screen
           name="SchedulingDropScreen"

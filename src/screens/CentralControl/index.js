@@ -17,6 +17,7 @@ import styles from './style';
 
 //Component
 import Layer from '../../components/ShortLayer';
+import { CentralHeader } from '../../components';
 
 const CentralControlScreen = ({ navigation }) => {
   return (
@@ -24,34 +25,10 @@ const CentralControlScreen = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <SafeAreaView>
           <ScrollView>
-            <View style={styles.menuView}>
-              <TouchableOpacity
-                onPress={() => navigation.navigate('HomeScreen')}>
-                <Image source={Images.menu} style={styles.icon} />
-              </TouchableOpacity>
-
-              <View style={styles.separator} />
-
-              <TouchableOpacity
-                onPress={() => {
-                  navigation.goBack(null);
-                }}>
-                <Image source={Images.home} style={styles.icon} />
-              </TouchableOpacity>
-
-              <Text style={styles.header}>Central Control</Text>
-
-              <View style={styles.menuView}>
-                <View style={styles.separator} />
-
-                <TouchableOpacity
-                  onPress={() => {
-                    navigation.goBack(null);
-                  }}>
-                  <Image source={Images.back} style={styles.icon} />
-                </TouchableOpacity>
-              </View>
-            </View>
+            <CentralHeader
+              onPress={() => navigation.navigate('HomeScreen')}
+              headerText="Central Control"
+            />
             <View style={styles.separate} />
 
             <View style={styles.main}>

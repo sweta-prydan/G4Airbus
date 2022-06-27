@@ -12,9 +12,9 @@ const styles = StyleSheet.create({
 
   childView: {
     width: 350,
-    marginHorizontal: 6,
     marginVertical: 6,
     borderRadius: 20,
+    marginHorizontal: 6,
     backgroundColor: Colors.transform,
   },
 

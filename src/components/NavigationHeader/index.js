@@ -8,7 +8,7 @@ import styles from './style';
 //images
 import Images from '../../utils/images';
 
-const NavigationHeader = ({ NavigationHeaderText }) => {
+const NavigationHeader = ({ NavigationHeaderText, onPress }) => {
   const navigation = useNavigation();
 
   return (
@@ -36,7 +36,7 @@ const NavigationHeader = ({ NavigationHeaderText }) => {
       <View style={styles.separator} />
 
       <View>
-        <TouchableOpacity onPress={() => navigation.navigate('HomeScreen')}>
+        <TouchableOpacity onPress={onPress}>
           <Image source={Images.plus} style={styles.icon} />
         </TouchableOpacity>
       </View>

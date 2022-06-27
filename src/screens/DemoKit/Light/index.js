@@ -22,6 +22,7 @@ const Light = ({ navigation }) => {
           <NavigationHeader
             navigation={navigation}
             NavigationHeaderText="Light"
+            onPress={() => navigation.navigate('LightSetting')}
           />
         </View>
 
