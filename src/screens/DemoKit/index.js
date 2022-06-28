@@ -21,85 +21,85 @@ const Demokitzone = ({ navigation }) => {
 
             <View style={styles.main}>
               <Layer
-                onPress={() => navigation.navigate('MyTabs')}
                 Icon={Images.roomLight}
                 layerText={'Light'}
+                onPress={() => navigation.navigate('MyTabs')}
               />
 
               <Layer
-                onPress={() => navigation.navigate('Rgbw')}
                 Icon={Images.rgb}
                 layerText={'RGBW'}
+                onPress={() => navigation.navigate('Rgbw')}
               />
             </View>
 
             <View style={styles.main}>
               <Layer
-                onPress={() => navigation.navigate('Dmx')}
                 Icon={Images.dmx}
                 layerText={'DMX'}
+                onPress={() => navigation.navigate('Dmx')}
               />
 
               <Layer
-                onPress={() => navigation.navigate('Ac')}
                 Icon={Images.hvac}
                 layerText={'HVAC'}
+                onPress={() => navigation.navigate('Ac')}
               />
             </View>
 
             <View style={styles.main}>
               <Layer
-                onPress={() => navigation.navigate('Music')}
                 Icon={Images.audio}
                 layerText={'Z-Audio'}
+                onPress={() => navigation.navigate('Music')}
               />
 
               <Layer
-                onPress={() => navigation.navigate('Curtain')}
                 Icon={Images.curtain}
                 layerText={'Curtain'}
+                onPress={() => navigation.navigate('Curtain')}
               />
             </View>
 
             <View style={styles.main}>
               <Layer
-                onPress={() => navigation.navigate('Mood')}
                 Icon={Images.mood}
                 layerText={'Modes'}
+                onPress={() => navigation.navigate('Mood')}
               />
 
               <Layer
-                onPress={() => navigation.navigate('Fan')}
                 Icon={Images.fan}
                 layerText={'Fan'}
+                onPress={() => navigation.navigate('Fan')}
               />
             </View>
 
             <View style={styles.main}>
               <Layer
-                onPress={() => navigation.navigate('MyTabs')}
                 Icon={Images.control}
                 layerText={'OtherControls'}
+                onPress={() => navigation.navigate('MyTabs')}
               />
 
               <Layer
-                onPress={() => navigation.navigate('Irrigation')}
                 Icon={Images.irrigation}
                 layerText={'Irrigation'}
+                onPress={() => navigation.navigate('Irrigation')}
               />
             </View>
 
             <View style={styles.main}>
               <Layer
-                onPress={() => navigation.navigate('Media')}
                 Icon={Images.media}
                 layerText={'Media'}
+                onPress={() => navigation.navigate('Media')}
               />
 
               <Layer
-                onPress={() => navigation.navigate('Camera')}
                 Icon={Images.roomCamera}
                 layerText={'Camera'}
+                onPress={() => navigation.navigate('Camera')}
               />
             </View>
           </ScrollView>

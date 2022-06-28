@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
-//constants
-import { Fonts, Colors } from '../../../../constants';
+//Fonts
+import Fonts from '../../../../constants';
 
 const styles = StyleSheet.create({
   container: {
@@ -16,28 +16,8 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
 
-  input: {
-    height: 50,
-    width: '64%',
-    fontSize: 18,
-    borderRadius: 5,
-    marginVertical: 10,
-    color: Colors.white,
-    textAlign: 'center',
-    marginHorizontal: 10,
-    fontWeight: Fonts.FontWeight.regular,
-    fontFamily: Fonts.FontFamily.default,
-    backgroundColor: Colors.charlestonGreen,
-  },
-
   text: {
     margin: 6,
-    fontSize: 16,
-    fontWeight: Fonts.FontWeight.bold,
-    fontFamily: Fonts.FontFamily.bold,
-  },
-
-  text2: {
     fontSize: 16,
     marginHorizontal: 16,
     fontWeight: Fonts.FontWeight.bold,
@@ -51,9 +31,9 @@ const styles = StyleSheet.create({
   },
 
   icon: {
-    width: 70,
-    height: 70,
-    marginHorizontal: 30,
+    width: 50,
+    height: 50,
+    marginHorizontal: 40,
     marginVertical: 10,
   },
 
@@ -63,6 +43,25 @@ const styles = StyleSheet.create({
     marginHorizontal: 40,
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
+  },
+
+  allow: {
+    fontSize: 20,
+    marginHorizontal: 30,
+    fontWeight: Fonts.FontWeight.semibold,
+    fontFamily: Fonts.FontFamily.semibold,
+  },
+
+  checkbox: {
+    width: 30,
+    height: 30,
+    marginVertical: 20,
+  },
+
+  row1: {
+    flexDirection: 'row',
+    textAlign: 'center',
+    alignItems: 'center',
   },
 });
 

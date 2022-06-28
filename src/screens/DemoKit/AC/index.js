@@ -26,7 +26,12 @@ const Ac = ({ navigation }) => {
     <View style={styles.container}>
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
-          <NavigationHeader navigation={navigation} NavigationHeaderText="AC" />
+          <NavigationHeader
+            onPress={() => {
+              navigation.navigate('ACSetting');
+            }}
+            NavigationHeaderText="AC"
+          />
         </View>
 
         <SafeAreaView style={styles.container}>

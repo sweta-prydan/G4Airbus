@@ -6,8 +6,8 @@ import { Colors, Fonts } from '../../constants';
 const styles = StyleSheet.create({
   layer: {
     width: '99%',
-    padding: 10,
     height: 240,
+    padding: 10,
     marginVertical: 3,
     marginHorizontal: 3,
     textAlign: 'center',

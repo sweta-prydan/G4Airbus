@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 //constants
-import { Colors, Fonts } from '../../../constants';
+import { Fonts, Colors } from '../../../../constants';
 
 const styles = StyleSheet.create({
   container: {
@@ -12,43 +12,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  main: {
-    marginVertical: 330,
-  },
-
-  row: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-  },
-
-  data: {
-    fontSize: 16,
-    color: Colors.white,
-    marginVertical: 20,
-    marginHorizontal: 10,
-  },
-
-  border: {
-    padding: 10,
-    borderBottomWidth: 0.5,
-    borderBottomColor: Colors.white,
-  },
-
-  checkbox: {
-    width: 30,
-    height: 30,
-    marginVertical: 20,
-  },
-
-  row1: {
-    flexDirection: 'row',
-    textAlign: 'center',
-    alignItems: 'center',
-    marginHorizontal: 10,
-  },
-
-  button1: {
-    width: 180,
+  separator: {
+    marginVertical: 5,
   },
 
   icon: {
@@ -67,7 +32,7 @@ const styles = StyleSheet.create({
   },
 
   dropdown: {
-    margin: 10,
+    margin: 28,
     height: 40,
     elevation: 2,
     borderRadius: 5,
@@ -110,4 +75,5 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.FontFamily.light,
   },
 });
+
 export default styles;

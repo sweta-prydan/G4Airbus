@@ -5,8 +5,7 @@ import { ImageBackground, View, SafeAreaView, ScrollView } from 'react-native';
 import Images from '../../../utils/images';
 
 //Components
-import Button from '../../../components/Button';
-import { NavigationHeader } from '../../../components';
+import { NavigationHeader, Button } from '../../../components';
 
 //style
 import styles from './style';

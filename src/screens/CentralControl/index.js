@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  Image,
-  ScrollView,
-  SafeAreaView,
-  ImageBackground,
-  TouchableOpacity,
-} from 'react-native';
+import { View, ScrollView, SafeAreaView, ImageBackground } from 'react-native';
 
 //images
 import Images from '../../utils/images';
@@ -26,8 +18,11 @@ const CentralControlScreen = ({ navigation }) => {
         <SafeAreaView>
           <ScrollView>
             <CentralHeader
-              onPress={() => navigation.navigate('HomeScreen')}
               headerText="Central Control"
+              onPress={() => navigation.navigate('StarScreen')}
+              navigation={() => {
+                navigation.goBack(null);
+              }}
             />
             <View style={styles.separate} />
 

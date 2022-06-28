@@ -16,8 +16,8 @@ const RGBW = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            navigation={navigation}
             NavigationHeaderText="RGBW"
+            onPress={() => navigation.navigate('RGBWSetting')}
           />
         </View>
         <SafeAreaView style={styles.container}>

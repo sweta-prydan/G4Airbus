@@ -11,6 +11,7 @@ import Color from '../../constants/color';
 
 const SliderTrack = () => {
   const [sliderValue, setSliderValue] = useState(15);
+
   return (
     <View style={styles.slider}>
       <Text style={styles.text}> {sliderValue}%</Text>
@@ -18,13 +19,13 @@ const SliderTrack = () => {
       <View style={styles.separator} />
 
       <Slider
-        style={styles.track}
-        maximumValue={100}
+        step={1}
         minimumValue={0}
+        maximumValue={100}
+        value={sliderValue}
+        style={styles.track}
         minimumTrackTintColor={Color.bronze}
         maximumTrackTintColor={Color.transform}
-        step={1}
-        value={sliderValue}
         onValueChange={sliderValue => setSliderValue(sliderValue)}
         thumbStyle={styles.thumb}
       />

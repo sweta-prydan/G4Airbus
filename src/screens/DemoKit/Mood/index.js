@@ -28,8 +28,6 @@ const Mood = ({ navigation }) => {
 
                 <ScreenLayer />
               </View>
-
-              {/* <View style={styles.button}></View> */}
             </View>
           </ScrollView>
         </SafeAreaView>

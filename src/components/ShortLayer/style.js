@@ -5,9 +5,9 @@ import { Colors, Fonts } from '../../constants';
 
 const styles = StyleSheet.create({
   layer: {
-    width: 185,
+    width: 165,
     padding: 22,
-    height: 100,
+    height: 92,
     opacity: 0.9,
     marginVertical: 1,
     marginHorizontal: 1,
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
 
   text: {
     padding: 16,
-    fontSize: 16,
+    fontSize: 14,
     color: Colors.white,
     fontFamily: Fonts.FontFamily.semibold,
     fontWeight: Fonts.FontWeight.semibold,

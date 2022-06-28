@@ -41,16 +41,17 @@ const LoginScreen = ({ navigation }) => {
         <SafeAreaView>
           <ScrollView>
             <Logo Heading={'Login'} />
+
             <View style={styles.childView}>
               <View style={styles.SectionStyle}>
                 <View style={styles.input}>
                   <Text style={styles.registerTextStyle}>Email:</Text>
                   <TextInput
-                    autoCapitalize="none"
                     blurOnSubmit={false}
+                    autoCapitalize="none"
+                    style={styles.inputStyle}
                     placeholder=" Enter Email "
                     keyboardType="email-address"
-                    style={styles.inputStyle}
                     placeholderTextColor={Colors.gray}
                     onChangeText={UserEmail => setUserEmail(UserEmail)}
                   />
@@ -63,9 +64,9 @@ const LoginScreen = ({ navigation }) => {
                   <TextInput
                     blurOnSubmit={false}
                     secureTextEntry={true}
+                    style={styles.inputStyle}
                     placeholder="Enter Password"
                     placeholderTextColor={Colors.gray}
-                    style={styles.inputStyle}
                     onChangeText={UserPassword => setUserPassword(UserPassword)}
                   />
                 </View>

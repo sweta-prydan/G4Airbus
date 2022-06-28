@@ -23,12 +23,12 @@ import styles from './style';
 import { Colors } from '../../../constants';
 
 const Music = ({ navigation }) => {
-  const [istvEnabled, setIsTvEnabled] = useState(true);
   const [sliderValue, setSliderValue] = useState(100);
+  const [istvEnabled, setIsTvEnabled] = useState(true);
   const [issimEnabled, setIsSimEnabled] = useState(true);
   const [isradioEnabled, setIsRadioEnabled] = useState(true);
-  const [isspeakerEnabled, setIsSpeakerEnabled] = useState(true);
   const [ischromeEnabled, setIsChromeEnabled] = useState(true);
+  const [isspeakerEnabled, setIsSpeakerEnabled] = useState(true);
 
   return (
     <View style={styles.container}>
@@ -49,45 +49,45 @@ const Music = ({ navigation }) => {
                 <TouchableOpacity
                   onPress={() => setIsSimEnabled(!issimEnabled)}>
                   <Image
-                    source={issimEnabled ? Images.sdcard : Images.sdunseclect}
                     style={styles.icon}
+                    source={issimEnabled ? Images.sdcard : Images.sdunseclect}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity onPress={() => setIsTvEnabled(!istvEnabled)}>
                   <Image
-                    source={istvEnabled ? Images.tv : Images.tvunselect}
                     style={styles.icon}
+                    source={istvEnabled ? Images.tv : Images.tvunselect}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity
                   onPress={() => setIsRadioEnabled(!isradioEnabled)}>
                   <Image
+                    style={styles.icon}
                     source={
                       isradioEnabled ? Images.radio : Images.radiounselect
                     }
-                    style={styles.icon}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity
                   onPress={() => setIsSpeakerEnabled(!isspeakerEnabled)}>
                   <Image
+                    style={styles.icon}
                     source={
                       isspeakerEnabled ? Images.speaker : Images.speckerunselect
                     }
-                    style={styles.icon}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity
                   onPress={() => setIsChromeEnabled(!ischromeEnabled)}>
                   <Image
+                    style={styles.icon}
                     source={
                       ischromeEnabled ? Images.chrome : Images.chromeunselect
                     }
-                    style={styles.icon}
                   />
                 </TouchableOpacity>
               </View>
@@ -97,18 +97,19 @@ const Music = ({ navigation }) => {
               <View style={styles.childView}>
                 <View>
                   <Image source={Images.volumeon} style={styles.volume} />
+
                   <View style={styles.separator} />
                   <View style={styles.separator} />
 
                   <View style={styles.slider}>
                     <Slider
-                      style={styles.track}
-                      maximumValue={100}
+                      step={1}
                       minimumValue={0}
+                      maximumValue={100}
+                      value={sliderValue}
+                      style={styles.track}
                       minimumTrackTintColor={Colors.pearlAqua}
                       maximumTrackTintColor={Colors.davyGrey}
-                      step={1}
-                      value={sliderValue}
                       onValueChange={sliderValue => setSliderValue(sliderValue)}
                       thumbStyle={styles.thumb}
                     />

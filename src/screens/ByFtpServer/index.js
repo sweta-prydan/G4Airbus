@@ -105,8 +105,8 @@ const ByFtpServerScreen = ({ navigation }) => {
 
               <View style={styles.button}>
                 <Button
-                  onPress={() => navigation.navigate('LanguageSettingScreen')}
                   buttonText="Save"
+                  onPress={() => navigation.navigate('LanguageSettingScreen')}
                 />
               </View>
             </View>

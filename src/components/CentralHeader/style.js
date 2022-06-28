@@ -4,14 +4,6 @@ import { StyleSheet } from 'react-native';
 import { Colors, Fonts } from '../../constants';
 
 const styles = StyleSheet.create({
-  menuView: {
-    height: 60,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: Colors.transform3,
-  },
-
   header: {
     fontSize: 20,
     color: Colors.white,

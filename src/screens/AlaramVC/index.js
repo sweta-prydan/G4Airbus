@@ -48,12 +48,12 @@ const AlaramVCScreen = ({ navigation }) => {
             <View style={styles.main}>
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer}>
                   <Image
-                    source={Images.currentLocation}
                     style={styles.symbol}
+                    source={Images.currentLocation}
                   />
 
                   <Text style={styles.text}>Current</Text>
@@ -62,8 +62,8 @@ const AlaramVCScreen = ({ navigation }) => {
 
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer2}>
                   <Image source={Images.emergency} style={styles.symbol} />
 
@@ -75,8 +75,8 @@ const AlaramVCScreen = ({ navigation }) => {
             <View style={styles.main}>
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer}>
                   <Image source={Images.panic} style={styles.symbol} />
 
@@ -86,8 +86,8 @@ const AlaramVCScreen = ({ navigation }) => {
 
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer2}>
                   <Image source={Images.gas} style={styles.symbol} />
 
@@ -99,8 +99,8 @@ const AlaramVCScreen = ({ navigation }) => {
             <View style={styles.main}>
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer}>
                   <Image source={Images.fire} style={styles.symbol} />
 
@@ -110,8 +110,8 @@ const AlaramVCScreen = ({ navigation }) => {
 
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer2}>
                   <Image source={Images.temperature} style={styles.symbol} />
 
@@ -123,8 +123,8 @@ const AlaramVCScreen = ({ navigation }) => {
             <View style={styles.main}>
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer}>
                   <Image source={Images.power} style={styles.symbol} />
 
@@ -134,8 +134,8 @@ const AlaramVCScreen = ({ navigation }) => {
 
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer2}>
                   <Image source={Images.car} style={styles.symbol} />
 
@@ -147,8 +147,8 @@ const AlaramVCScreen = ({ navigation }) => {
             <View style={styles.main}>
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer}>
                   <Image source={Images.cloud} style={styles.symbol} />
 
@@ -157,8 +157,8 @@ const AlaramVCScreen = ({ navigation }) => {
               </TouchableHighlight>
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer2}>
                   <Image source={Images.guest} style={styles.symbol} />
 
@@ -170,8 +170,8 @@ const AlaramVCScreen = ({ navigation }) => {
             <View style={styles.main}>
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer}>
                   <Image source={Images.nightmode} style={styles.symbol} />
 
@@ -181,8 +181,8 @@ const AlaramVCScreen = ({ navigation }) => {
 
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer2}>
                   <Image source={Images.away} style={styles.symbol} />
 
@@ -194,8 +194,8 @@ const AlaramVCScreen = ({ navigation }) => {
             <View style={styles.main}>
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={colors.transform}>
                 <View style={styles.layer}>
                   <Image source={Images.vacation} style={styles.symbol} />
 

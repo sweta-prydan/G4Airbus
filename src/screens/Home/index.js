@@ -144,20 +144,20 @@ const HomeScreen = ({ navigation }) => {
                           <View style={styles.button}>
                             <Button
                               style={styles.button}
+                              buttonText="Save"
                               onPress={() =>
                                 navigation.navigate('LanguageSettingScreen')
                               }
-                              buttonText="Save"
                             />
                           </View>
 
                           <View style={styles.button}>
                             <Button
                               style={styles.button}
+                              buttonText="Delete"
                               onPress={() =>
                                 navigation.navigate('SettingScreen')
                               }
-                              buttonText="Delete"
                             />
                           </View>
                         </View>
@@ -172,8 +172,8 @@ const HomeScreen = ({ navigation }) => {
               </View>
               <View>
                 <Card
-                  Banner={Images.smartbuilding}
                   layerText={'DemoArea'}
+                  Banner={Images.smartbuilding}
                   onPress={() => navigation.navigate('StarScreen')}
                 />
               </View>

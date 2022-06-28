@@ -73,8 +73,8 @@ const StarScreen = ({ navigation }) => {
                     <View>
                       <View style={styles.edit}>
                         <KeyboardAvoidingView
-                          style={styles.container}
                           behavior="padding"
+                          style={styles.container}
                           enabled>
                           <TextInput
                             value={text}
@@ -112,15 +112,15 @@ const StarScreen = ({ navigation }) => {
                     <View style={styles.layout}>
                       <View style={styles.button}>
                         <Button
-                          onPress={() => navigation.navigate('HomeScreen')}
                           buttonText="Save"
+                          onPress={() => navigation.navigate('HomeScreen')}
                         />
                       </View>
 
                       <View style={styles.button}>
                         <Button
-                          // onPress={() => navigation.navigate('SettingScreen')}
                           buttonText="Delete"
+                          // onPress={() => navigation.navigate('SettingScreen')}
                         />
                       </View>
                     </View>

@@ -39,9 +39,9 @@ const MusicScreen = ({ navigation }) => {
                     false: colors.davyGrey,
                     true: colors.outerSpace,
                   }}
-                  thumbColor={isEnabled ? colors.pearlAqua : colors.gray}
-                  onValueChange={toggleSwitch}
                   value={isEnabled}
+                  onValueChange={toggleSwitch}
+                  thumbColor={isEnabled ? colors.pearlAqua : colors.gray}
                 />
               </View>
 

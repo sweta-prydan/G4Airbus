@@ -44,14 +44,14 @@ const ForgetScreen = ({ navigation }) => {
                   <Text style={styles.registerTextStyle}>Email:</Text>
 
                   <TextInput
-                    style={styles.inputStyle}
-                    onChangeText={UserEmail => setUserEmail(UserEmail)}
-                    placeholder="Enter Email"
-                    placeholderTextColor={Colors.black}
                     autoCapitalize="none"
-                    keyboardType="email-address"
-                    returnKeyType="next"
                     blurOnSubmit={false}
+                    returnKeyType="next"
+                    style={styles.inputStyle}
+                    placeholder="Enter Email"
+                    keyboardType="email-address"
+                    placeholderTextColor={Colors.black}
+                    onChangeText={UserEmail => setUserEmail(UserEmail)}
                   />
                 </View>
               </View>

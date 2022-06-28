@@ -72,8 +72,8 @@ const SecurityScreen = ({ navigation }) => {
 
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={Colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={Colors.transform}>
                 <View style={styles.layer2}>
                   <Image source={Images.away} style={styles.symbol} />
 
@@ -85,8 +85,8 @@ const SecurityScreen = ({ navigation }) => {
             <View style={styles.main}>
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={Colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={Colors.transform}>
                 <View style={styles.layer}>
                   <Image source={Images.night} style={styles.symbol} />
 
@@ -96,8 +96,8 @@ const SecurityScreen = ({ navigation }) => {
 
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={Colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={Colors.transform}>
                 <View style={styles.layer2}>
                   <Image source={Images.guest} style={styles.symbol} />
 
@@ -109,8 +109,8 @@ const SecurityScreen = ({ navigation }) => {
             <View style={styles.main}>
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={Colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={Colors.transform}>
                 <View style={styles.layer}>
                   <Image source={Images.day} style={styles.symbol} />
 
@@ -120,8 +120,8 @@ const SecurityScreen = ({ navigation }) => {
 
               <TouchableHighlight
                 activeOpacity={0.6}
-                underlayColor={Colors.transform}
-                onPress={() => ''}>
+                onPress={() => ''}
+                underlayColor={Colors.transform}>
                 <View style={styles.layer2}>
                   <Image source={Images.alarm} style={styles.symbol} />
 
@@ -137,8 +137,8 @@ const SecurityScreen = ({ navigation }) => {
 
               <View style={styles.edit}>
                 <KeyboardAvoidingView
-                  style={styles.container}
                   behavior="padding"
+                  style={styles.container}
                   enabled>
                   <TextInput
                     style={styles.input}

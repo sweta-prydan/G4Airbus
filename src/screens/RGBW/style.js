@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    margin: 20,
-    marginHorizontal: 130,
+    marginVertical: 20,
+    marginHorizontal: 120,
   },
 
   container1: {
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   },
 
   colorpiker: {
-    margin: 90,
+    margin: 40,
     width: 300,
     height: 330,
   },
@@ -53,10 +53,9 @@ const styles = StyleSheet.create({
   },
 
   cancel: {
-    margin: 5,
     width: 30,
     height: 30,
-    marginHorizontal: 40,
+    marginVertical: 20,
   },
 });
 

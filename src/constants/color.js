@@ -8,10 +8,10 @@ const Colors = {
   outerSpace: '#3d5350',
   venetianRed: '#CC1512',
   spanishGray: '#93969D',
-  minion_Yellow: '#ede649',
+  minionYellow: '#ede649',
   darkJungleGreen: '#1b2023',
   charlestonGreen: '#25282f',
-  transform: 'rgba(8, 8,8, 0.7)',
+  transform: 'rgba(20, 20,20, 1.9)',
   transform3: 'rgba(8, 8,8, 0.4)',
   transform2: 'rgba(60,53,43,0.7)',
 };

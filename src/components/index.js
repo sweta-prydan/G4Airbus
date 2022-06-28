@@ -1,5 +1,6 @@
 export { default as Card } from './Card/index';
 export { default as Logo } from './Logo/index';
+export { default as Input } from './Input/index';
 export { default as Button } from './Button/index';
 export { default as Header } from './Header/index';
 export { default as Toggle } from './Switch/index';

@@ -46,13 +46,13 @@ const Fan = ({ navigation }) => {
                       <Text style={styles.text1}> {sliderValue} </Text>
 
                       <Slider
-                        style={styles.track}
+                        step={1}
                         maximumValue={4}
                         minimumValue={0}
+                        value={sliderValue}
+                        style={styles.track}
                         minimumTrackTintColor={Colors.bronze}
                         maximumTrackTintColor={Colors.transform}
-                        step={1}
-                        value={sliderValue}
                         onValueChange={sliderValue =>
                           setSliderValue(sliderValue)
                         }

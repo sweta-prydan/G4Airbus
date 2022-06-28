@@ -27,15 +27,15 @@ const SettingScreen = ({ navigation }) => {
           <ScrollView style={styles.container}>
             <View style={styles.layout}>
               <Button
-                onPress={() => navigation.navigate('LanguageSettingScreen')}
                 buttonText="Language Setting (Language)"
+                onPress={() => navigation.navigate('LanguageSettingScreen')}
               />
 
               <View style={styles.separator} />
 
               <Button
-                onPress={() => navigation.navigate('DatabaseSettingScreen')}
                 buttonText="Database Upload & Download"
+                onPress={() => navigation.navigate('DatabaseSettingScreen')}
               />
             </View>
 

@@ -14,6 +14,7 @@ import Images from '../../utils/images';
 
 function SliderLayer({ layerText, onPress }) {
   const [sliderValue, setSliderValue] = useState(100);
+
   return (
     <TouchableOpacity onPress={onPress} style={styles.button}>
       <View style={styles.layer}>
@@ -23,13 +24,13 @@ function SliderLayer({ layerText, onPress }) {
 
           <View style={styles.slider}>
             <Slider
-              style={styles.track}
-              maximumValue={100}
+              step={1}
               minimumValue={0}
+              maximumValue={100}
+              value={sliderValue}
+              style={styles.track}
               minimumTrackTintColor={Colors.bronze}
               maximumTrackTintColor={Colors.davyGrey}
-              step={1}
-              value={sliderValue}
               onValueChange={sliderValue => setSliderValue(sliderValue)}
               thumbStyle={styles.thumb}
             />

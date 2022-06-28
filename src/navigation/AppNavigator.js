@@ -19,6 +19,8 @@ import {
   Irrigation,
   Demokitzone,
   LightSetting,
+  ACSetting,
+  RGBWSetting,
   MusicScreen,
   LightScreen,
   SplashScreen,
@@ -38,6 +40,7 @@ import {
 } from '../screens';
 import MyTabs from './Tab';
 import AuthNavigator from './AuthNavigator';
+
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -75,32 +78,19 @@ const AppNavigator = () => {
           component={HomeScreen}
         />
 
-        <Stack.Screen name="MyTabs" component={MyTabs} />
-
-        <Stack.Screen name="Light" component={Light} />
-
-        <Stack.Screen name="Dmx" component={Dmx} />
-
-        <Stack.Screen name="Fan" component={Fan} />
-
-        <Stack.Screen name="Rgbw" component={RGBW} />
-
         <Stack.Screen name="Ac" component={Ac} />
-
-        <Stack.Screen name="Curtain" component={Curtain} />
-
+        <Stack.Screen name="Fan" component={Fan} />
+        <Stack.Screen name="Dmx" component={Dmx} />
+        <Stack.Screen name="Rgbw" component={RGBW} />
         <Stack.Screen name="Mood" component={Mood} />
-
-        <Stack.Screen name="Camera" component={Camera} />
-
+        <Stack.Screen name="Light" component={Light} />
         <Stack.Screen name="Music" component={Music} />
-
         <Stack.Screen name="Media" component={Media} />
-
+        <Stack.Screen name="Camera" component={Camera} />
+        <Stack.Screen name="MyTabs" component={MyTabs} />
+        <Stack.Screen name="Curtain" component={Curtain} />
         <Stack.Screen name="Irrigation" component={Irrigation} />
-
         <Stack.Screen name="SettingScreen" component={SettingScreen} />
-
         <Stack.Screen
           name="LanguageSettingScreen"
           component={LanguageSettingScreen}
@@ -111,11 +101,9 @@ const AppNavigator = () => {
           component={DatabaseSettingScreen}
         />
 
-        <Stack.Screen name="ByBrowserScreen" component={ByBrowserScreen} />
-
-        <Stack.Screen name="ByFtpServerScreen" component={ByFtpServerScreen} />
-
         <Stack.Screen name="StarScreen" component={StarScreen} />
+        <Stack.Screen name="ByBrowserScreen" component={ByBrowserScreen} />
+        <Stack.Screen name="ByFtpServerScreen" component={ByFtpServerScreen} />
 
         <Stack.Screen
           name="GlobalNetworkScreen"
@@ -129,29 +117,20 @@ const AppNavigator = () => {
           component={CentralControlScreen}
         />
 
-        <Stack.Screen name="MusicScreen" component={MusicScreen} />
-
-        <Stack.Screen name="IrrigationScreen" component={IrrigationScreen} />
-
-        <Stack.Screen name="LightScreen" component={LightScreen} />
-
         <Stack.Screen name="FanScreen" component={FanScreen} />
-
-        <Stack.Screen name="CurtainScreen" component={CurtainScreen} />
-
-        <Stack.Screen name="HVACScreen" component={HVACScreen} />
-
-        <Stack.Screen name="RGBWScreen" component={RGBWScreen} />
-
         <Stack.Screen name="DMXScreen" component={DMXScreen} />
-
-        <Stack.Screen name="SecurityScreen" component={SecurityScreen} />
-
-        <Stack.Screen name="SchedulingScreen" component={SchedulingScreen} />
-
-        <Stack.Screen name="AlaramVCScreen" component={AlaramVCScreen} />
-
+        <Stack.Screen name="ACSetting" component={ACSetting} />
+        <Stack.Screen name="HVACScreen" component={HVACScreen} />
+        <Stack.Screen name="RGBWScreen" component={RGBWScreen} />
+        <Stack.Screen name="MusicScreen" component={MusicScreen} />
+        <Stack.Screen name="LightScreen" component={LightScreen} />
+        <Stack.Screen name="RGBWSetting" component={RGBWSetting} />
         <Stack.Screen name="LightSetting" component={LightSetting} />
+        <Stack.Screen name="CurtainScreen" component={CurtainScreen} />
+        <Stack.Screen name="SecurityScreen" component={SecurityScreen} />
+        <Stack.Screen name="AlaramVCScreen" component={AlaramVCScreen} />
+        <Stack.Screen name="IrrigationScreen" component={IrrigationScreen} />
+        <Stack.Screen name="SchedulingScreen" component={SchedulingScreen} />
 
         <Stack.Screen
           name="SchedulingDropScreen"

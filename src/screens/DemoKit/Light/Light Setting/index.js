@@ -1,21 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
   Image,
-  TextInput,
   ScrollView,
   SafeAreaView,
   ImageBackground,
   TouchableOpacity,
-  KeyboardAvoidingView,
 } from 'react-native';
 
 //images
 import Images from '../../../../utils/images';
 
 //Components
-import { CentralHeader } from '../../../../components';
+import { CentralHeader, Input } from '../../../../components';
 
 //style
 import styles from './style';
@@ -23,106 +21,97 @@ import styles from './style';
 const LightSetting = ({ navigation }) => {
   const [deviceName, onChangedeviceName] = React.useState();
   const [lightType, onChangeLightType] = React.useState();
-  const [subnet, onChangeSubnet] = React.useState(null);
-  const [device, onChangeDevice] = React.useState(null);
-  const [Channel, onChangeChannel] = React.useState(null);
+  const [subnet, onChangeSubnet] = React.useState();
+  const [device, onChangeDevice] = React.useState();
+  const [Channel, onChangeChannel] = React.useState();
+
   const [flag, setFlag] = React.useState(true);
+  const [isSelected, setIsSelected] = useState(false);
   const toggleSwitch = () => setFlag(previousState => !previousState);
 
   return (
     <View style={styles.container}>
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
-          <CentralHeader headerText={'Light Setting'} />
+          <CentralHeader
+            headerText={'Light Setting'}
+            navigation={() => {
+              navigation.goBack(null);
+            }}
+            onPress={() => navigation.navigate('StarScreen')}
+          />
         </View>
 
         <SafeAreaView style={styles.container}>
           <ScrollView style={styles.container}>
             <View>
               <View style={styles.separator} />
-              <View>
-                <KeyboardAvoidingView behavior="padding" enabled>
-                  <View style={styles.main}>
-                    <Text style={styles.text}>Device Name:</Text>
-                    <TextInput
-                      value={deviceName}
-                      style={styles.input}
-                      onChangedeviceName={onChangedeviceName}
-                      keyboardType="name-phone-pad"
-                    />
-                  </View>
-                </KeyboardAvoidingView>
 
-                <KeyboardAvoidingView behavior="padding" enabled>
-                  <View style={styles.main}>
-                    <Text style={styles.text2}>Light Type </Text>
-                    <TextInput
-                      value={lightType}
-                      style={styles.input}
-                      keyboardType="name-phone-pad"
-                      onChangeLightType={onChangeLightType}
-                    />
-                  </View>
-                </KeyboardAvoidingView>
+              <Input
+                value={deviceName}
+                text={'Device Name'}
+                onChange={onChangedeviceName}
+              />
 
-                <KeyboardAvoidingView behavior="padding" enabled>
-                  <View style={styles.main}>
-                    <Text style={styles.text2}>Subnet Id: </Text>
-                    <TextInput
-                      value={subnet}
-                      style={styles.input}
-                      keyboardType="phone-pad"
-                      onChangeSubnet={onChangeSubnet}
-                    />
-                  </View>
-                </KeyboardAvoidingView>
+              <Input
+                value={lightType}
+                text={' Light Type   '}
+                onChange={onChangeLightType}
+              />
 
-                <KeyboardAvoidingView behavior="padding" enabled>
-                  <View style={styles.main}>
-                    <Text style={styles.text2}>Device Id: </Text>
-                    <TextInput
-                      value={device}
-                      style={styles.input}
-                      keyboardType="phone-pad"
-                      onChangeDevice={onChangeDevice}
-                    />
-                  </View>
-                </KeyboardAvoidingView>
+              <Input
+                value={subnet}
+                text={'   Subnet Id:   '}
+                onChange={onChangeSubnet}
+              />
 
-                <KeyboardAvoidingView behavior="padding" enabled>
-                  <View style={styles.main}>
-                    <Text style={styles.text}>Add Channel </Text>
-                    <TextInput
-                      value={Channel}
-                      style={styles.input}
-                      keyboardType="name-phone-pad"
-                      onChangeChannel={onChangeChannel}
-                    />
-                  </View>
-                </KeyboardAvoidingView>
+              <Input
+                value={device}
+                text={' Device Id:     '}
+                onChange={onChangeDevice}
+              />
 
-                <KeyboardAvoidingView behavior="padding" enabled>
-                  <View style={styles.main}>
-                    <Text style={styles.text}>Select Icon</Text>
-                    <View>
-                      <TouchableOpacity onPress={() => toggleSwitch()}>
-                        <Image
-                          source={flag ? Images.logo : Images.camera}
-                          style={styles.icon}
-                        />
-                      </TouchableOpacity>
-                      <Text style={styles.title}>OffSate</Text>
-                    </View>
-                    <View>
-                      <Image
-                        source={flag ? Images.logo : Images.gallery}
-                        style={styles.icon}
-                      />
-                      <Text style={styles.title}>OnSate</Text>
-                    </View>
-                  </View>
-                </KeyboardAvoidingView>
+              <Input
+                value={Channel}
+                text={'Add Channel '}
+                onChange={onChangeChannel}
+              />
+
+              <View style={styles.main}>
+                <Text style={styles.text}>Select Icon</Text>
+
+                <View>
+                  <TouchableOpacity onPress={() => toggleSwitch()}>
+                    <Image
+                      style={styles.icon}
+                      source={flag ? Images.logo : Images.camera}
+                    />
+                  </TouchableOpacity>
+                  <Text style={styles.title}>OffState</Text>
+                </View>
+
+                <View>
+                  <Image
+                    style={styles.icon}
+                    source={flag ? Images.logo : Images.gallery}
+                  />
+                  <Text style={styles.title}>OnState</Text>
+                </View>
               </View>
+
+              <View style={styles.row1}>
+                <View>
+                  <Text style={styles.allow}>Allow Control Main Screen</Text>
+                </View>
+                <TouchableOpacity onPress={() => setIsSelected(!isSelected)}>
+                  <Image
+                    style={styles.checkbox}
+                    source={isSelected ? Images.select : Images.unselect}
+                  />
+                </TouchableOpacity>
+              </View>
+
+              <Image source={Images.close} style={styles.icon} />
             </View>
           </ScrollView>
         </SafeAreaView>

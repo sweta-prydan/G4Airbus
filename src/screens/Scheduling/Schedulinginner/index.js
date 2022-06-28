@@ -42,19 +42,19 @@ const SchedulingDropScreen = ({ navigation }) => {
                 <Text style={[styles.data, styles.border]}>Schedule Name</Text>
 
                 <Dropdown
-                  data={data}
                   search
+                  data={data}
+                  value={value}
                   maxHeight={200}
                   labelField="label"
-                  searchPlaceholder="Search..."
                   valueField="value"
                   placeholder="Select Zone"
-                  value={value}
                   onChange={item => {
                     setValue(item.value);
                   }}
                   style={styles.dropdown}
                   iconStyle={styles.iconStyle}
+                  searchPlaceholder="Search..."
                   placeholderStyle={styles.placeholderStyle}
                   selectedTextStyle={styles.selectedTextStyle}
                   inputSearchStyle={styles.inputSearchStyle}

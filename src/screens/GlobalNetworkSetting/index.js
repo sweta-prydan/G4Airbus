@@ -39,10 +39,10 @@ const GlobalNetworkScreen = ({ navigation }) => {
               <Text style={styles.description}>Auto </Text>
 
               <Switch
-                trackColor={{ false: Colors.davyGrey, true: Colors.outerSpace }}
-                thumbColor={isEnabled ? Colors.pearlAqua : Colors.gray}
-                onValueChange={(toggleSwitch, modal)}
                 value={(isEnabled, shouldShow)}
+                onValueChange={(toggleSwitch, modal)}
+                thumbColor={isEnabled ? Colors.pearlAqua : Colors.gray}
+                trackColor={{ false: Colors.davyGrey, true: Colors.outerSpace }}
               />
             </View>
 
@@ -89,8 +89,8 @@ const GlobalNetworkScreen = ({ navigation }) => {
                     </View>
 
                     <Button
-                      onPress={() => navigation.navigate('StarScreen')}
                       buttonText="Get My IP "
+                      onPress={() => navigation.navigate('StarScreen')}
                     />
 
                     <View style={styles.separator} />
@@ -101,8 +101,8 @@ const GlobalNetworkScreen = ({ navigation }) => {
                     <View style={styles.separator} />
                     <View style={styles.button}>
                       <Button
-                        onPress={() => navigation.navigate('StarScreen')}
                         buttonText="Save "
+                        onPress={() => navigation.navigate('StarScreen')}
                       />
                     </View>
                   </View>
