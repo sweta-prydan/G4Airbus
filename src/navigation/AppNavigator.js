@@ -10,20 +10,21 @@ import {
   Light,
   Camera,
   Curtain,
+  ACSetting,
   FanScreen,
   DMXScreen,
+  DMXSetting,
   StarScreen,
   RGBWScreen,
   HVACScreen,
   HomeScreen,
   Irrigation,
-  Demokitzone,
-  LightSetting,
-  ACSetting,
-  RGBWSetting,
   MusicScreen,
+  RGBWSetting,
+  Demokitzone,
   LightScreen,
   SplashScreen,
+  LightSetting,
   SettingScreen,
   CurtainScreen,
   SecurityScreen,
@@ -122,6 +123,7 @@ const AppNavigator = () => {
         <Stack.Screen name="ACSetting" component={ACSetting} />
         <Stack.Screen name="HVACScreen" component={HVACScreen} />
         <Stack.Screen name="RGBWScreen" component={RGBWScreen} />
+        <Stack.Screen name="DMXSetting" component={DMXSetting} />
         <Stack.Screen name="MusicScreen" component={MusicScreen} />
         <Stack.Screen name="LightScreen" component={LightScreen} />
         <Stack.Screen name="RGBWSetting" component={RGBWSetting} />

@@ -3,6 +3,11 @@ import { StyleSheet } from 'react-native';
 //colors
 import { Colors } from '../../../constants';
 
+import {
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -30,12 +35,12 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 350,
     padding: 20,
-    height: 550,
     borderRadius: 20,
     marginVertical: 5,
     marginHorizontal: 5,
+    width: responsiveWidth(97),
+    height: responsiveHeight(70),
     backgroundColor: Colors.transform,
   },
 });

@@ -1,7 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 //Fonts
-import Fonts from '../../../../constants';
+import Fonts from '../../../../constants/fonts';
+
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -31,31 +37,31 @@ const styles = StyleSheet.create({
   },
 
   icon: {
-    width: 50,
-    height: 50,
-    marginHorizontal: 40,
     marginVertical: 10,
+    marginHorizontal: 30,
+    width: responsiveWidth(20),
+    height: responsiveHeight(10),
   },
 
   title: {
     margin: 6,
-    fontSize: 16,
+    fontSize: responsiveFontSize(2.5),
     marginHorizontal: 40,
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
   },
 
   allow: {
-    fontSize: 20,
     marginHorizontal: 30,
+    fontSize: responsiveFontSize(2.5),
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
   },
 
   checkbox: {
-    width: 30,
-    height: 30,
     marginVertical: 20,
+    width: responsiveWidth(16),
+    height: responsiveHeight(8),
   },
 
   row1: {

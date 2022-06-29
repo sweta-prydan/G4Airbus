@@ -16,8 +16,8 @@ const Dmx = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            navigation={navigation}
             NavigationHeaderText="DMX"
+            onPress={() => navigation.navigate('DMXSetting')}
           />
         </View>
 

@@ -3,14 +3,20 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   slider: {
     margin: 40,
   },
 
   text: {
-    fontSize: 18,
     color: Colors.white,
+    fontSize: responsiveFontSize(2.5),
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
   },
@@ -26,11 +32,11 @@ const styles = StyleSheet.create({
   },
 
   thumb: {
-    width: 30,
-    height: 30,
-    borderWidth: 8,
-    borderRadius: 80,
+    borderWidth: 5,
+    borderRadius: 50,
     borderColor: Colors.white,
+    width: responsiveWidth(8),
+    height: responsiveHeight(4),
     backgroundColor: Colors.venetianRed,
   },
 });

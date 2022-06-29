@@ -3,6 +3,12 @@ import { StyleSheet } from 'react-native';
 //color
 import { Colors, Fonts } from '../../../constants';
 
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   layer: {
     padding: 8,
@@ -14,14 +20,14 @@ const styles = StyleSheet.create({
   },
 
   symbol: {
-    width: 80,
-    height: 80,
+    width: responsiveWidth(20),
+    height: responsiveHeight(10),
   },
 
   text: {
-    fontSize: 16,
     color: Colors.white,
     marginHorizontal: 30,
+    fontSize: responsiveFontSize(2.5),
     fontFamily: Fonts.FontFamily.default,
     fontWeight: Fonts.FontWeight.regular,
   },
@@ -31,16 +37,16 @@ const styles = StyleSheet.create({
   },
 
   text1: {
-    fontSize: 18,
+    fontSize: responsiveFontSize(2.5),
     color: Colors.white,
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
   },
 
   track: {
-    height: 10,
-    width: 100,
     borderRadius: 50,
+    height: responsiveHeight(1),
+    width: responsiveWidth(30),
     backgroundColor: Colors.transform,
   },
 
@@ -49,8 +55,8 @@ const styles = StyleSheet.create({
   },
 
   thumb: {
-    width: 20,
-    height: 30,
+    width: responsiveWidth(5),
+    height: responsiveHeight(2),
   },
 
   container: {
@@ -72,20 +78,13 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
   },
 
-  number: {
-    width: 100,
-    borderWidth: 3,
-    borderRadius: 5,
-    borderColor: Colors.black,
-  },
-
   childView: {
-    width: 350,
-    height: 550,
     padding: 20,
+    borderRadius: 20,
     marginVertical: 5,
     marginHorizontal: 5,
-    borderRadius: 20,
+    width: responsiveWidth(97),
+    height: responsiveHeight(70),
     backgroundColor: Colors.transform,
   },
 });

@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 
 //constants
 import { Colors, Fonts } from '../../constants';
+import { responsiveFontSize } from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -25,10 +26,10 @@ const styles = StyleSheet.create({
 
   version: {
     bottom: 20,
-    fontSize: 20,
     color: Colors.white,
     textAlign: 'center',
     alignItems: 'center',
+    fontSize: responsiveFontSize(3),
     fontWeight: Fonts.FontWeight.bold,
     fontFamily: Fonts.FontFamily.bold,
   },

@@ -21,8 +21,9 @@ import Header from '../../components/Header';
 import Button from '../../components/Button/index';
 
 const ByFtpServerScreen = ({ navigation }) => {
-  const [Username, onChangeUsername] = useState({ value: '' });
+  const [username, onChangeUsername] = useState({ value: '' });
   const [password, onChangePassword] = useState({ value: '' });
+  const [address, onChangeAdress] = useState({ value: '' });
 
   return (
     <View style={styles.container}>
@@ -45,9 +46,10 @@ const ByFtpServerScreen = ({ navigation }) => {
                       style={styles.container}
                       enabled>
                       <TextInput
-                        value=""
+                        value={address}
                         style={styles.input}
                         keyboardType="phone-pad"
+                        onChange={onChangeAdress}
                       />
                     </KeyboardAvoidingView>
                   </View>
@@ -68,7 +70,7 @@ const ByFtpServerScreen = ({ navigation }) => {
                       style={styles.container}
                       enabled>
                       <TextInput
-                        value={Username}
+                        value={username}
                         style={styles.input}
                         onChange={onChangeUsername}
                         placeholder="Enter User Name"

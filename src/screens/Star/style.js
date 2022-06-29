@@ -3,6 +3,12 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -19,10 +25,10 @@ const styles = StyleSheet.create({
   },
 
   menuView: {
-    height: 60,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    height: responsiveHeight(8),
     backgroundColor: Colors.black,
   },
 
@@ -31,9 +37,9 @@ const styles = StyleSheet.create({
   },
 
   home: {
-    width: 35,
-    height: 35,
     marginHorizontal: 100,
+    height: responsiveHeight(5),
+    width: responsiveWidth(10),
   },
 
   theme: {
@@ -44,25 +50,25 @@ const styles = StyleSheet.create({
 
   layer: {
     margin: 10,
-    width: 450,
-    height: 250,
     opacity: 0.4,
     color: Colors.black,
+    width: responsiveWidth(10),
+    height: responsiveHeight(10),
   },
 
   room: {
-    width: 430,
-    height: 250,
+    width: responsiveWidth(99),
+    height: responsiveHeight(30),
   },
 
   icon: {
-    width: 35,
-    height: 35,
+    width: responsiveWidth(10),
+    height: responsiveHeight(5),
   },
 
   symbol: {
-    width: 50,
-    height: 50,
+    width: responsiveWidth(10),
+    height: responsiveHeight(5),
   },
 
   heading: {
@@ -74,7 +80,6 @@ const styles = StyleSheet.create({
 
   Head: {
     zIndex: 1,
-    fontSize: 18,
     marginStart: 0,
     position: 'absolute',
     justifyContent: 'center',
@@ -82,21 +87,22 @@ const styles = StyleSheet.create({
 
   eye: {
     zIndex: 2,
-    width: 42,
-    height: 40,
+    width: responsiveWidth(13),
+    height: responsiveHeight(5),
   },
 
   demo: {
-    height: 35,
-    width: 300,
     textAlign: 'center',
     paddingVertical: 7,
     color: Colors.white,
     borderTopRightRadius: 250,
+    width: responsiveWidth(80),
     borderBottomRightRadius: 0,
-    backgroundColor: Colors.transform2,
+    height: responsiveHeight(5),
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.bold,
     fontFamily: Fonts.FontFamily.bold,
+    backgroundColor: Colors.transform2,
   },
 
   separator: {
@@ -104,9 +110,9 @@ const styles = StyleSheet.create({
   },
 
   star: {
-    width: 100,
-    height: 100,
     marginVertical: 100,
+    width: responsiveWidth(40),
+    height: responsiveHeight(20),
   },
 
   modalView: {
@@ -120,20 +126,20 @@ const styles = StyleSheet.create({
   },
 
   cancel: {
-    width: 35,
-    height: 35,
     margin: 20,
-    marginHorizontal: 50,
+    marginHorizontal: 30,
+    width: responsiveWidth(10),
+    height: responsiveHeight(5),
   },
 
   edit: {
-    height: 50,
-    width: '90%',
-    fontSize: 50,
     borderRadius: 5,
     marginVertical: 10,
     color: Colors.white,
     marginHorizontal: 20,
+    width: responsiveWidth(78),
+    height: responsiveHeight(7),
+    fontSize: responsiveFontSize(2.8),
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
     backgroundColor: Colors.charlestonGreen,
@@ -141,30 +147,29 @@ const styles = StyleSheet.create({
 
   input: {
     padding: 10,
-    fontSize: 20,
     borderRadius: 5,
     color: Colors.white,
+    fontSize: responsiveFontSize(2.8),
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
     backgroundColor: Colors.charlestonGreen,
   },
 
   button: {
-    alignSelf: 'flex-start',
-    width: '40%',
     marginHorizontal: 15,
+    alignSelf: 'flex-start',
+    width: responsiveWidth(33),
   },
 
   close: {
-    width: 90,
     display: 'flex',
     marginHorizontal: 230,
   },
 
   location: {
-    fontSize: 14,
     color: Colors.white,
     marginHorizontal: 20,
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
   },
@@ -179,9 +184,9 @@ const styles = StyleSheet.create({
 
   loading: {
     margin: 10,
-    width: 100,
-    height: 100,
     marginHorizontal: 100,
+    width: responsiveWidth(30),
+    height: responsiveHeight(15),
     backgroundColor: Colors.white,
   },
 
@@ -193,22 +198,22 @@ const styles = StyleSheet.create({
   },
 
   photo: {
-    width: 60,
-    height: 60,
+    width: responsiveWidth(18),
+    height: responsiveHeight(9),
   },
 
   font: {
-    fontSize: 16,
     textAlign: 'center',
     alignItems: 'center',
     color: Colors.white,
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
   },
 
   font1: {
-    fontSize: 18,
     color: Colors.white,
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.light,
     fontFamily: Fonts.FontFamily.light,
   },
@@ -221,8 +226,8 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    fontSize: 18,
     color: Colors.white,
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.light,
     fontFamily: Fonts.FontFamily.light,
   },

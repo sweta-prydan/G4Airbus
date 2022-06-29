@@ -1,13 +1,14 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 //constants
 import { Colors, Fonts } from '../../constants';
 
 const styles = StyleSheet.create({
   main: {
-    textAlign: 'center',
     alignItems: 'center',
     flexDirection: 'row',
+    justifyContent: 'center',
+    width: Dimensions.get('window').width,
   },
 
   text: {
@@ -20,12 +21,13 @@ const styles = StyleSheet.create({
   input: {
     height: 40,
     width: '60%',
-    fontSize: 18,
+    fontSize: 16,
     borderRadius: 5,
     marginVertical: 10,
     color: Colors.white,
     textAlign: 'center',
     marginHorizontal: 20,
+    justifyContent: 'center',
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
     backgroundColor: Colors.charlestonGreen,

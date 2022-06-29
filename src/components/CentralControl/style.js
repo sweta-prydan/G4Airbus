@@ -3,6 +3,12 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   toggle: {
     margin: 5,
@@ -12,21 +18,20 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 350,
-    height: 400,
     padding: 20,
-    marginHorizontal: 5,
-    marginVertical: 5,
     borderRadius: 20,
+    marginVertical: 5,
+    marginHorizontal: 5,
+    width: responsiveWidth(97),
+    height: responsiveHeight(50),
     backgroundColor: Colors.transform,
   },
 
   description: {
-    fontSize: 20,
-    marginLeft: 5,
-    marginVertical: 4,
+    marginVertical: 5,
+    marginHorizontal: 5,
     color: Colors.white,
-    marginHorizontal: 4,
+    fontSize: responsiveFontSize(3),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.regular,
   },

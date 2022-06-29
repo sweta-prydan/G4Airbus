@@ -3,6 +3,11 @@ import { StyleSheet } from 'react-native';
 //color
 import Colors from '../../constants/color';
 
+import {
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -32,8 +37,8 @@ const styles = StyleSheet.create({
 
   colorpiker: {
     margin: 40,
-    width: 300,
-    height: 330,
+    width: responsiveWidth(80),
+    height: responsiveHeight(40),
   },
 
   centeredView: {
@@ -53,8 +58,8 @@ const styles = StyleSheet.create({
   },
 
   cancel: {
-    width: 30,
-    height: 30,
+    width: responsiveWidth(10),
+    height: responsiveHeight(5),
     marginVertical: 20,
   },
 });

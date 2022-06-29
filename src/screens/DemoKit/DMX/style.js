@@ -3,6 +3,11 @@ import { StyleSheet } from 'react-native';
 //color
 import Colors from '../../../constants/color';
 
+import {
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -28,19 +33,19 @@ const styles = StyleSheet.create({
   },
 
   number: {
-    width: 100,
     borderRadius: 5,
     borderWidth: 3,
+    width: responsiveWidth(10),
     borderColor: Colors.black,
   },
 
   childView: {
-    width: 350,
-    height: 550,
     padding: 20,
     borderRadius: 20,
     marginVertical: 5,
     marginHorizontal: 5,
+    width: responsiveWidth(97),
+    height: responsiveHeight(70),
     backgroundColor: Colors.transform,
   },
 });

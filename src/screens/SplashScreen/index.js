@@ -7,7 +7,6 @@ import styles from './style';
 // Images
 import Images from '../../utils/images';
 
-//colors
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const SplashScreen = props => {

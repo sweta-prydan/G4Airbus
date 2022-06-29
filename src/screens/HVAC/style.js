@@ -3,6 +3,12 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -23,34 +29,32 @@ const styles = StyleSheet.create({
   button: {
     margin: 10,
     elevation: 3,
-    paddingTop: 10,
-    paddingLeft: 20,
-    paddingRight: 20,
-    paddingBottom: 10,
+    paddingVertical: 10,
     alignItems: 'center',
+    paddingHorizontal: 20,
     justifyContent: 'center',
     backgroundColor: Colors.charlestonGreen,
   },
 
   buttonText: {
-    fontSize: 14,
     lineHeight: 21,
     color: Colors.white,
     letterSpacing: 0.25,
     textTransform: 'uppercase',
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.bold,
     fontFamily: Fonts.FontFamily.bold,
   },
 
   symbol: {
-    width: 28,
-    height: 28,
+    width: responsiveWidth(7),
+    height: responsiveHeight(3),
   },
 
   number: {
-    width: 130,
     borderWidth: 3,
     borderRadius: 5,
+    width: responsiveWidth(35),
     borderColor: Colors.black,
   },
 });

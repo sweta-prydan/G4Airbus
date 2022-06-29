@@ -143,7 +143,6 @@ const HomeScreen = ({ navigation }) => {
                         <View style={styles.layout}>
                           <View style={styles.button}>
                             <Button
-                              style={styles.button}
                               buttonText="Save"
                               onPress={() =>
                                 navigation.navigate('LanguageSettingScreen')
@@ -153,7 +152,6 @@ const HomeScreen = ({ navigation }) => {
 
                           <View style={styles.button}>
                             <Button
-                              style={styles.button}
                               buttonText="Delete"
                               onPress={() =>
                                 navigation.navigate('SettingScreen')

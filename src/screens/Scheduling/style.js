@@ -3,6 +3,11 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+import {
+  responsiveHeight,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -13,9 +18,9 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontSize: 20,
     color: Colors.white,
     textAlign: 'center',
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
   },
@@ -27,23 +32,22 @@ const styles = StyleSheet.create({
   },
 
   data: {
-    fontSize: 16,
     marginVertical: 20,
     color: Colors.white,
     borderColor: 'black',
     marginHorizontal: 12,
+    fontSize: responsiveFontSize(2.2),
   },
 
   border: {
-    height: 70,
     borderRadius: 4,
     borderWidth: 0.5,
     borderColor: Colors.white,
+    height: responsiveHeight(10),
     borderTopColor: Colors.black,
   },
 
   button: {
-    width: 100,
     marginVertical: 500,
     marginHorizontal: 120,
   },

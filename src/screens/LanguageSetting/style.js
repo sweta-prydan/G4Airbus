@@ -3,6 +3,8 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+import { responsiveFontSize } from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -15,9 +17,9 @@ const styles = StyleSheet.create({
   lang: {
     padding: 3,
     margin: 16,
-    fontSize: 16,
     color: Colors.white,
     borderBottomWidth: 1,
+    fontSize: responsiveFontSize(2.5),
     borderBottomColor: Colors.davyGrey,
     fontWeight: Fonts.FontWeight.light,
     fontFamily: Fonts.FontFamily.light,
@@ -30,7 +32,7 @@ const styles = StyleSheet.create({
   button: {
     minWidth: '25%',
     marginVertical: 300,
-    marginHorizontal: 50,
+    marginHorizontal: 45,
   },
 });
 export default styles;

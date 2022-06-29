@@ -3,6 +3,8 @@ import { StyleSheet } from 'react-native';
 //color
 import Colors from '../../constants/color';
 
+import { responsiveWidth } from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -23,10 +25,10 @@ const styles = StyleSheet.create({
   },
 
   number: {
-    width: 130,
     borderWidth: 3,
     borderRadius: 5,
     borderColor: Colors.black,
+    width: responsiveWidth(40),
   },
 });
 export default styles;

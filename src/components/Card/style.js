@@ -3,16 +3,22 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   layer: {
-    width: '99%',
-    height: 240,
     padding: 10,
     marginVertical: 3,
     marginHorizontal: 3,
     textAlign: 'center',
     alignItems: 'center',
     flexDirection: 'row',
+    width: responsiveWidth(98),
+    height: responsiveHeight(28),
   },
 
   banner: {
@@ -25,7 +31,6 @@ const styles = StyleSheet.create({
   },
 
   round: {
-    marginTop: 20,
     textAlign: 'center',
     alignItems: 'center',
     flexDirection: 'row',
@@ -33,36 +38,34 @@ const styles = StyleSheet.create({
   },
 
   Header: {
-    fontSize: 18,
     borderRadius: 100,
     alignContent: 'center',
     justifyContent: 'center',
   },
 
   text: {
-    height: 35,
-    width: 160,
-    padding: 'auto',
     borderRadius: 100,
-    paddingVertical: 7,
+    paddingVertical: 10,
     textAlign: 'center',
     color: Colors.white,
     borderTopLeftRadius: 0,
     justifyContent: 'center',
     borderBottomLeftRadius: 0,
+    width: responsiveWidth(50),
+    height: responsiveHeight(6),
+    fontSize: responsiveFontSize(2),
     backgroundColor: Colors.transform2,
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
   },
 
   icon: {
-    width: 50,
-    height: 50,
-    marginHorizontal: 10,
+    width: responsiveWidth(13),
+    height: responsiveHeight(6),
   },
   arrow: {
-    marginVertical: 20,
-    marginHorizontal: 300,
+    marginVertical: 30,
+    marginHorizontal: 250,
     justifyContent: 'flex-end',
   },
 });

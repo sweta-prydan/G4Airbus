@@ -1,5 +1,9 @@
 import { StyleSheet } from 'react-native';
 import { Colors, Fonts } from '../../constants';
+import {
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -11,10 +15,10 @@ const styles = StyleSheet.create({
   },
 
   childView: {
-    width: 350,
     marginVertical: 6,
     borderRadius: 20,
     marginHorizontal: 6,
+    width: responsiveWidth(97),
     backgroundColor: Colors.transform,
   },
 
@@ -25,10 +29,9 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    width: 300,
-    marginTop: 30,
     marginVertical: 30,
     marginHorizontal: 30,
+    width: responsiveWidth(80),
   },
 
   inputStyle: {
@@ -38,30 +41,28 @@ const styles = StyleSheet.create({
     color: Colors.black,
     paddingHorizontal: 15,
     backgroundColor: Colors.white,
+    fontSize: responsiveFontSize(2.5),
     fontFamily: Fonts.FontFamily.medium,
     fontWeight: Fonts.FontWeight.medium,
   },
 
   errorTextStyle: {
     color: 'red',
-    fontSize: 14,
     textAlign: 'center',
+    fontSize: responsiveFontSize(2.5),
   },
 
   buttonStyle: {
-    height: 40,
-    marginTop: 20,
-    marginBottom: 25,
-    marginVertical: 35,
+    marginVertical: 10,
     marginHorizontal: 35,
   },
 
   registerTextStyle: {
     padding: 10,
-    fontSize: 16,
     color: Colors.white,
     textAlign: 'center',
     alignSelf: 'center',
+    fontSize: responsiveFontSize(2.5),
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
   },

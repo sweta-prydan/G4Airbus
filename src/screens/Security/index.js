@@ -37,8 +37,9 @@ const SecurityScreen = ({ navigation }) => {
                 }}>
                 <Image source={Images.back} style={styles.icon} />
               </TouchableOpacity>
-              <Text style={styles.header}>Security</Text>
-
+              <View>
+                <Text style={styles.header}>Security</Text>
+              </View>
               <View style={styles.menuView}>
                 <Image source={Images.setting} style={styles.icon} />
               </View>
@@ -63,8 +64,10 @@ const SecurityScreen = ({ navigation }) => {
 
             <View style={styles.main}>
               <TouchableHighlight activeOpacity={0.6} onPress={() => ''}>
-                <View style={styles.layer}>
-                  underlayColor={Colors.transform}
+                <View
+                  style={styles.layer}
+                  onPress={() => ''}
+                  underlayColor={Colors.transform}>
                   <Image source={Images.vacation} style={styles.symbol} />
                   <Text style={styles.text}>Vacation</Text>
                 </View>

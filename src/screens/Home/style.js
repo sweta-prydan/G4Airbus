@@ -3,6 +3,12 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -25,10 +31,10 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    fontSize: 18,
     lineHeight: 50,
     color: Colors.white,
     textAlign: 'center',
+    fontSize: responsiveFontSize(3),
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
   },
@@ -49,41 +55,39 @@ const styles = StyleSheet.create({
   },
 
   cancel: {
-    width: 35,
-    height: 35,
+    width: responsiveWidth(10),
+    height: responsiveHeight(5),
   },
 
   edit: {
-    height: 50,
-    width: '90%',
-    fontSize: 50,
     borderRadius: 5,
     marginVertical: 10,
     color: Colors.white,
     marginHorizontal: 20,
-    backgroundColor: Colors.charlestonGreen,
+    width: responsiveWidth(78),
+    height: responsiveHeight(6),
+    fontSize: responsiveFontSize(2),
     fontFamily: Fonts.FontFamily.light,
     fontWeight: Fonts.FontWeight.light,
+    backgroundColor: Colors.charlestonGreen,
   },
 
   input: {
-    fontSize: 20,
     padding: 10,
     borderRadius: 5,
     color: Colors.white,
+    fontSize: responsiveFontSize(2.8),
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
     backgroundColor: Colors.charlestonGreen,
   },
 
   button: {
-    width: 140,
-    marginVertical: '2%',
-    marginHorizontal: '5%',
+    marginVertical: '3%',
+    marginHorizontal: '20%',
   },
 
   close: {
-    width: 90,
     margin: 6,
     display: 'flex',
     marginVertical: 5,
@@ -92,9 +96,9 @@ const styles = StyleSheet.create({
 
   location: {
     margin: 2,
-    fontSize: 14,
     color: Colors.white,
     marginHorizontal: 20,
+    fontSize: responsiveFontSize(1.8),
     fontWeight: Fonts.FontWeight.light,
     fontFamily: Fonts.FontFamily.light,
   },
@@ -107,9 +111,9 @@ const styles = StyleSheet.create({
   },
 
   loading: {
-    width: 100,
-    height: 100,
-    marginHorizontal: 130,
+    marginHorizontal: 90,
+    width: responsiveWidth(35),
+    height: responsiveHeight(18),
     backgroundColor: Colors.white,
   },
 
@@ -122,21 +126,21 @@ const styles = StyleSheet.create({
   },
 
   photo: {
-    width: 60,
-    height: 60,
+    width: responsiveWidth(18),
+    height: responsiveHeight(9),
   },
 
   font: {
-    fontSize: 16,
     color: Colors.white,
     textAlign: 'center',
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
   },
 
   font1: {
-    fontSize: 18,
     color: Colors.white,
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.light,
     fontFamily: Fonts.FontFamily.light,
   },
