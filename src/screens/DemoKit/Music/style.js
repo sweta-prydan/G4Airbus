@@ -3,6 +3,12 @@ import { StyleSheet } from 'react-native';
 //color
 import Colors from '../../../constants/color';
 
+//responsive
+import {
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -17,10 +23,10 @@ const styles = StyleSheet.create({
   },
 
   volume: {
-    width: 40,
-    height: 40,
-    marginVertical: 10,
+    marginVertical: 8,
     marginHorizontal: 300,
+    width: responsiveWidth(10),
+    height: responsiveHeight(5),
   },
 
   slider: {
@@ -29,19 +35,19 @@ const styles = StyleSheet.create({
   },
 
   track: {
-    height: 10,
-    width: 270,
-    borderRadius: 50,
+    borderRadius: 0,
+    width: responsiveHeight(36),
+    height: responsiveWidth(3),
     transform: [{ rotate: '-90deg' }],
     backgroundColor: Colors.transform2,
   },
 
   thumb: {
-    width: 30,
-    height: 30,
     borderWidth: 8,
     borderRadius: 80,
     borderColor: Colors.gray,
+    width: responsiveWidth(8),
+    height: responsiveHeight(4),
     backgroundColor: Colors.davyGrey,
   },
 
@@ -50,65 +56,55 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
 
-  down: {
-    paddingVertical: 20,
-  },
-
   button: {
     flexDirection: 'row',
     alignContent: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
   },
 
   button1: {
     flexDirection: 'row',
     alignContent: 'center',
-    justifyContent: 'center',
-  },
-
-  number: {
-    width: 100,
-    borderWidth: 3,
-    borderRadius: 5,
-    borderColor: Colors.black,
+    justifyContent: 'space-evenly',
   },
 
   childView: {
-    width: 350,
-    height: 580,
     borderRadius: 20,
-    marginVertical: 5,
     marginHorizontal: 5,
+    width: responsiveWidth(97),
+    height: responsiveHeight(75),
     backgroundColor: Colors.transform,
   },
 
   icon: {
-    width: 60,
-    height: 60,
+    width: responsiveWidth(16),
+    height: responsiveHeight(8),
   },
 
   secondrow: {
-    width: 60,
-    height: 60,
-    marginHorizontal: 3,
+    marginHorizontal: 2,
+    width: responsiveWidth(16),
+    height: responsiveHeight(8),
   },
 
   play: {
-    width: 80,
-    height: 80,
-    marginVertical: 10,
+    width: responsiveWidth(18.5),
+    height: responsiveHeight(9.5),
+    marginVertical: 6,
+    marginHorizontal: 6,
   },
 
   stop: {
-    width: 60,
-    height: 60,
     marginVertical: 20,
     marginHorizontal: 5,
+    width: responsiveWidth(12),
+    height: responsiveHeight(6),
   },
 
   group: {
-    width: 220,
     flexDirection: 'row',
+    width: responsiveWidth(51),
+    height: responsiveWidth(23),
   },
 });
 

@@ -3,6 +3,13 @@ import { StyleSheet } from 'react-native';
 //color
 import { Colors, Fonts } from '../../constants';
 
+//responsive
+import {
+  responsiveFontSize,
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   layer: {
     padding: 10,
@@ -17,14 +24,14 @@ const styles = StyleSheet.create({
   },
 
   symbol: {
-    width: 80,
-    height: 80,
+    width: responsiveWidth(20),
+    height: responsiveHeight(9.7),
   },
 
   text: {
-    fontSize: 16,
     color: Colors.white,
     marginHorizontal: 30,
+    fontSize: responsiveFontSize(2),
     fontFamily: Fonts.FontFamily.default,
     fontWeight: Fonts.FontWeight.regular,
   },
@@ -34,16 +41,16 @@ const styles = StyleSheet.create({
   },
 
   text1: {
-    fontSize: 18,
     color: Colors.white,
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
   },
 
   track: {
-    height: 10,
-    width: 200,
     borderRadius: 50,
+    height: responsiveHeight(1),
+    width: responsiveWidth(50),
     backgroundColor: Colors.bronze,
   },
 
@@ -52,10 +59,10 @@ const styles = StyleSheet.create({
   },
 
   thumb: {
-    width: 30,
-    height: 30,
     borderWidth: 7,
     borderRadius: 80,
+    width: responsiveWidth(10),
+    height: responsiveHeight(5),
     borderColor: Colors.white,
     backgroundColor: Colors.venetianRed,
   },

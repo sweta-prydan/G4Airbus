@@ -3,11 +3,18 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
+import {
+  responsiveFontSize,
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   layer: {
     padding: 10,
     opacity: 0.9,
-    borderRadius: 10,
+    borderRadius: 8,
     marginVertical: 3,
     textAlign: 'center',
     marginHorizontal: 3,
@@ -17,21 +24,21 @@ const styles = StyleSheet.create({
   },
 
   symbol: {
-    width: 80,
-    height: 80,
+    width: responsiveWidth(20),
+    height: responsiveHeight(9.7),
   },
 
   text: {
-    fontSize: 16,
     color: Colors.white,
     marginHorizontal: 30,
+    fontSize: responsiveFontSize(2),
     fontFamily: Fonts.FontFamily.semibold,
     fontWeight: Fonts.FontWeight.semibold,
   },
   icon: {
-    height: 50,
-    width: 100,
-    marginVertical: 10,
+    marginVertical: 8,
+    height: responsiveHeight(6),
+    width: responsiveWidth(24.5),
   },
 
   separator: {

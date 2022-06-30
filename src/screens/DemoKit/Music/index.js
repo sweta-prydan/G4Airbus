@@ -23,9 +23,10 @@ import styles from './style';
 import { Colors } from '../../../constants';
 
 const Music = ({ navigation }) => {
-  const [sliderValue, setSliderValue] = useState(100);
+  const [sliderValue, setSliderValue] = useState(0);
   const [istvEnabled, setIsTvEnabled] = useState(true);
   const [issimEnabled, setIsSimEnabled] = useState(true);
+  const [isstop, setIsStop] = useState(true);
   const [isradioEnabled, setIsRadioEnabled] = useState(true);
   const [ischromeEnabled, setIsChromeEnabled] = useState(true);
   const [isspeakerEnabled, setIsSpeakerEnabled] = useState(true);
@@ -35,7 +36,7 @@ const Music = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            navigation={navigation}
+            onPress={() => navigation.navigate('MusicSetting')}
             NavigationHeaderText="Music"
           />
         </View>
@@ -105,7 +106,7 @@ const Music = ({ navigation }) => {
                     <Slider
                       step={1}
                       minimumValue={0}
-                      maximumValue={100}
+                      maximumValue={0}
                       value={sliderValue}
                       style={styles.track}
                       minimumTrackTintColor={Colors.pearlAqua}
@@ -120,38 +121,34 @@ const Music = ({ navigation }) => {
 
                   <Image source={Images.volumemute} style={styles.volume} />
                 </View>
-                <View style={styles.down}>
-                  <View style={styles.button}>
-                    <Image source={Images.imgStop} style={styles.stop} />
 
-                    <View>
-                      <ImageBackground
-                        source={Images.layout}
-                        style={styles.group}>
-                        <Image source={Images.imgLeft} style={styles.stop} />
-                        <Image source={Images.imgPlay} style={styles.play} />
-                        <Image source={Images.imgRight} style={styles.stop} />
-                      </ImageBackground>
-                    </View>
+                <View style={styles.button}>
+                  <Image source={Images.imgStop} style={styles.stop} />
 
-                    <Image source={Images.imgStopque} style={styles.stop} />
-                  </View>
+                  <ImageBackground source={Images.layout} style={styles.group}>
+                    <Image source={Images.imgLeft} style={styles.stop} />
+                    <TouchableOpacity onPress={() => setIsStop(!isstop)}>
+                      <Image
+                        style={styles.play}
+                        source={isstop ? Images.imgPlay : Images.imgPause}
+                      />
+                    </TouchableOpacity>
+                    <Image source={Images.imgRight} style={styles.stop} />
+                  </ImageBackground>
 
-                  <View style={styles.separator} />
-                  <View style={styles.separator} />
-                  <View style={styles.separator} />
+                  <Image source={Images.imgStopque} style={styles.stop} />
+                </View>
 
-                  <View style={styles.button1}>
-                    <Image source={Images.imageup} style={styles.secondrow} />
-                    <Image source={Images.repeat} style={styles.secondrow} />
-                    <Image
-                      source={Images.imgPlayque}
-                      style={styles.secondrow}
-                    />
+                <View style={styles.separator} />
+                <View style={styles.separator} />
 
-                    <Image source={Images.imgPlus} style={styles.secondrow} />
-                    <Image source={Images.editQueue} style={styles.secondrow} />
-                  </View>
+                <View style={styles.button1}>
+                  <Image source={Images.imageup} style={styles.secondrow} />
+                  <Image source={Images.repeat} style={styles.secondrow} />
+                  <Image source={Images.imgPlayque} style={styles.secondrow} />
+
+                  <Image source={Images.imgPlus} style={styles.secondrow} />
+                  <Image source={Images.editQueue} style={styles.secondrow} />
                 </View>
               </View>
             </View>

@@ -3,6 +3,13 @@ import { StyleSheet, Dimensions } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
+import {
+  responsiveFontSize,
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   main: {
     alignItems: 'center',
@@ -19,15 +26,15 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    height: 40,
-    width: '60%',
-    fontSize: 16,
     borderRadius: 5,
     marginVertical: 10,
     color: Colors.white,
     textAlign: 'center',
     marginHorizontal: 20,
     justifyContent: 'center',
+    width: responsiveWidth(60),
+    height: responsiveHeight(5),
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
     backgroundColor: Colors.charlestonGreen,

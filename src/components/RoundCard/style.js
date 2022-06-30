@@ -3,13 +3,19 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
+import {
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   image: {
-    width: 120,
-    height: 120,
     borderWidth: 1,
     borderRadius: 100,
+    width: responsiveWidth(10),
     borderColor: Colors.white,
+    height: responsiveHeight(20),
   },
 
   text: {

@@ -11,9 +11,9 @@ import {
 
 const styles = StyleSheet.create({
   layer: {
-    padding: 8,
+    padding: 5,
     opacity: 0.9,
-    borderRadius: 10,
+    borderRadius: 8,
     flexDirection: 'row',
     textAlign: 'center',
     alignItems: 'center',
@@ -21,15 +21,15 @@ const styles = StyleSheet.create({
   },
 
   symbol: {
-    width: responsiveWidth(28),
-    height: responsiveHeight(14),
+    width: responsiveWidth(20),
+    height: responsiveHeight(9.7),
   },
 
   text: {
     marginVertical: 20,
     color: Colors.white,
     marginHorizontal: 20,
-    fontSize: responsiveFontSize(2.3),
+    fontSize: responsiveFontSize(2),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.bold,
   },
@@ -44,9 +44,10 @@ const styles = StyleSheet.create({
   button: {
     elevation: 3,
     borderWidth: 3,
-    paddingHorizontal: 10,
-    paddingVertical: 10,
     alignItems: 'center',
+    justifyContent: 'center',
+    width: responsiveWidth(18),
+    height: responsiveHeight(6),
     borderColor: Colors.darkJungleGreen,
     backgroundColor: Colors.charlestonGreen,
   },

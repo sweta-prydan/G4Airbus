@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
 
   header: {
     color: Colors.white,
-    marginHorizontal: 70,
-    fontSize: responsiveFontSize(2.8),
+    marginHorizontal: 50,
+    fontSize: responsiveFontSize(3),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.black,
   },

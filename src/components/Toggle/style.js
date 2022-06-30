@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
 import {
   responsiveHeight,
   responsiveWidth,
@@ -16,14 +17,14 @@ const styles = StyleSheet.create({
 
   text: {
     color: Colors.white,
-    fontSize: responsiveFontSize(2.5),
+    fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
   },
 
   track: {
-    height: 10,
     borderRadius: 50,
+    height: responsiveHeight(1),
     backgroundColor: Colors.transform,
   },
 

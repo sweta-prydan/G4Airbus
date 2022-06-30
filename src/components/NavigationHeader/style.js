@@ -3,19 +3,26 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
+import {
+  responsiveFontSize,
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   menuView: {
-    height: 60,
     padding: 8,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    height: responsiveHeight(8),
     backgroundColor: Colors.black,
   },
 
   icon: {
-    width: 30,
-    height: 30,
+    width: responsiveWidth(8),
+    height: responsiveHeight(4),
   },
 
   separator: {
@@ -23,16 +30,16 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    fontSize: 20,
     color: Colors.white,
     marginHorizontal: 40,
+    fontSize: responsiveFontSize(3),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.bold,
   },
 
   text: {
-    fontSize: 18,
     color: Colors.white,
+    fontSize: responsiveFontSize(2),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.regular,
   },

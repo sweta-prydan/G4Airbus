@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
 import {
   responsiveHeight,
   responsiveWidth,
@@ -24,14 +25,14 @@ const styles = StyleSheet.create({
   },
 
   symbol: {
-    width: responsiveWidth(10),
-    height: responsiveHeight(5),
+    width: responsiveWidth(12.8),
+    height: responsiveHeight(5.9),
   },
 
   text: {
     padding: 15,
     color: Colors.white,
-    fontSize: responsiveFontSize(2.2),
+    fontSize: responsiveFontSize(2),
     fontFamily: Fonts.FontFamily.semibold,
     fontWeight: Fonts.FontWeight.semibold,
   },

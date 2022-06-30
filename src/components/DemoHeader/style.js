@@ -3,18 +3,25 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
+import {
+  responsiveFontSize,
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   menuView: {
-    height: 60,
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'center',
+    height: responsiveHeight(8),
     backgroundColor: Colors.transform3,
   },
 
   icon: {
-    width: 30,
-    height: 30,
+    width: responsiveWidth(8),
+    height: responsiveHeight(4),
   },
 
   separator: {
@@ -22,9 +29,9 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    fontSize: 20,
     color: Colors.white,
     marginHorizontal: 40,
+    fontSize: responsiveFontSize(3),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.black,
   },

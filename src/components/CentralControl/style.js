@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
 import {
   responsiveHeight,
   responsiveWidth,
@@ -19,11 +20,11 @@ const styles = StyleSheet.create({
 
   childView: {
     padding: 20,
-    borderRadius: 20,
+    borderRadius: 15,
     marginVertical: 5,
     marginHorizontal: 5,
     width: responsiveWidth(97),
-    height: responsiveHeight(50),
+    height: responsiveHeight(40),
     backgroundColor: Colors.transform,
   },
 
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     marginHorizontal: 5,
     color: Colors.white,
-    fontSize: responsiveFontSize(3),
+    fontSize: responsiveFontSize(2.5),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.regular,
   },

@@ -16,8 +16,8 @@ const Curtain = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            navigation={navigation}
             NavigationHeaderText="Curtain"
+            onPress={() => navigation.navigate('CurtainSetting')}
           />
         </View>
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import {
   Text,
-  TouchableOpacity,
   View,
-  ImageBackground,
   Image,
+  ImageBackground,
+  TouchableOpacity,
 } from 'react-native';
 
 //style

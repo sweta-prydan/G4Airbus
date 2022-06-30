@@ -37,4 +37,6 @@ export { default as DatabaseSettingScreen } from './DatabaseSetting';
 export { default as RGBWSetting } from './DemoKit/RGBW/RGBW Setting';
 export { default as GlobalNetworkScreen } from './GlobalNetworkSetting';
 export { default as LightSetting } from './DemoKit/Light/Light Setting';
+export { default as MusicSetting } from './DemoKit/Music/Music Setting';
+export { default as CurtainSetting } from './DemoKit/Curtain/Curtain Setting';
 export { default as SchedulingDropScreen } from './Scheduling/Schedulinginner';

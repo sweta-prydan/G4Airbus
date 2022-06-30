@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
 import {
   responsiveHeight,
   responsiveWidth,
@@ -63,6 +64,7 @@ const styles = StyleSheet.create({
     width: responsiveWidth(13),
     height: responsiveHeight(6),
   },
+
   arrow: {
     marginVertical: 30,
     marginHorizontal: 250,

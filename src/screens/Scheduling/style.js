@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    marginVertical: 500,
+    marginTop: 500,
     marginHorizontal: 120,
   },
 });

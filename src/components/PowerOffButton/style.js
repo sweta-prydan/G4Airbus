@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 
+//responsive
 import {
   responsiveHeight,
   responsiveWidth,
@@ -9,8 +10,8 @@ const styles = StyleSheet.create({
   icon: {
     marginVertical: 15,
     marginHorizontal: 60,
-    width: responsiveWidth(15),
-    height: responsiveHeight(7),
+    width: responsiveWidth(16.5),
+    height: responsiveHeight(8),
   },
 });
 export default styles;

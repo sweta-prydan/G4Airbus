@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
   },
 
   number: {
-    borderWidth: 3,
-    borderRadius: 5,
+    borderWidth: 2,
+    borderRadius: 8,
     width: responsiveWidth(30),
     borderColor: Colors.black,
   },

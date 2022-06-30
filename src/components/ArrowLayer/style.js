@@ -3,6 +3,13 @@ import { StyleSheet } from 'react-native';
 //color
 import { Colors, Fonts } from '../../constants';
 
+//responsive
+import {
+  responsiveFontSize,
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   layer: {
     padding: 8,
@@ -15,15 +22,15 @@ const styles = StyleSheet.create({
   },
 
   symbol: {
-    width: 100,
-    height: 100,
+    width: responsiveWidth(30.8),
+    height: responsiveHeight(15),
   },
 
   text: {
-    fontSize: 16,
     marginVertical: 40,
     color: Colors.white,
-    marginHorizontal: 30,
+    marginHorizontal: 20,
+    fontSize: responsiveFontSize(2),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.bold,
   },

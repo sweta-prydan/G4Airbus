@@ -3,15 +3,22 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
+import {
+  responsiveFontSize,
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
 
   logo: {
-    margin: 50,
-    width: 100,
-    height: 100,
+    margin: 20,
+    width: responsiveWidth(30),
+    height: responsiveHeight(14.5),
   },
 
   contain: {
@@ -20,8 +27,8 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    fontSize: 30,
     color: Colors.white,
+    fontSize: responsiveFontSize(4),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.black,
   },

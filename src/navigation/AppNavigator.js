@@ -24,11 +24,13 @@ import {
   Demokitzone,
   LightScreen,
   SplashScreen,
+  MusicSetting,
   LightSetting,
   SettingScreen,
   CurtainScreen,
   SecurityScreen,
   AlaramVCScreen,
+  CurtainSetting,
   ByBrowserScreen,
   IrrigationScreen,
   SchedulingScreen,
@@ -128,8 +130,10 @@ const AppNavigator = () => {
         <Stack.Screen name="LightScreen" component={LightScreen} />
         <Stack.Screen name="RGBWSetting" component={RGBWSetting} />
         <Stack.Screen name="LightSetting" component={LightSetting} />
+        <Stack.Screen name="MusicSetting" component={MusicSetting} />
         <Stack.Screen name="CurtainScreen" component={CurtainScreen} />
         <Stack.Screen name="SecurityScreen" component={SecurityScreen} />
+        <Stack.Screen name="CurtainSetting" component={CurtainSetting} />
         <Stack.Screen name="AlaramVCScreen" component={AlaramVCScreen} />
         <Stack.Screen name="IrrigationScreen" component={IrrigationScreen} />
         <Stack.Screen name="SchedulingScreen" component={SchedulingScreen} />

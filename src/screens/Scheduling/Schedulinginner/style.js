@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
 
   main: {
-    marginVertical: 330,
+    marginTop: 330,
   },
 
   row: {
