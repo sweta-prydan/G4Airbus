@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
   layer: {
     padding: 8,
     opacity: 0.9,
+    borderRadius: 8,
     textAlign: 'center',
     alignItems: 'center',
     flexDirection: 'row',

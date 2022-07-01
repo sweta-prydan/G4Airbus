@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
 
   text: {
-    padding: 15,
+    padding: 8,
     color: Colors.white,
     fontSize: responsiveFontSize(2),
     fontFamily: Fonts.FontFamily.semibold,

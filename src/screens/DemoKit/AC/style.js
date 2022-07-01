@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
 
   temp: {
     marginHorizontal: 90,
-    width: responsiveWidth(41),
+    width: responsiveWidth(41.2),
     height: responsiveHeight(50),
   },
 });
