@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   },
 
   Head: {
-    // zIndex: 1,
+    zIndex: 1,
     marginStart: 0,
     position: 'absolute',
     justifyContent: 'center',
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     paddingVertical: 7,
     color: Colors.white,
-    // borderRadius: 100,
+    borderRadius: 50,
     borderBottomLeftRadius: 0,
     borderBottomStartRadius: 400,
     borderTopEndRadius: 400,
@@ -115,8 +115,8 @@ const styles = StyleSheet.create({
 
   star: {
     marginVertical: 100,
-    width: responsiveWidth(40),
-    height: responsiveHeight(20),
+    width: responsiveWidth(36),
+    height: responsiveHeight(17.5),
   },
 
   modalView: {

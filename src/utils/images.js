@@ -265,6 +265,10 @@ const images = {
   layout: require('../assets/images/layout.png'),
   //temperatureCool
   temperatureCool: require('../assets/images/tmpcher_cool.png'),
+  //grayuncheck
+  grayUncheck: require('../assets/images/unchecked.png'),
+  // graycheck
+  grayCheck: require('../assets/images/checked.png'),
 };
 
 export default images;

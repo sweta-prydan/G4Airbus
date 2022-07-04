@@ -4,7 +4,7 @@ import {
   Ac,
   Dmx,
   Fan,
-  Mood,
+  Moods,
   RGBW,
   Light,
   Music,
@@ -131,7 +131,7 @@ function MyTabs() {
 
       <Tab.Screen
         name="tab7"
-        component={Mood}
+        component={Moods}
         options={{
           tabBarIcon: ({ focus }) => (
             <Image
@@ -163,7 +163,7 @@ function MyTabs() {
 
       <Tab.Screen
         name="tab9"
-        component={Mood}
+        component={Moods}
         options={{
           tabBarIcon: ({ focus }) => (
             <Image

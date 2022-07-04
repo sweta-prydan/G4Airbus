@@ -64,8 +64,8 @@ const Demokitzone = ({ navigation }) => {
             <View style={styles.main}>
               <Layer
                 Icon={Images.mood}
-                layerText={'Modes'}
-                onPress={() => navigation.navigate('Mood')}
+                layerText={'Moods'}
+                onPress={() => navigation.navigate('Moods')}
               />
 
               <Layer

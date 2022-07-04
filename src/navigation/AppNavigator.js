@@ -4,8 +4,8 @@ import {
   Fan,
   Dmx,
   RGBW,
-  Mood,
   Media,
+  Moods,
   Music,
   Light,
   Camera,
@@ -24,6 +24,7 @@ import {
   Demokitzone,
   LightScreen,
   SplashScreen,
+  MoodSetting,
   MusicSetting,
   LightSetting,
   SettingScreen,
@@ -85,7 +86,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Fan" component={Fan} />
         <Stack.Screen name="Dmx" component={Dmx} />
         <Stack.Screen name="Rgbw" component={RGBW} />
-        <Stack.Screen name="Mood" component={Mood} />
+        <Stack.Screen name="Moods" component={Moods} />
         <Stack.Screen name="Light" component={Light} />
         <Stack.Screen name="Music" component={Music} />
         <Stack.Screen name="Media" component={Media} />
@@ -129,6 +130,7 @@ const AppNavigator = () => {
         <Stack.Screen name="MusicScreen" component={MusicScreen} />
         <Stack.Screen name="LightScreen" component={LightScreen} />
         <Stack.Screen name="RGBWSetting" component={RGBWSetting} />
+        <Stack.Screen name="MoodSetting" component={MoodSetting} />
         <Stack.Screen name="LightSetting" component={LightSetting} />
         <Stack.Screen name="MusicSetting" component={MusicSetting} />
         <Stack.Screen name="CurtainScreen" component={CurtainScreen} />

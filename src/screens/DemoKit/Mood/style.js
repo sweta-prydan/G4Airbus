@@ -1,4 +1,8 @@
 import { StyleSheet } from 'react-native';
+import {
+  responsiveHeight,
+  responsiveWidth,
+} from 'react-native-responsive-dimensions';
 
 //color
 import Colors from '../../../constants/color';
@@ -13,34 +17,16 @@ const styles = StyleSheet.create({
   },
 
   separator: {
-    marginVertical: 5,
-  },
-
-  main: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-
-  button: {
-    margin: 10,
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-  },
-
-  number: {
-    width: 100,
-    borderWidth: 3,
-    borderRadius: 5,
-    borderColor: Colors.black,
+    marginVertical: 260,
   },
 
   childView: {
-    width: 350,
-    height: 550,
     padding: 20,
     borderRadius: 20,
     marginVertical: 5,
     marginHorizontal: 5,
+    width: responsiveWidth(97),
+    height: responsiveHeight(85),
     backgroundColor: Colors.transform,
   },
 });

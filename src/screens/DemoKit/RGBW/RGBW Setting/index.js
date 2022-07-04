@@ -26,7 +26,7 @@ const RGBWSetting = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <CentralHeader
-            headerText={'RGBWSetting'}
+            headerText={'RGBW Setting'}
             navigation={() => {
               navigation.goBack(null);
             }}

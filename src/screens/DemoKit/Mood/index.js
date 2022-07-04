@@ -8,9 +8,9 @@ import styles from './style';
 import Images from '../../../utils/images';
 
 //Components
-import { ScreenLayer, NavigationHeader } from '../../../components';
+import { NavigationHeader, Button } from '../../../components';
 
-const Mood = ({ navigation }) => {
+const Moods = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <ImageBackground source={Images.background} style={styles.image}>
@@ -18,16 +18,16 @@ const Mood = ({ navigation }) => {
           <NavigationHeader
             navigation={navigation}
             NavigationHeaderText="Mood"
+            onPress={() => navigation.navigate('MoodSetting')}
           />
         </View>
+
         <SafeAreaView style={styles.container}>
           <ScrollView style={styles.container}>
             <View style={styles.childView}>
-              <View>
-                <View style={styles.separator} />
+              <View style={styles.separator} />
 
-                <ScreenLayer />
-              </View>
+              <Button buttonText={'record Mood'} />
             </View>
           </ScrollView>
         </SafeAreaView>
@@ -35,4 +35,4 @@ const Mood = ({ navigation }) => {
     </View>
   );
 };
-export default Mood;
+export default Moods;
