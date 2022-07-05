@@ -30,6 +30,7 @@ export { default as IrrigationScreen } from './Irrigation';
 export { default as ByFtpServerScreen } from './ByFtpServer';
 export { default as Irrigation } from './DemoKit/Irrigation';
 export { default as ACSetting } from './DemoKit/AC/AC Setting';
+export { default as FanSetting } from './DemoKit/Fan/Fan Setting';
 export { default as DMXSetting } from './DemoKit/DMX/DMX Setting';
 export { default as CentralControlScreen } from './CentralControl';
 export { default as LanguageSettingScreen } from './LanguageSetting';

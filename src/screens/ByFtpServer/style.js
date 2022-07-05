@@ -3,9 +3,10 @@ import { StyleSheet, Dimensions } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
 import {
-  responsiveHeight,
   responsiveWidth,
+  responsiveHeight,
   responsiveFontSize,
 } from 'react-native-responsive-dimensions';
 
@@ -24,7 +25,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginVertical: 3,
     marginHorizontal: 6,
-    width: responsiveWidth(96),
     height: responsiveHeight(35),
     backgroundColor: Colors.transform,
   },
@@ -104,7 +104,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginVertical: 3,
     marginHorizontal: 6,
-    width: responsiveWidth(96),
     height: responsiveHeight(25),
     backgroundColor: Colors.transform,
   },
@@ -115,7 +114,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginVertical: 3,
     marginHorizontal: 6,
-    width: responsiveWidth(97),
     height: responsiveHeight(26),
     backgroundColor: Colors.transform,
   },

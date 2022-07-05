@@ -5,8 +5,8 @@ import { Colors, Fonts } from '../../constants';
 
 //responsive
 import {
-  responsiveHeight,
   responsiveWidth,
+  responsiveHeight,
   responsiveFontSize,
 } from 'react-native-responsive-dimensions';
 

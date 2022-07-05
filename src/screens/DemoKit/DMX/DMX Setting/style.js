@@ -3,9 +3,10 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Fonts, Colors } from '../../../../constants';
 
+//responsive
 import {
-  responsiveHeight,
   responsiveWidth,
+  responsiveHeight,
   responsiveFontSize,
 } from 'react-native-responsive-dimensions';
 
@@ -41,7 +42,6 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 20,
     marginHorizontal: 5,
-    width: responsiveWidth(97),
     height: responsiveHeight(50),
     backgroundColor: Colors.transform,
   },

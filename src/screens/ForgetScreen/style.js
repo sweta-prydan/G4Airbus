@@ -1,5 +1,9 @@
 import { StyleSheet } from 'react-native';
+
+//constants
 import { Colors, Fonts } from '../../constants';
+
+//responsive
 import {
   responsiveWidth,
   responsiveFontSize,
@@ -18,7 +22,6 @@ const styles = StyleSheet.create({
     marginVertical: 6,
     borderRadius: 20,
     marginHorizontal: 6,
-    width: responsiveWidth(97),
     backgroundColor: Colors.transform,
   },
 
@@ -31,7 +34,7 @@ const styles = StyleSheet.create({
   input: {
     marginVertical: 30,
     marginHorizontal: 30,
-    width: responsiveWidth(80),
+    width: responsiveWidth(70),
   },
 
   inputStyle: {

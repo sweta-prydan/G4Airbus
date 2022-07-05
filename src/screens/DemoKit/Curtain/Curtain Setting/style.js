@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 //Fonts
 import Fonts from '../../../../constants/fonts';
 
+//responsive
 import {
   responsiveHeight,
   responsiveWidth,
@@ -55,8 +56,8 @@ const styles = StyleSheet.create({
   },
 
   row1: {
-    flexDirection: 'row',
     textAlign: 'center',
+    flexDirection: 'row',
     justifyContent: 'center',
   },
 

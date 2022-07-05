@@ -1,5 +1,12 @@
 import { StyleSheet } from 'react-native';
 
+//responsive
+import {
+  responsiveWidth,
+  responsiveHeight,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
+
 //constants
 import { Fonts, Colors } from '../../constants';
 
@@ -12,22 +19,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  menuView: {
-    height: 60,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: Colors.black,
-  },
-
-  header: {
-    fontSize: 16,
-    color: Colors.white,
-    marginHorizontal: 120,
-    fontFamily: Fonts.FontFamily.light,
-    fontWeight: Fonts.FontWeight.light,
-  },
-
   main: {
     alignItems: 'center',
     flexDirection: 'row',
@@ -35,45 +26,49 @@ const styles = StyleSheet.create({
   },
 
   layer: {
-    width: 180,
-    height: 120,
-    padding: 40,
-    marginHorizontal: 20,
+    marginVertical: 20,
+    marginHorizontal: 50,
+    width: responsiveWidth(40),
+    height: responsiveHeight(15),
   },
 
   layer2: {
-    width: 180,
-    height: 120,
-    padding: 40,
     marginVertical: 20,
-    marginHorizontal: 20,
-  },
-
-  icon: {
-    width: 35,
-    height: 35,
+    marginHorizontal: 30,
+    width: responsiveWidth(35),
+    height: responsiveHeight(15),
   },
 
   text: {
-    fontSize: 16,
     marginVertical: 4,
     color: Colors.white,
     marginHorizontal: 12,
+    fontSize: responsiveFontSize(2.5),
     fontFamily: Fonts.FontFamily.light,
     fontWeight: Fonts.FontWeight.light,
   },
 
   text2: {
-    fontSize: 16,
     marginHorizontal: 4,
     color: Colors.white,
+    fontSize: responsiveFontSize(2.5),
     fontFamily: Fonts.FontFamily.light,
     fontWeight: Fonts.FontWeight.light,
   },
 
   symbol: {
-    width: 80,
-    height: 80,
+    width: 100,
+    height: 120,
+  },
+
+  symbol1: {
+    width: 100,
+    height: 100,
+  },
+
+  symbol2: {
+    width: 85,
+    height: 120,
   },
 
   separator: {
@@ -81,32 +76,7 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    width: 150,
-  },
-
-  description: {
-    fontSize: 20,
-    marginVertical: 180,
-    color: Colors.white,
-    marginHorizontal: 10,
-    fontFamily: Fonts.FontFamily.semibold,
-    fontWeight: Fonts.FontWeight.semiboldbold,
-  },
-
-  edit: {
-    width: '60%',
-    borderRadius: 5,
-    backgroundColor: Colors.white,
-  },
-
-  input: {
-    padding: 3,
-    fontSize: 18,
-    borderRadius: 5,
-    backgroundColor: Colors.white,
-    color: Colors.charlestonGreen,
-    fontFamily: Fonts.FontFamily.default,
-    fontWeight: Fonts.FontWeight.medium,
+    width: responsiveWidth(30),
   },
 });
 export default styles;

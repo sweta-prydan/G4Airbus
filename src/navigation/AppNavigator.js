@@ -21,6 +21,7 @@ import {
   Irrigation,
   MusicScreen,
   RGBWSetting,
+  FanSetting,
   Demokitzone,
   LightScreen,
   SplashScreen,
@@ -127,6 +128,7 @@ const AppNavigator = () => {
         <Stack.Screen name="HVACScreen" component={HVACScreen} />
         <Stack.Screen name="RGBWScreen" component={RGBWScreen} />
         <Stack.Screen name="DMXSetting" component={DMXSetting} />
+        <Stack.Screen name="FanSetting" component={FanSetting} />
         <Stack.Screen name="MusicScreen" component={MusicScreen} />
         <Stack.Screen name="LightScreen" component={LightScreen} />
         <Stack.Screen name="RGBWSetting" component={RGBWSetting} />

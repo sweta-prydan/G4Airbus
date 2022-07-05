@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
   Image,
+  Modal,
   ScrollView,
   SafeAreaView,
   ImageBackground,
@@ -19,15 +20,17 @@ import { Button, CentralHeader, Input } from '../../../../components';
 import styles from './style';
 
 const MoodSetting = ({ navigation }) => {
-  const [isDmx, setDmx] = React.useState(false);
-  const [isHvac, setHvac] = React.useState(false);
-  const [isRgbw, setRgbw] = React.useState(false);
-  const [title, onChangeTitle] = React.useState();
-  const [isLight, setLight] = React.useState(false);
-  const [isAudio, setAudio] = React.useState(false);
-  const [isCamera, setCamera] = React.useState(false);
-  const [isCurtain, setCurtain] = React.useState(false);
-  const [isIrrigation, setIrrigation] = React.useState(false);
+  const [isDmx, setDmx] = useState(false);
+  const [isHvac, setHvac] = useState(false);
+  const [isRgbw, setRgbw] = useState(false);
+
+  const [title, onChangeTitle] = useState();
+  const [isLight, setLight] = useState(false);
+  const [isAudio, setAudio] = useState(false);
+  const [isCamera, setCamera] = useState(false);
+  const [isCurtain, setCurtain] = useState(false);
+  const [isIrrigation, setIrrigation] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
 
   return (
     <View style={styles.container}>
@@ -47,8 +50,8 @@ const MoodSetting = ({ navigation }) => {
             <View style={styles.row}>
               <TouchableOpacity onPress={setLight}>
                 <Image
-                  source={!isLight ? Images.grayUncheck : Images.grayCheck}
                   style={styles.checkbox}
+                  source={!isLight ? Images.grayUncheck : Images.grayCheck}
                 />
               </TouchableOpacity>
 
@@ -56,8 +59,8 @@ const MoodSetting = ({ navigation }) => {
 
               <TouchableOpacity onPress={setHvac}>
                 <Image
-                  source={!isHvac ? Images.grayUncheck : Images.grayCheck}
                   style={styles.checkbox}
+                  source={!isHvac ? Images.grayUncheck : Images.grayCheck}
                 />
               </TouchableOpacity>
 
@@ -67,8 +70,8 @@ const MoodSetting = ({ navigation }) => {
             <View style={styles.row}>
               <TouchableOpacity onPress={setAudio}>
                 <Image
-                  source={!isAudio ? Images.grayUncheck : Images.grayCheck}
                   style={styles.checkbox}
+                  source={!isAudio ? Images.grayUncheck : Images.grayCheck}
                 />
               </TouchableOpacity>
 
@@ -76,8 +79,8 @@ const MoodSetting = ({ navigation }) => {
 
               <TouchableOpacity onPress={setCurtain}>
                 <Image
-                  source={!isCurtain ? Images.grayUncheck : Images.grayCheck}
                   style={styles.checkbox}
+                  source={!isCurtain ? Images.grayUncheck : Images.grayCheck}
                 />
               </TouchableOpacity>
 
@@ -87,8 +90,8 @@ const MoodSetting = ({ navigation }) => {
             <View style={styles.row}>
               <TouchableOpacity onPress={setIrrigation}>
                 <Image
-                  source={!isIrrigation ? Images.grayUncheck : Images.grayCheck}
                   style={styles.checkbox}
+                  source={!isIrrigation ? Images.grayUncheck : Images.grayCheck}
                 />
               </TouchableOpacity>
 
@@ -96,8 +99,8 @@ const MoodSetting = ({ navigation }) => {
 
               <TouchableOpacity onPress={setDmx}>
                 <Image
-                  source={!isDmx ? Images.grayUncheck : Images.grayCheck}
                   style={styles.checkbox}
+                  source={!isDmx ? Images.grayUncheck : Images.grayCheck}
                 />
               </TouchableOpacity>
 
@@ -109,8 +112,8 @@ const MoodSetting = ({ navigation }) => {
             <View style={styles.row}>
               <TouchableOpacity onPress={setRgbw}>
                 <Image
-                  source={!isRgbw ? Images.grayUncheck : Images.grayCheck}
                   style={styles.checkbox}
+                  source={!isRgbw ? Images.grayUncheck : Images.grayCheck}
                 />
               </TouchableOpacity>
 
@@ -118,8 +121,8 @@ const MoodSetting = ({ navigation }) => {
 
               <TouchableOpacity onPress={setCamera}>
                 <Image
-                  source={!isCamera ? Images.grayUncheck : Images.grayCheck}
                   style={styles.checkbox}
+                  source={!isCamera ? Images.grayUncheck : Images.grayCheck}
                 />
               </TouchableOpacity>
 
@@ -134,7 +137,35 @@ const MoodSetting = ({ navigation }) => {
 
               <View style={styles.separator}>
                 <Image source={Images.logo} style={styles.icon} />
-                <Button style={styles.button} buttonText={'Record Mood'} />
+
+                <Modal
+                  transparent={true}
+                  animationType="slide"
+                  visible={modalVisible}
+                  onRequestClose={() => {
+                    setModalVisible(!modalVisible);
+                  }}>
+                  <View style={styles.centeredView}>
+                    <View style={styles.modalView}>
+                      <View>
+                        <View style={styles.edit}>
+                          <Text>1. One device should be chosen atleast </Text>
+                        </View>
+                        <View style={styles.edit}>
+                          <Text>2. Mood Name cannot be empty</Text>
+                        </View>
+                        <View style={styles.edit}>
+                          <Text>3. Mood Name must be unique</Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </Modal>
+
+                <Button
+                  buttonText={'Record Mood'}
+                  onPress={() => setModalVisible(true)}
+                />
               </View>
             </View>
           </ScrollView>

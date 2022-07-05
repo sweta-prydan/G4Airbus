@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 //color
 import { Colors, Fonts } from '../../constants';
 
+//responsive
 import {
   responsiveHeight,
   responsiveWidth,
@@ -89,8 +90,8 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    width: responsiveWidth(40),
     marginHorizontal: 50,
+    width: responsiveWidth(40),
   },
 
   description: {
@@ -110,10 +111,10 @@ const styles = StyleSheet.create({
 
   input: {
     padding: 3,
-    fontSize: responsiveFontSize(2.4),
     borderRadius: 5,
     color: Colors.charlestonGreen,
     backgroundColor: Colors.white,
+    fontSize: responsiveFontSize(2.4),
     fontWeight: Fonts.FontWeight.regular,
     fontFamily: Fonts.FontFamily.default,
   },

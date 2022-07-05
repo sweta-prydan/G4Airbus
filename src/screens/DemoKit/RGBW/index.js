@@ -20,6 +20,7 @@ const RGBW = ({ navigation }) => {
             onPress={() => navigation.navigate('RGBWSetting')}
           />
         </View>
+
         <SafeAreaView style={styles.container}>
           <ScrollView style={styles.container}>
             <View>

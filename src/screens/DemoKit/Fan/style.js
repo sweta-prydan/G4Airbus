@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 //color
 import { Colors, Fonts } from '../../../constants';
 
+//responsive
 import {
   responsiveHeight,
   responsiveWidth,
@@ -46,8 +47,8 @@ const styles = StyleSheet.create({
 
   track: {
     borderRadius: 50,
-    height: responsiveHeight(1),
     width: responsiveWidth(30),
+    height: responsiveHeight(1),
     backgroundColor: Colors.transform,
   },
 
@@ -84,7 +85,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginVertical: 5,
     marginHorizontal: 5,
-    width: responsiveWidth(97),
     height: responsiveHeight(70),
     backgroundColor: Colors.transform,
   },

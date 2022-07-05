@@ -3,9 +3,10 @@ import { StyleSheet } from 'react-native';
 //Fonts
 import Fonts from '../../../../constants/fonts';
 
+//responsive
 import {
-  responsiveHeight,
   responsiveWidth,
+  responsiveHeight,
   responsiveFontSize,
 } from 'react-native-responsive-dimensions';
 
@@ -38,9 +39,9 @@ const styles = StyleSheet.create({
 
   icon: {
     marginVertical: 10,
-    marginHorizontal: 30,
+    marginHorizontal: 140,
     width: responsiveWidth(20),
-    height: responsiveHeight(10),
+    height: responsiveHeight(9.6),
   },
 
   title: {

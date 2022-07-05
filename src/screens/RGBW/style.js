@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 //color
 import Colors from '../../constants/color';
 
+//responsive
 import {
   responsiveHeight,
   responsiveWidth,
@@ -58,9 +59,9 @@ const styles = StyleSheet.create({
   },
 
   cancel: {
+    marginVertical: 20,
     width: responsiveWidth(10),
     height: responsiveHeight(5),
-    marginVertical: 20,
   },
 });
 

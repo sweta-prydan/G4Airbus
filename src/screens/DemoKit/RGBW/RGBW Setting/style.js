@@ -1,4 +1,8 @@
 import { StyleSheet } from 'react-native';
+import {
+  responsiveWidth,
+  responsiveHeight,
+} from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -14,10 +18,10 @@ const styles = StyleSheet.create({
   },
 
   icon: {
-    width: 50,
-    height: 50,
-    marginHorizontal: 40,
     marginVertical: 10,
+    marginHorizontal: 140,
+    width: responsiveWidth(20),
+    height: responsiveHeight(9.6),
   },
 });
 

@@ -3,9 +3,10 @@ import { StyleSheet } from 'react-native';
 //constants
 import { Colors, Fonts } from '../../constants';
 
+//responsive
 import {
-  responsiveHeight,
   responsiveWidth,
+  responsiveHeight,
   responsiveFontSize,
 } from 'react-native-responsive-dimensions';
 
@@ -38,8 +39,8 @@ const styles = StyleSheet.create({
 
   home: {
     marginHorizontal: 100,
-    height: responsiveHeight(5),
     width: responsiveWidth(10),
+    height: responsiveHeight(5),
   },
 
   theme: {
@@ -97,12 +98,12 @@ const styles = StyleSheet.create({
     color: Colors.white,
     borderRadius: 50,
     borderBottomLeftRadius: 0,
-    borderBottomStartRadius: 400,
     borderTopEndRadius: 400,
     borderTopLeftRadius: 0,
     transform: [{ scaleX: 1 }],
     width: responsiveWidth(90),
     height: responsiveHeight(4),
+    borderBottomStartRadius: 400,
     fontSize: responsiveFontSize(2),
     fontWeight: Fonts.FontWeight.bold,
     fontFamily: Fonts.FontFamily.bold,

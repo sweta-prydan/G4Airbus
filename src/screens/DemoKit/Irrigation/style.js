@@ -3,10 +3,8 @@ import { StyleSheet } from 'react-native';
 //colors
 import { Colors } from '../../../constants';
 
-import {
-  responsiveHeight,
-  responsiveWidth,
-} from 'react-native-responsive-dimensions';
+//responsive
+import { responsiveHeight } from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -39,7 +37,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginVertical: 5,
     marginHorizontal: 5,
-    width: responsiveWidth(97),
     height: responsiveHeight(70),
     backgroundColor: Colors.transform,
   },

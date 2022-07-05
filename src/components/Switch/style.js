@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 
 //constants
 import { Colors, Fonts } from '../../constants';
+
 //responsive
 import { responsiveFontSize } from 'react-native-responsive-dimensions';
 

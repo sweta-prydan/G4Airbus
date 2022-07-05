@@ -27,10 +27,13 @@ const Fan = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            navigation={navigation}
-            NavigationHeaderText="     Fan     "
+            onPress={() => {
+              navigation.navigate('FanSetting');
+            }}
+            NavigationHeaderText="   Fan   "
           />
         </View>
+
         <SafeAreaView style={styles.container}>
           <ScrollView style={styles.container}>
             <View>

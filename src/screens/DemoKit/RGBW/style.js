@@ -1,5 +1,8 @@
 import { StyleSheet } from 'react-native';
 
+//responsive
+import { responsiveHeight } from 'react-native-responsive-dimensions';
+
 //color
 import Colors from '../../../constants/color';
 
@@ -28,19 +31,17 @@ const styles = StyleSheet.create({
   },
 
   number: {
-    width: 100,
     borderWidth: 3,
     borderRadius: 5,
     borderColor: Colors.black,
   },
 
   childView: {
-    width: 350,
     padding: 20,
-    height: 550,
     borderRadius: 20,
     marginVertical: 5,
     marginHorizontal: 5,
+    height: responsiveHeight(70),
     backgroundColor: Colors.transform,
   },
 });

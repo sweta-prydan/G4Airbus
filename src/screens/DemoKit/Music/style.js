@@ -5,8 +5,8 @@ import Colors from '../../../constants/color';
 
 //responsive
 import {
-  responsiveHeight,
   responsiveWidth,
+  responsiveHeight,
 } from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
@@ -36,8 +36,8 @@ const styles = StyleSheet.create({
 
   track: {
     borderRadius: 0,
-    width: responsiveHeight(36),
     height: responsiveWidth(3),
+    width: responsiveHeight(36),
     transform: [{ rotate: '-90deg' }],
     backgroundColor: Colors.transform2,
   },
@@ -71,7 +71,6 @@ const styles = StyleSheet.create({
   childView: {
     borderRadius: 20,
     marginHorizontal: 5,
-    width: responsiveWidth(97),
     height: responsiveHeight(75),
     backgroundColor: Colors.transform,
   },
@@ -88,10 +87,10 @@ const styles = StyleSheet.create({
   },
 
   play: {
-    width: responsiveWidth(18.5),
-    height: responsiveHeight(9.5),
     marginVertical: 6,
     marginHorizontal: 6,
+    width: responsiveWidth(18.5),
+    height: responsiveHeight(9.5),
   },
 
   stop: {

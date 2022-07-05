@@ -27,7 +27,10 @@ const Moods = ({ navigation }) => {
             <View style={styles.childView}>
               <View style={styles.separator} />
 
-              <Button buttonText={'record Mood'} />
+              <Button
+                buttonText={'record Mood'}
+                onPress={() => navigation.navigate('MoodSetting')}
+              />
             </View>
           </ScrollView>
         </SafeAreaView>

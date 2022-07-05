@@ -24,8 +24,8 @@ import styles from './style';
 
 const GlobalNetworkScreen = ({ navigation }) => {
   const [isEnabled, setIsEnabled] = useState(false);
-  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
   const [shouldShow, setShouldShow] = useState(false);
+  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
   const modal = () => setShouldShow(previousState => !previousState);
 
   return (
@@ -53,7 +53,7 @@ const GlobalNetworkScreen = ({ navigation }) => {
                   <View style={styles.container}>
                     <View style={styles.main}>
                       <View>
-                        <Text style={styles.description}> Phone IP </Text>
+                        <Text style={styles.description}>     Phone IP    </Text>
                       </View>
 
                       <View style={styles.edit}>
@@ -65,7 +65,7 @@ const GlobalNetworkScreen = ({ navigation }) => {
 
                     <View style={styles.main}>
                       <View>
-                        <Text style={styles.description}> Router Real IP </Text>
+                        <Text style={styles.description}>Router Real IP</Text>
                       </View>
 
                       <View style={styles.edit}>
@@ -74,6 +74,7 @@ const GlobalNetworkScreen = ({ navigation }) => {
                     </View>
 
                     <View style={styles.separator} />
+
                     <View style={styles.main}>
                       <Text style={styles.description}>
                         Enter Your DNS Domain Name{' '}
@@ -88,17 +89,23 @@ const GlobalNetworkScreen = ({ navigation }) => {
                       />
                     </View>
 
-                    <Button
-                      buttonText="Get My IP "
-                      onPress={() => navigation.navigate('StarScreen')}
-                    />
+                    <View style={styles.separator} />
+
+                    <View style={styles.button}>
+                      <Button
+                        buttonText="Get My IP "
+                        onPress={() => navigation.navigate('StarScreen')}
+                      />
+                    </View>
 
                     <View style={styles.separator} />
+
                     <View style={styles.edittext}>
                       <TextInput style={styles.input} />
                     </View>
 
                     <View style={styles.separator} />
+
                     <View style={styles.button}>
                       <Button
                         buttonText="Save "

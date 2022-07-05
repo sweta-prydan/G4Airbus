@@ -5,9 +5,9 @@ import { Colors, Fonts } from '../../constants';
 
 //responsive
 import {
-  responsiveFontSize,
   responsiveHeight,
   responsiveWidth,
+  responsiveFontSize,
 } from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
@@ -22,14 +22,14 @@ const styles = StyleSheet.create({
   },
 
   symbol: {
-    width: responsiveWidth(30.8),
-    height: responsiveHeight(15),
+    width: responsiveWidth(25),
+    height: responsiveHeight(12),
   },
 
   text: {
     marginVertical: 40,
     color: Colors.white,
-    marginHorizontal: 20,
+    marginHorizontal: 40,
     fontSize: responsiveFontSize(2),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.bold,

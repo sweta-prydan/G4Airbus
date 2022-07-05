@@ -5,9 +5,9 @@ import { Colors, Fonts } from '../../constants';
 
 //responsive
 import {
-  responsiveFontSize,
   responsiveHeight,
   responsiveWidth,
+  responsiveFontSize,
 } from 'react-native-responsive-dimensions';
 
 const styles = StyleSheet.create({
