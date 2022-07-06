@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
-//Fonts
-import Fonts from '../../../../constants/fonts';
+//Constants
+import { Colors, Fonts } from '../../../../constants';
 
 //responsive
 import {
@@ -44,6 +44,13 @@ const styles = StyleSheet.create({
     height: responsiveHeight(9.6),
   },
 
+  close: {
+    marginVertical: 10,
+    marginHorizontal: 120,
+    width: responsiveWidth(20),
+    height: responsiveHeight(9.6),
+  },
+
   title: {
     margin: 6,
     fontSize: responsiveFontSize(2.5),
@@ -52,23 +59,42 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.FontFamily.semibold,
   },
 
-  allow: {
-    marginHorizontal: 30,
+  placeholderStyle: {
+    color: Colors.black,
+    backgroundColor: Colors.white,
     fontSize: responsiveFontSize(2.5),
     fontWeight: Fonts.FontWeight.semibold,
     fontFamily: Fonts.FontFamily.semibold,
   },
 
-  checkbox: {
-    marginVertical: 20,
-    width: responsiveWidth(12),
-    height: responsiveHeight(6),
+  selectedTextStyle: {
+    color: Colors.black,
+    backgroundColor: Colors.white,
+    fontSize: responsiveFontSize(2.5),
+    fontWeight: Fonts.FontWeight.semibold,
+    fontFamily: Fonts.FontFamily.semibold,
   },
 
-  row1: {
-    flexDirection: 'row',
-    textAlign: 'center',
-    alignItems: 'center',
+  iconStyle: {
+    width: responsiveWidth(8),
+    height: responsiveHeight(4),
+  },
+
+  inputSearchStyle: {
+    color: Colors.black,
+    backgroundColor: Colors.white,
+    fontSize: responsiveFontSize(2.5),
+    fontWeight: Fonts.FontWeight.light,
+    fontFamily: Fonts.FontFamily.light,
+  },
+  dropdown: {
+    margin: 28,
+    elevation: 2,
+    borderRadius: 5,
+    shadowOpacity: 0.2,
+    shadowRadius: 1.41,
+    height: responsiveHeight(5),
+    backgroundColor: Colors.white,
   },
 });
 

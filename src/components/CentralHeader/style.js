@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 
   header: {
     color: Colors.white,
-    marginHorizontal: 50,
+    marginHorizontal: 30,
     fontSize: responsiveFontSize(3),
     fontFamily: Fonts.FontFamily.bold,
     fontWeight: Fonts.FontWeight.black,
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
 
   separator: {
-    marginHorizontal: 8,
+    marginHorizontal: 4,
   },
 });
 export default styles;

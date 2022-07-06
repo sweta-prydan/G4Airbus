@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import {
   View,
+  Text,
   Image,
   ScrollView,
   SafeAreaView,
   ImageBackground,
+  TouchableOpacity,
 } from 'react-native';
+
+//style
+import styles from './style';
 
 //images
 import Images from '../../../../utils/images';
@@ -13,41 +18,33 @@ import Images from '../../../../utils/images';
 //Components
 import { CentralHeader, Input } from '../../../../components';
 
-//style
-import styles from './style';
-
 //dropdown
 import { Dropdown } from 'react-native-element-dropdown';
-import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const data = [
-  { label: '1', value: '1' },
-  { label: '2', value: '2' },
-  { label: '3', value: '3' },
-  { label: '4', value: '4' },
+  { label: 'Signal Control', value: '1' },
+  { label: 'InterLOck Control', value: '2' },
+  { label: 'Logic Control', value: '3' },
 ];
-
-const data2 = [
-  { label: '3', value: '1' },
-  { label: '5', value: '2' },
-];
-
-const FanSetting = ({ navigation }) => {
+const OtherSetting = ({ navigation }) => {
+  const [flag, setFlag] = useState(true);
   const [value, setValue] = useState(null);
+  const [subnet, onChangeSubnet] = useState();
+  const [device, onChangeDevice] = useState();
+  const [Channel, onChangeChannel] = useState();
   const [deviceName, onChangedeviceName] = useState();
-  const [lightType, onChangeLightType] = useState();
-  const [subnet, onChangeSubnet] = useState(null);
-  const [Channel, onChangeChannel] = useState(null);
+  const toggleSwitch = () => setFlag(previousState => !previousState);
 
   return (
     <View style={styles.container}>
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <CentralHeader
-            headerText={' Fan Setting '}
+            headerText={'Other Control Setting'}
             navigation={() => {
               navigation.goBack(null);
             }}
+            onPress={() => navigation.navigate('StarScreen')}
           />
         </View>
 
@@ -58,17 +55,18 @@ const FanSetting = ({ navigation }) => {
 
               <Input
                 value={deviceName}
-                text={'Device Name:'}
+                text={'    Remark:      '}
                 onChange={onChangedeviceName}
               />
+
               <Dropdown
                 search
                 data={data}
                 value={value}
                 maxHeight={200}
+                placeholder="Type"
                 valueField="value"
                 labelField="label"
-                placeholder="Fan Type"
                 searchPlaceholder="Search..."
                 onChange={item => {
                   setValue(item.value);
@@ -78,46 +76,48 @@ const FanSetting = ({ navigation }) => {
                 placeholderStyle={styles.placeholderStyle}
                 selectedTextStyle={styles.selectedTextStyle}
                 inputSearchStyle={styles.inputSearchStyle}
-                renderLeftIcon={() => <AntDesign style={styles.icon2} />}
               />
-              <Input
-                value={lightType}
-                text={' Subnet Id:'}
-                onChange={onChangeLightType}
-              />
-
               <Input
                 value={subnet}
-                text={' Device Id: '}
+                text={'   Subnet Id:   '}
                 onChange={onChangeSubnet}
               />
 
               <Input
+                value={device}
+                text={' Device Id:     '}
+                onChange={onChangeDevice}
+              />
+
+              <Input
                 value={Channel}
-                text={'Add Channel'}
+                text={'Add Channel '}
                 onChange={onChangeChannel}
               />
 
-              <Dropdown
-                search
-                data={data2}
-                value={value}
-                maxHeight={200}
-                placeholder="Gear"
-                valueField="value"
-                labelField="label"
-                searchPlaceholder="Search..."
-                onChange={item => {
-                  setValue(item.value);
-                }}
-                style={styles.dropdown}
-                iconStyle={styles.iconStyle}
-                placeholderStyle={styles.placeholderStyle}
-                selectedTextStyle={styles.selectedTextStyle}
-                inputSearchStyle={styles.inputSearchStyle}
-                renderLeftIcon={() => <AntDesign style={styles.icon2} />}
-              />
-              <Image source={Images.close} style={styles.icon} />
+              <View style={styles.main}>
+                <Text style={styles.text}>Select Icon</Text>
+
+                <View>
+                  <TouchableOpacity onPress={() => toggleSwitch()}>
+                    <Image
+                      style={styles.icon}
+                      source={flag ? Images.logo : Images.camera}
+                    />
+                  </TouchableOpacity>
+                  <Text style={styles.title}>OffState</Text>
+                </View>
+
+                <View>
+                  <Image
+                    style={styles.icon}
+                    source={flag ? Images.logo : Images.gallery}
+                  />
+                  <Text style={styles.title}>OnState</Text>
+                </View>
+              </View>
+
+              <Image source={Images.close} style={styles.close} />
             </View>
           </ScrollView>
         </SafeAreaView>
@@ -125,4 +125,4 @@ const FanSetting = ({ navigation }) => {
     </View>
   );
 };
-export default FanSetting;
+export default OtherSetting;

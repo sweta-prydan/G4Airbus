@@ -79,7 +79,7 @@ const Demokitzone = ({ navigation }) => {
               <Layer
                 Icon={Images.control}
                 layerText={'OtherControls'}
-                onPress={() => navigation.navigate('MyTabs')}
+                onPress={() => navigation.navigate('OtherControl')}
               />
 
               <Layer

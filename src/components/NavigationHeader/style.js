@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
 
   separator: {
-    marginHorizontal: 10,
+    marginHorizontal: 4,
   },
 
   header: {

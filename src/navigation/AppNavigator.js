@@ -28,6 +28,8 @@ import {
   MoodSetting,
   MusicSetting,
   LightSetting,
+  OtherControl,
+  OtherSetting,
   SettingScreen,
   CurtainScreen,
   SecurityScreen,
@@ -133,9 +135,11 @@ const AppNavigator = () => {
         <Stack.Screen name="LightScreen" component={LightScreen} />
         <Stack.Screen name="RGBWSetting" component={RGBWSetting} />
         <Stack.Screen name="MoodSetting" component={MoodSetting} />
+        <Stack.Screen name="OtherSetting" component={OtherSetting} />
         <Stack.Screen name="LightSetting" component={LightSetting} />
         <Stack.Screen name="MusicSetting" component={MusicSetting} />
         <Stack.Screen name="CurtainScreen" component={CurtainScreen} />
+        <Stack.Screen name="OtherControl" component={OtherControl} />
         <Stack.Screen name="SecurityScreen" component={SecurityScreen} />
         <Stack.Screen name="CurtainSetting" component={CurtainSetting} />
         <Stack.Screen name="AlaramVCScreen" component={AlaramVCScreen} />
