@@ -16,19 +16,19 @@ const Demokitzone = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <SafeAreaView>
           <ScrollView>
-            <DemoHeader DemoHeaderText={'DEMO KIT Zone'} />
+            <DemoHeader DemoHeaderText={'DEMOKITZone'} />
             <View style={styles.separator} />
 
             <View style={styles.main}>
               <Layer
                 Icon={Images.roomLight}
-                layerText={'Light'}
+                layerText={'     Light'}
                 onPress={() => navigation.navigate('MyTabs')}
               />
 
               <Layer
                 Icon={Images.rgb}
-                layerText={'RGBW'}
+                layerText={'     RGBW'}
                 onPress={() => navigation.navigate('Rgbw')}
               />
             </View>
@@ -36,13 +36,13 @@ const Demokitzone = ({ navigation }) => {
             <View style={styles.main}>
               <Layer
                 Icon={Images.dmx}
-                layerText={'DMX'}
+                layerText={'     DMX'}
                 onPress={() => navigation.navigate('Dmx')}
               />
 
               <Layer
                 Icon={Images.hvac}
-                layerText={'HVAC'}
+                layerText={'       HVAC'}
                 onPress={() => navigation.navigate('Ac')}
               />
             </View>
@@ -50,13 +50,13 @@ const Demokitzone = ({ navigation }) => {
             <View style={styles.main}>
               <Layer
                 Icon={Images.audio}
-                layerText={'Z-Audio'}
+                layerText={'   Z-Audio'}
                 onPress={() => navigation.navigate('Music')}
               />
 
               <Layer
                 Icon={Images.curtain}
-                layerText={'Curtain'}
+                layerText={'    Curtain'}
                 onPress={() => navigation.navigate('Curtain')}
               />
             </View>
@@ -64,13 +64,13 @@ const Demokitzone = ({ navigation }) => {
             <View style={styles.main}>
               <Layer
                 Icon={Images.mood}
-                layerText={'Moods'}
+                layerText={'   Moods'}
                 onPress={() => navigation.navigate('Moods')}
               />
 
               <Layer
                 Icon={Images.fan}
-                layerText={'Fan'}
+                layerText={'        Fan'}
                 onPress={() => navigation.navigate('Fan')}
               />
             </View>
@@ -84,7 +84,7 @@ const Demokitzone = ({ navigation }) => {
 
               <Layer
                 Icon={Images.irrigation}
-                layerText={'Irrigation'}
+                layerText={'  Irrigation'}
                 onPress={() => navigation.navigate('Irrigation')}
               />
             </View>
@@ -92,13 +92,13 @@ const Demokitzone = ({ navigation }) => {
             <View style={styles.main}>
               <Layer
                 Icon={Images.media}
-                layerText={'Media'}
+                layerText={'     Media'}
                 onPress={() => navigation.navigate('Media')}
               />
 
               <Layer
                 Icon={Images.roomCamera}
-                layerText={'Camera'}
+                layerText={'   Camera'}
                 onPress={() => navigation.navigate('Camera')}
               />
             </View>

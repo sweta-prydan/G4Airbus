@@ -8,7 +8,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import Slider from 'react-native-slider';
+//style
+import styles from './style';
 
 //images
 import Images from '../../../utils/images';
@@ -16,17 +17,16 @@ import Images from '../../../utils/images';
 //Components
 import { NavigationHeader } from '../../../components';
 
-//style
-import styles from './style';
-
 //color
 import { Colors } from '../../../constants';
 
+import Slider from 'react-native-slider';
+
 const Music = ({ navigation }) => {
+  const [isstop, setIsStop] = useState(true);
   const [sliderValue, setSliderValue] = useState(0);
   const [istvEnabled, setIsTvEnabled] = useState(true);
   const [issimEnabled, setIsSimEnabled] = useState(true);
-  const [isstop, setIsStop] = useState(true);
   const [isradioEnabled, setIsRadioEnabled] = useState(true);
   const [ischromeEnabled, setIsChromeEnabled] = useState(true);
   const [isspeakerEnabled, setIsSpeakerEnabled] = useState(true);
@@ -37,7 +37,7 @@ const Music = ({ navigation }) => {
         <View>
           <NavigationHeader
             onPress={() => navigation.navigate('MusicSetting')}
-            NavigationHeaderText="Music"
+            NavigationHeaderText="     Music     "
           />
         </View>
 

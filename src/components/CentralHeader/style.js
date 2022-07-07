@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
 
   separator: {
-    marginHorizontal: 4,
+    marginHorizontal: 5,
   },
 });
 export default styles;

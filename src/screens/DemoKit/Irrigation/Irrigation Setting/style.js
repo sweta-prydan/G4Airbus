@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 //Constants
-import { Colors, Fonts } from '../../../../constants';
+import { Fonts, Colors } from '../../../../constants';
 
 //responsive
 import {
@@ -31,22 +31,9 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.FontFamily.bold,
   },
 
-  main: {
-    textAlign: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-  },
-
   icon: {
     marginVertical: 10,
     marginHorizontal: 35,
-    width: responsiveWidth(20),
-    height: responsiveHeight(9.6),
-  },
-
-  close: {
-    marginVertical: 10,
-    marginHorizontal: 150,
     width: responsiveWidth(20),
     height: responsiveHeight(9.6),
   },
@@ -59,8 +46,27 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.FontFamily.semibold,
   },
 
+  allow: {
+    marginHorizontal: 50,
+    fontSize: responsiveFontSize(2.5),
+    fontWeight: Fonts.FontWeight.semibold,
+    fontFamily: Fonts.FontFamily.semibold,
+  },
+
+  checkbox: {
+    width: responsiveWidth(12),
+    height: responsiveHeight(6),
+  },
+
+  row1: {
+    flexDirection: 'row',
+    textAlign: 'center',
+    alignItems: 'center',
+  },
+
   placeholderStyle: {
     color: Colors.black,
+    textAlign: 'center',
     backgroundColor: Colors.white,
     fontSize: responsiveFontSize(2.5),
     fontWeight: Fonts.FontWeight.semibold,

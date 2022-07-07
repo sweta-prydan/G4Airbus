@@ -1,14 +1,14 @@
 import React from 'react';
 import { ImageBackground, View, SafeAreaView, ScrollView } from 'react-native';
 
+//style
+import styles from './style';
+
 //images
 import Images from '../../../utils/images';
 
 //Component
 import { NavigationHeader } from '../../../components';
-
-//style
-import styles from './style';
 
 const Camera = ({ navigation }) => {
   return (
@@ -16,8 +16,8 @@ const Camera = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            navigation={navigation}
-            NavigationHeaderText="Camera"
+            NavigationHeaderText="    Camera    "
+            onPress={() => navigation.navigate('CameraSetting')}
           />
         </View>
 

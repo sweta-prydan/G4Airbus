@@ -37,7 +37,7 @@ const MoodSetting = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <CentralHeader
-            headerText={'Mood Setting'}
+            headerText={'    Mood Setting       '}
             navigation={() => {
               navigation.goBack(null);
             }}

@@ -17,7 +17,7 @@ const Moods = ({ navigation }) => {
         <View>
           <NavigationHeader
             navigation={navigation}
-            NavigationHeaderText="Mood"
+            NavigationHeaderText="     Mood      "
             onPress={() => navigation.navigate('MoodSetting')}
           />
         </View>

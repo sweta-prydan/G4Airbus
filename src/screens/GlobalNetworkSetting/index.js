@@ -9,6 +9,9 @@ import {
   ImageBackground,
 } from 'react-native';
 
+//style
+import styles from './style';
+
 //images
 import Images from '../../utils/images';
 
@@ -19,14 +22,12 @@ import Button from '../../components/Button/index';
 //color
 import Colors from '../../constants/color';
 
-//style
-import styles from './style';
-
 const GlobalNetworkScreen = ({ navigation }) => {
   const [isEnabled, setIsEnabled] = useState(false);
   const [shouldShow, setShouldShow] = useState(false);
-  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
+
   const modal = () => setShouldShow(previousState => !previousState);
+  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
   return (
     <View style={styles.container}>
@@ -46,7 +47,7 @@ const GlobalNetworkScreen = ({ navigation }) => {
               />
             </View>
 
-            <Text>Network Setting</Text>
+            <Text style={styles.description}> Network Setting</Text>
             {shouldShow ? (
               <View>
                 <View style={styles.childView}>

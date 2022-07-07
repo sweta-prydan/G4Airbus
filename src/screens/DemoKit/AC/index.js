@@ -8,14 +8,14 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+//style
+import styles from './style';
+
 //images
 import Images from '../../../utils/images';
 
 //Components
 import { NavigationHeader } from '../../../components';
-
-//style
-import styles from './style';
 
 const Ac = ({ navigation }) => {
   const [isfanslowEnabled, setIsFanSlowEnabled] = useState(true);
@@ -30,7 +30,7 @@ const Ac = ({ navigation }) => {
             onPress={() => {
               navigation.navigate('ACSetting');
             }}
-            NavigationHeaderText="AC"
+            NavigationHeaderText="        AC          "
           />
         </View>
 

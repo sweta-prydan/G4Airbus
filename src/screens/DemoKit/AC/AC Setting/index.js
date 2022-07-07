@@ -26,18 +26,18 @@ const data = [
 ];
 
 const ACSetting = ({ navigation }) => {
-  const [deviceName, onChangedeviceName] = React.useState();
-  const [lightType, onChangeLightType] = React.useState();
-  const [subnet, onChangeSubnet] = React.useState(null);
-  const [Channel, onChangeChannel] = React.useState(null);
   const [value, setValue] = useState(null);
+  const [deviceName, onChangedeviceName] = useState();
+  const [lightType, onChangeLightType] = useState();
+  const [subnet, onChangeSubnet] = useState(null);
+  const [Channel, onChangeChannel] = useState(null);
 
   return (
     <View style={styles.container}>
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <CentralHeader
-            headerText={'AC Setting'}
+            headerText={'      AC Setting           '}
             onPress={() => navigation.navigate('StarScreen')}
             navigation={() => {
               navigation.goBack(null);

@@ -1,14 +1,14 @@
 import React from 'react';
 import { ImageBackground, View, SafeAreaView, ScrollView } from 'react-native';
 
+//style
+import styles from './style';
+
 //images
 import Images from '../../../utils/images';
 
 //components
 import { NavigationHeader, ArrowLayer } from '../../../components';
-
-//style
-import styles from './style';
 
 const RGBW = ({ navigation }) => {
   return (
@@ -16,7 +16,7 @@ const RGBW = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            NavigationHeaderText="RGBW"
+            NavigationHeaderText="    RGBW     "
             onPress={() => navigation.navigate('RGBWSetting')}
           />
         </View>

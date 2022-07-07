@@ -34,7 +34,7 @@ const LightSetting = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <CentralHeader
-            headerText={'Light Setting'}
+            headerText={'        Light Setting      '}
             navigation={() => {
               navigation.goBack(null);
             }}

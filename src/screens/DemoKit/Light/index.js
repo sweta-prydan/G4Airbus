@@ -20,7 +20,7 @@ const Light = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            NavigationHeaderText="Light"
+            NavigationHeaderText="     Light      "
             onPress={() => navigation.navigate('LightSetting')}
           />
         </View>

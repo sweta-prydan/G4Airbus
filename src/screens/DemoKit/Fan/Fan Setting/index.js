@@ -7,14 +7,14 @@ import {
   ImageBackground,
 } from 'react-native';
 
+//style
+import styles from './style';
+
 //images
 import Images from '../../../../utils/images';
 
 //Components
 import { CentralHeader, Input } from '../../../../components';
-
-//style
-import styles from './style';
 
 //dropdown
 import { Dropdown } from 'react-native-element-dropdown';
@@ -44,7 +44,7 @@ const FanSetting = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <CentralHeader
-            headerText={' Fan Setting '}
+            headerText={'    Fan Setting          '}
             navigation={() => {
               navigation.goBack(null);
             }}

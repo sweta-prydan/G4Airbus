@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, ScrollView, SafeAreaView, ImageBackground } from 'react-native';
 
 //images
@@ -11,15 +11,15 @@ import { Button, CentralHeader, Input } from '../../../../components';
 import styles from './style';
 
 const MusicSetting = ({ navigation }) => {
-  const [subnet, onChangeSubnet] = React.useState();
-  const [device, onChangeDevice] = React.useState();
+  const [subnet, onChangeSubnet] = useState();
+  const [device, onChangeDevice] = useState();
 
   return (
     <View style={styles.container}>
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <CentralHeader
-            headerText={'Music Setting'}
+            headerText={'     Music Setting      '}
             navigation={() => {
               navigation.goBack(null);
             }}

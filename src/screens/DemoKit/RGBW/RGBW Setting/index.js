@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Image,
@@ -16,17 +16,17 @@ import { CentralHeader, Input } from '../../../../components';
 //style
 import styles from './style';
 
-const RGBWSetting = ({ navigation }) => {
-  const [title, onChangeTitle] = React.useState();
-  const [device, onChangeDevice] = React.useState();
-  const [subnet, onChangeSubnet] = React.useState(null);
+const CameraSetting = ({ navigation }) => {
+  const [title, onChangeTitle] = useState();
+  const [device, onChangeDevice] = useState();
+  const [subnet, onChangeSubnet] = useState(null);
 
   return (
     <View style={styles.container}>
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <CentralHeader
-            headerText={'RGBW Setting'}
+            headerText={'     Camera Setting      '}
             navigation={() => {
               navigation.goBack(null);
             }}
@@ -64,4 +64,4 @@ const RGBWSetting = ({ navigation }) => {
     </View>
   );
 };
-export default RGBWSetting;
+export default CameraSetting;

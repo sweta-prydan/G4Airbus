@@ -18,7 +18,7 @@ const CentralControlScreen = ({ navigation }) => {
         <SafeAreaView>
           <ScrollView>
             <CentralHeader
-              headerText="Central Control"
+              headerText="    Central Control    "
               onPress={() => navigation.navigate('StarScreen')}
               navigation={() => {
                 navigation.goBack(null);
@@ -29,13 +29,13 @@ const CentralControlScreen = ({ navigation }) => {
             <View style={styles.main}>
               <Layer
                 Icon={Images.roomLight}
-                layerText={'Light'}
+                layerText={'    Light'}
                 onPress={() => navigation.navigate('LightScreen')}
               />
 
               <Layer
                 Icon={Images.audio}
-                layerText={'Music'}
+                layerText={'    Music'}
                 onPress={() => navigation.navigate('MusicScreen')}
               />
             </View>
@@ -43,13 +43,13 @@ const CentralControlScreen = ({ navigation }) => {
             <View style={styles.main}>
               <Layer
                 Icon={Images.hvac}
-                layerText={'HVAC'}
+                layerText={'   HVAC'}
                 onPress={() => navigation.navigate('HVACScreen')}
               />
 
               <Layer
                 Icon={Images.curtain}
-                layerText={'Curtain'}
+                layerText={'   Curtain'}
                 onPress={() => navigation.navigate('CurtainScreen')}
               />
             </View>
@@ -57,13 +57,13 @@ const CentralControlScreen = ({ navigation }) => {
             <View style={styles.main}>
               <Layer
                 Icon={Images.fan}
-                layerText={'Fan'}
+                layerText={'    Fan'}
                 onPress={() => navigation.navigate('FanScreen')}
               />
 
               <Layer
                 Icon={Images.irrigation}
-                layerText={'Irrigation'}
+                layerText={' Irrigation'}
                 onPress={() => navigation.navigate('IrrigationScreen')}
               />
             </View>
@@ -71,13 +71,13 @@ const CentralControlScreen = ({ navigation }) => {
             <View style={styles.main}>
               <Layer
                 Icon={Images.dmx}
-                layerText={'DMX'}
+                layerText={'   DMX'}
                 onPress={() => navigation.navigate('DMXScreen')}
               />
 
               <Layer
                 Icon={Images.rgb}
-                layerText={'RGBW'}
+                layerText={'  RGBW'}
                 onPress={() => navigation.navigate('RGBWScreen')}
               />
             </View>
@@ -85,13 +85,13 @@ const CentralControlScreen = ({ navigation }) => {
             <View style={styles.main}>
               <Layer
                 Icon={Images.security}
-                layerText={'Security'}
+                layerText={'    Security'}
                 onPress={() => navigation.navigate('SecurityScreen')}
               />
 
               <Layer
                 Icon={Images.schedule}
-                layerText={'Scheduling'}
+                layerText={' Scheduling'}
                 onPress={() => navigation.navigate('SchedulingScreen')}
               />
             </View>

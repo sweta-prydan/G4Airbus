@@ -24,9 +24,9 @@ const styles = StyleSheet.create({
   },
 
   icon: {
-    marginVertical: 20,
+    marginVertical: 10,
     alignItems: 'center',
-    marginHorizontal: 140,
+    marginHorizontal: 50,
     justifyContent: 'center',
     width: responsiveWidth(20),
     height: responsiveHeight(9.6),

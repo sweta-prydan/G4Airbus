@@ -1,14 +1,14 @@
 import React from 'react';
 import { ImageBackground, View, SafeAreaView, ScrollView } from 'react-native';
 
+//style
+import styles from './style';
+
 //images
 import Images from '../../../utils/images';
 
 //Components
 import { NavigationHeader, Button } from '../../../components';
-
-//style
-import styles from './style';
 
 const Irrigation = ({ navigation }) => {
   return (
@@ -16,8 +16,8 @@ const Irrigation = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            navigation={navigation}
-            NavigationHeaderText="Irrigation"
+            onPress={() => navigation.navigate('IrrigationSetting')}
+            NavigationHeaderText=" Irrigation "
           />
         </View>
 

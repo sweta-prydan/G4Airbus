@@ -22,7 +22,7 @@ const OtherControl = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            NavigationHeaderText="Other Control"
+            NavigationHeaderText="OtherControl"
             onPress={() => navigation.navigate('OtherSetting')}
           />
         </View>

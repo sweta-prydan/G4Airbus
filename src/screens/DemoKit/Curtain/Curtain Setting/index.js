@@ -19,11 +19,11 @@ import { Button, CentralHeader, Input } from '../../../../components';
 import styles from './style';
 
 const CurtainSetting = ({ navigation }) => {
-  const [deviceName, onChangedeviceName] = React.useState();
-  const [shadeType, onChangeShadeType] = React.useState();
-  const [manage, onChangeManage] = React.useState();
+  const [manage, onChangeManage] = useState();
+  const [deviceName, onChangedeviceName] = useState();
+  const [shadeType, onChangeShadeType] = useState();
 
-  const [flag, setFlag] = React.useState(true);
+  const [flag, setFlag] = useState(true);
   const [isRotate, setIsRotate] = useState(false);
   const [isSelected, setIsSelected] = useState(false);
   const toggleSwitch = () => setFlag(previousState => !previousState);
@@ -32,7 +32,7 @@ const CurtainSetting = ({ navigation }) => {
     <View style={styles.container}>
       <ImageBackground source={Images.background} style={styles.image}>
         <CentralHeader
-          headerText={'Curtain Setting'}
+          headerText={'    Curtain Setting     '}
           navigation={() => {
             navigation.goBack(null);
           }}

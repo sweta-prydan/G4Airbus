@@ -30,7 +30,7 @@ const Fan = ({ navigation }) => {
             onPress={() => {
               navigation.navigate('FanSetting');
             }}
-            NavigationHeaderText="   Fan   "
+            NavigationHeaderText="        Fan       "
           />
         </View>
 

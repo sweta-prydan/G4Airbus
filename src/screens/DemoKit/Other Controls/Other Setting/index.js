@@ -26,6 +26,7 @@ const data = [
   { label: 'InterLOck Control', value: '2' },
   { label: 'Logic Control', value: '3' },
 ];
+
 const OtherSetting = ({ navigation }) => {
   const [flag, setFlag] = useState(true);
   const [value, setValue] = useState(null);
@@ -40,7 +41,7 @@ const OtherSetting = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <CentralHeader
-            headerText={'Other Control Setting'}
+            headerText={'OtherControlSetting'}
             navigation={() => {
               navigation.goBack(null);
             }}

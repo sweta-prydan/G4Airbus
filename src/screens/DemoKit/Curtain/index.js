@@ -1,14 +1,14 @@
 import React from 'react';
 import { ImageBackground, View, SafeAreaView, ScrollView } from 'react-native';
 
+//style
+import styles from './style';
+
 //images
 import Images from '../../../utils/images';
 
 //Components
 import { CurtainLayer, NavigationHeader } from '../../../components';
-
-//style
-import styles from './style';
 
 const Curtain = ({ navigation }) => {
   return (
@@ -16,7 +16,7 @@ const Curtain = ({ navigation }) => {
       <ImageBackground source={Images.background} style={styles.image}>
         <View>
           <NavigationHeader
-            NavigationHeaderText="Curtain"
+            NavigationHeaderText="    Curtain      "
             onPress={() => navigation.navigate('CurtainSetting')}
           />
         </View>

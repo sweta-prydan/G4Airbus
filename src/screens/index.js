@@ -41,6 +41,8 @@ export { default as MoodSetting } from './DemoKit/Mood/Mood Setting';
 export { default as GlobalNetworkScreen } from './GlobalNetworkSetting';
 export { default as LightSetting } from './DemoKit/Light/Light Setting';
 export { default as MusicSetting } from './DemoKit/Music/Music Setting';
+export { default as CameraSetting } from './DemoKit/Camera/Camera Setting';
 export { default as CurtainSetting } from './DemoKit/Curtain/Curtain Setting';
 export { default as SchedulingDropScreen } from './Scheduling/Schedulinginner';
 export { default as OtherSetting } from './DemoKit/Other Controls/Other Setting';
+export { default as IrrigationSetting } from './DemoKit/Irrigation/Irrigation Setting';

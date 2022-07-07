@@ -30,6 +30,7 @@ import {
   LightSetting,
   OtherControl,
   OtherSetting,
+  CameraSetting,
   SettingScreen,
   CurtainScreen,
   SecurityScreen,
@@ -39,6 +40,7 @@ import {
   IrrigationScreen,
   SchedulingScreen,
   ByFtpServerScreen,
+  IrrigationSetting,
   GlobalNetworkScreen,
   SchedulingDropScreen,
   CentralControlScreen,
@@ -138,13 +140,15 @@ const AppNavigator = () => {
         <Stack.Screen name="OtherSetting" component={OtherSetting} />
         <Stack.Screen name="LightSetting" component={LightSetting} />
         <Stack.Screen name="MusicSetting" component={MusicSetting} />
-        <Stack.Screen name="CurtainScreen" component={CurtainScreen} />
         <Stack.Screen name="OtherControl" component={OtherControl} />
+        <Stack.Screen name="CurtainScreen" component={CurtainScreen} />
+        <Stack.Screen name="CameraSetting" component={CameraSetting} />
         <Stack.Screen name="SecurityScreen" component={SecurityScreen} />
         <Stack.Screen name="CurtainSetting" component={CurtainSetting} />
         <Stack.Screen name="AlaramVCScreen" component={AlaramVCScreen} />
         <Stack.Screen name="IrrigationScreen" component={IrrigationScreen} />
         <Stack.Screen name="SchedulingScreen" component={SchedulingScreen} />
+        <Stack.Screen name="IrrigationSetting" component={IrrigationSetting} />
 
         <Stack.Screen
           name="SchedulingDropScreen"
